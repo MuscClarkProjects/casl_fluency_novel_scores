@@ -1,14 +1,4 @@
 18-wheeler
-ATV
-Adam's_apple
-Altima
-BDT_cutter
-LST
-LST_navy_ship
-PT_boat
-SUV
-TV_remote
-UAV
 a
 a_frame
 aardvarcks
@@ -708,7 +698,6 @@ arctic
 ardent
 arduous
 are
-are...)
 area
 aren't
 argon
@@ -1347,7 +1336,6 @@ bug_spray
 buggies
 buggy
 bugs
-buick
 build
 building
 bull
@@ -1394,7 +1382,6 @@ buy
 buying
 buzzard
 buzzards
-by
 c_bar
 cab
 cab_trailer
@@ -1506,7 +1493,6 @@ cape
 caper
 capers
 capes
-capitalized
 capon
 capri
 capri_pant
@@ -3161,7 +3147,6 @@ gazelle
 gazelles
 gecko
 geese
-generated
 gerbil
 gerbils
 germ
@@ -3213,12 +3198,10 @@ go-cart
 go_-_cart
 go_cart
 goal
-goast
 goat
 goats
 gobo_root
 going
-going_fishing
 gold_fish
 golden_bear
 golden_flake
@@ -3503,7 +3486,6 @@ holler
 holstein_cow
 hominy
 hommos
-honda
 honey
 honey_bun
 honeydew
@@ -3597,7 +3579,6 @@ hydrofoil
 hydroplane
 hyena
 hyenas
-hyundai
 ice
 ice_breaker
 ice_cream
@@ -3612,7 +3593,6 @@ idaho_potato
 iguana
 impala
 indri
-infinity
 insect
 insect_repellent
 insecticide
@@ -3798,7 +3778,6 @@ lamp
 land
 landing
 landing_craft
-laptop
 lard
 lasagna
 lathe
@@ -3882,7 +3861,6 @@ limes
 limo
 limousine
 limpet
-lincoln
 line
 liner
 liner_sock
@@ -4234,7 +4212,6 @@ nissan
 non-prescription_drugs
 non_-_prescription_drug
 non_-_prescription_drugs
-none
 noodle
 noodles
 northern_bean
@@ -4832,7 +4809,6 @@ rat
 rat_poison
 ratchet
 ratchets
-rater)
 rats
 rattle
 rattlesnake
@@ -4953,7 +4929,6 @@ rocket
 rocket_ship
 rockets
 rocking
-rocks
 rodent
 rodents
 roebuck
@@ -6513,7 +6488,6 @@ swing
 swingblade
 swinging
 swinging_blade
-swings
 swirl
 swishy
 swiss
@@ -6622,7 +6596,6 @@ taxis
 tea
 tea_bag
 tea_bags
-tea_toter
 teddy_bear
 teddy_bears
 telephone
@@ -6653,14 +6626,11 @@ thermal_pants
 thermal_underwear
 thermal_wear
 thimble
-thing...)
-things
 think
 thinking
 thinks
 thong
 thongs
-those
 threader
 three-wheeler
 three_-_toed_sloth
@@ -6764,7 +6734,6 @@ train
 training
 trains
 tram
-transcribed
 transfer
 transmit
 transport
@@ -7128,7 +7097,6 @@ wool_pants
 woolly_mammoth
 worcestershire_sauce
 word
-words,
 work
 working
 workout_clothes

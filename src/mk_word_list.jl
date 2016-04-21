@@ -4,14 +4,14 @@ data_f(f_name::AbstractString) = joinpath(dirname(pwd()), "data", f_name)
 is_valid_word(w::ASCIIString) = length(w) > 0 && !ismatch(r"^[!|\-|#|(]", w)
 
 
-function load_words(f::AbstractString)
+function load_words(f::AbstractString, delim::Union{AbstractString, Char}='\n')
   has_content::Bool = length(open(readall, f)) > 0
   if !has_content
     return ASCIIString[]
   end
 
-  words::Vector{ASCIIString} = unique(readdlm(f, ASCIIString))
-  filter(is_valid_word, words)
+  words::Vector{ASCIIString} = unique(readdlm(f, delim, ASCIIString))
+  filter(is_valid_word, map(lowercase, words))
 end
 
 
