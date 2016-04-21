@@ -26,19 +26,23 @@ function load_words{T <: AbstractString}(fs::AbstractVector{T})
   sort(all_words)
 end
 
+
+function get_all_list_files()
+  step1_lists_dir = data_f("step1/lists/")
+
+  is_text_file(f::ASCIIString) = endswith(f, ".txt")
+  add_path(f::AbstractString) = joinpath(step1_lists_dir, f)
+
+  ASCIIString[add_path(f) for f in filter(is_text_file, readdir(step1_lists_dir))]
+end
+
+
+typealias Strings Vector{ASCIIString}
+
 function run{T <: AbstractString}(
     dest_file::Nullable{T}=Nullable(data_f("step1/target_words.txt")))
 
-  typealias Strings Vector{ASCIIString}
-
-  list_files::Strings = begin
-    step1_lists_dir = data_f("step1/lists/")
-
-    is_text_file(f::ASCIIString) = endswith(f, ".txt")
-    add_path(f::AbstractString) = joinpath(step1_lists_dir, f)
-
-    ASCIIString[add_path(f) for f in filter(is_text_file, readdir(step1_lists_dir))]
-  end
+  list_files::Strings = get_all_list_files()
 
   all_word_files::Strings = [data_f("step1/target_words_orig.txt"); list_files]
 
@@ -47,4 +51,36 @@ function run{T <: AbstractString}(
   isnull(dest_file) || writedlm(get(dest_file), all_words)
 
   all_words
+end
+
+
+function find_non_matching_words(ignore_words...)
+  ignore_words::Set{ASCIIString} = Set{ASCIIString}(ignore_words)
+
+  orig_keys::Strings = begin
+    f::ASCIIString = data_f("pPMI_keys.txt")
+    load_words(f, '\r')
+  end
+
+  list_files::Strings = get_all_list_files()
+
+  for f in list_files
+    words::Strings = load_words(f)
+    missing_words::Strings = filter(
+      w -> !in(w, ignore_words), setdiff(words, orig_keys)
+    )
+
+    if length(missing_words) > 0
+      f_name = basename(f)
+      println("file $f_name")
+      for w::ASCIIString in missing_words
+        println("word: $w in $f_name")
+        println("suggestions for $w")
+        first_letters = length(w) > 4 ? w[1:4] : w[1:end-1]
+        for k in sort(filter(i -> contains(i, first_letters), y))
+          println("$k suggestion for $w")
+        end
+      end
+    end
+  end
 end

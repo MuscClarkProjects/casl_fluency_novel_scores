@@ -3,12 +3,12 @@ foul
 falcon
 flower
 fish
-fungi
-fords
+fungus
+ford
 funny_papers
 # fish
 foot
-fangs
+fang
 fingers
 fleas
 # fox

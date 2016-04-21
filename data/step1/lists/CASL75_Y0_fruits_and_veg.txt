@@ -3,7 +3,7 @@ banana
 orange
 grape
 green_bean
-cantalope
+cantaloupe
 butter_bean
 squash
 broccoli

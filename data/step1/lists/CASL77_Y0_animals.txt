@@ -11,7 +11,7 @@ cat
 bear
 tiger
 hippopotamus
-aligator
+alligator
 frogs
 fish
 oysters

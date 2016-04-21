@@ -9,6 +9,6 @@ onions
 peaches
 artichokes
 dates
-raddish
+radish
 turnips
-sweet_potatos
+sweet_potatoes

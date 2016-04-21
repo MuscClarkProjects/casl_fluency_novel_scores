@@ -8,4 +8,4 @@ paddle_boat
 rowboat
 steamship
 sailboat
-ocean-liner
+oceanliner

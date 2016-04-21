@@ -1,6 +1,6 @@
 apple
-arraw
-asprin
+arrow
+aspirin
 apostrophe
 arcane
 actor

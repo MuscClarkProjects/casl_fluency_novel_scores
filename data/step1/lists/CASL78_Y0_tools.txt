@@ -1,4 +1,4 @@
-axes
+axe
 shovel
 pick
 hammers

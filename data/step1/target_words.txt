@@ -1,7 +1,6 @@
 18-wheeler
 a
 a_frame
-aardvarcks
 aardvark
 aardvarks
 ab
@@ -313,7 +312,6 @@ alaska
 albatross
 albino
 albinos
-albitross
 albondigas
 album
 alchemy
@@ -335,7 +333,6 @@ alibi
 alibis
 alice
 alien
-aligator
 alight
 align
 alike
@@ -730,7 +727,6 @@ arouse
 aroused
 arpeggio
 arrange
-arraw
 arrears
 arrest
 arrival
@@ -788,7 +784,6 @@ asphalt
 aspiration
 aspire
 aspirin
-asprin
 ass
 assassin
 assassinate
@@ -918,7 +913,6 @@ awl
 awning
 ax
 axe
-axes
 axillary
 axiom
 axis
@@ -1478,14 +1472,12 @@ canned_veggies
 canned_watermelon
 cannelini
 cannellini_bean
-cano
 canoe
 canoes
 canopy_boat
 cans
 cans_of_soup
 cans_of_soups
-cantalope
 cantaloupe
 cantaloupes
 cap
@@ -1545,7 +1537,6 @@ catamaran
 catamarans
 catch
 catching
-catepillar
 caterpillar
 caterpillars
 catfish
@@ -1990,7 +1981,6 @@ cutoff
 cutoffs
 cutter
 cutting
-cutting_grass
 cv_boat
 dachshund
 dairy
@@ -2368,7 +2358,6 @@ fanatical
 fancy
 fandango
 fang
-fangs
 fanny
 fantas
 fantasia
@@ -2781,7 +2770,6 @@ forbidden
 force
 forceful
 ford
-fords
 fore
 forearm
 forefinger
@@ -3084,7 +3072,6 @@ functionable
 fund
 fundamental
 funding
-fungi
 fungus
 funicular
 funk
@@ -3472,7 +3459,6 @@ hip_boot
 hippo
 hippopotamus
 hippos
-hippotopotamus
 hit
 hitting
 hoard
@@ -3567,13 +3553,11 @@ human_being
 human_beings
 humans
 hummer
-humming_bird
 hummingbird
 hummingbirds
 hummus
 humvee
 hunt
-hunting
 hurt
 hydrofoil
 hydroplane
@@ -4231,7 +4215,6 @@ oatmeal_cookie
 oatmeal_cookies
 oatmeal_cooky
 oats
-ocean-liner
 ocean_boat
 oceanliner
 ocelot
@@ -4577,7 +4560,6 @@ platypus
 play
 play_footbal
 playing
-playing_cards
 pleasure
 pleasure_boat
 pleasure_boats
@@ -4764,7 +4746,6 @@ racers
 racing_boat
 racket
 racoon
-raddish
 radial_saw
 radicchio
 radish
@@ -4884,8 +4865,6 @@ rest
 resting
 rhino
 rhinoceros
-rhinocerous
-rhinosaurus
 rhubarb
 rib
 ribbon
@@ -4987,7 +4966,6 @@ sad
 sadden
 saddened
 saddle
-saddles
 sadistic
 sadly
 sadness
@@ -5212,7 +5190,6 @@ screech
 screech_owl
 screen
 screw
-screw_driver
 screwdriver
 screwing
 screws
@@ -5723,7 +5700,6 @@ sleeve
 sleeveless_sweater
 sleeze
 sleigh
-slend
 slender
 slept
 slew
@@ -5819,7 +5795,6 @@ sneaker
 sneakers
 sneaky
 sneeze
-sneezing
 snide
 sniffle
 snip
@@ -5930,7 +5905,6 @@ somewhile
 somnambulent
 son
 song
-songs
 sonic
 sonic_boom
 sonnet
@@ -6077,7 +6051,6 @@ sprayer
 spring
 spring_onion
 spring_onions
-springing
 sprite
 sprites
 sprout
@@ -6201,7 +6174,6 @@ stoles
 stomach
 stomp
 stone
-stones
 stood
 stool
 stoop
@@ -6323,7 +6295,6 @@ suckling
 sucks
 sudden
 suddenly
-suddently
 suds
 sue
 suede_jacket
@@ -6465,7 +6436,6 @@ sweet_pepper
 sweet_peppers
 sweet_potato
 sweet_potatoes
-sweet_potatos
 sweet_roll
 sweet_rolls
 sweetener
@@ -6585,7 +6555,6 @@ tapir
 tapper
 tapping
 taps
-tarpin
 tarpon
 tartar_sauce
 taste
@@ -6934,7 +6903,6 @@ washing_detergent
 washing_liquid
 washing_material
 washing_materials
-washing_my_car
 washing_powder
 washing_powders
 washing_product

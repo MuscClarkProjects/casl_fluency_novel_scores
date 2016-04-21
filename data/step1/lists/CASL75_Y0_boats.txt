@@ -2,6 +2,6 @@
 ship
 waverunner
 tricycle_boat
-cano
+canoe
 paddle_boat
 submarine

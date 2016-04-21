@@ -7,7 +7,7 @@ alligator
 ! tiger
 elephant
 ! kangaroo
-hippotopotamus
+hippopotamus
 ! horse
 ! cows
 ! goast

@@ -8,7 +8,7 @@ cat
 dog
 fish
 hippopotamus
-rhinocerous
+rhinoceros
 giraffe
 lion
 tiger

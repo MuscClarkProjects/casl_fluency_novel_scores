@@ -1,8 +1,8 @@
 snake
 snail
 shark
-songs
-saddles
+song
+saddle
 shoes
 socks
 # snakes

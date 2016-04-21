@@ -5,8 +5,8 @@ swim
 driving
 walking
 running
-playing_cards
+playing
 ! going_fishing
-hunting
-washing_my_car
-cutting_grass
+hunt
+washing
+cutting
