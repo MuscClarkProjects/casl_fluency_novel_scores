@@ -1,0 +1,10 @@
+seal
+whale
+fish
+shrimp
+penguin
+crawfish
+minnow
+!polar_bear
+snake
+sea_lion

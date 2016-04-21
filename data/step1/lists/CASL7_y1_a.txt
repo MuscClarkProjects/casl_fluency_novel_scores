@@ -1,0 +1,13 @@
+art
+!artbox
+animal
+adventure
+!actin
+atlas
+!America
+!Atlanta
+!Archie
+!Africa
+apple
+airplane
+artist

@@ -1,0 +1,7 @@
+screwdriver
+hammer
+! lawn_mower
+cutter
+clipper
+!shower
+blower

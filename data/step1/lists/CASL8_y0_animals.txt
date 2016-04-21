@@ -1,0 +1,14 @@
+dog
+cat
+bird
+chicken
+fox
+tiger
+lizard
+leopard
+snake
+#cat
+rabbit
+chimpanzee
+duck
+geese

@@ -1,0 +1,14 @@
+(dgc)
+frog
+alligator
+crocodile
+whale
+shark
+mullet
+bass
+!water_bird
+flamingo
+manatee
+manta_ray
+barracuda
+bream

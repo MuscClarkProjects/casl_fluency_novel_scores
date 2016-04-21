@@ -1,0 +1,12 @@
+!tire
+!life_vest
+ski_boat
+yacht
+aircraft_carrier
+destroyer
+submarine
+powerboat
+!hang_glider
+raft
+!dock
+speedboat

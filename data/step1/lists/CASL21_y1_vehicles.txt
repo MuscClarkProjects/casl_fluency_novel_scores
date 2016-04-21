@@ -1,0 +1,13 @@
+car
+truck
+boat
+tractor
+motorcycle
+bicycle
+tricycle
+airplane
+helicopter
+bus
+ship
+#boat
+wagon

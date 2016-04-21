@@ -1,0 +1,15 @@
+running
+walking
+playing
+snoring
+eating
+drinking
+talking
+jumping
+batting
+riding
+biking
+flying
+#jumping
+hit
+fight

@@ -1,0 +1,20 @@
+hammer
+plier
+plumb
+level
+saw
+screwdriver
+#claw_hammer
+#roof_hammer
+#concrete_hammer
+lever
+#saw
+tile_cutter
+chainsaw
+#hand_saw
+#electric_saw
+sprayer
+rake
+shovel
+! lawnmower
+wheelbarrow

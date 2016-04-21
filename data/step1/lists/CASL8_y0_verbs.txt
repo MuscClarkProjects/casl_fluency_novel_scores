@@ -1,0 +1,14 @@
+jump
+ship
+walk
+talk
+flirt
+sing
+hopping
+dancing
+fly
+tapping
+skating
+bouncing
+fretting
+bicycling

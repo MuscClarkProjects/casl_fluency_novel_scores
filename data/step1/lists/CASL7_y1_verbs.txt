@@ -1,0 +1,14 @@
+go
+walk
+run
+stay
+jump
+climb
+dig
+race
+work
+mark
+tackle
+shoot
+kill
+save

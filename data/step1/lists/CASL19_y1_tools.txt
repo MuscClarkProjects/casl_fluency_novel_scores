@@ -1,0 +1,9 @@
+hammer
+hatchet
+saw
+screwdriver
+tweezers
+jack
+sewing_machine
+ruler
+tape_measure

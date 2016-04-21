@@ -1,0 +1,8 @@
+car
+truck
+boat
+motorcycle
+scooter
+skate
+SUV
+bicycle

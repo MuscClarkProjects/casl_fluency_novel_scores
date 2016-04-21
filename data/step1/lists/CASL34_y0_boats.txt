@@ -1,0 +1,10 @@
+yacht
+sailboat
+submarine
+destroyer
+frigates
+aircraft_carrier
+canoe
+gondola
+#submarine
+speed_boat

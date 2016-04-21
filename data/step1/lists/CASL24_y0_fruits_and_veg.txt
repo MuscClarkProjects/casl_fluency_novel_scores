@@ -1,0 +1,15 @@
+apple
+orange
+grape
+carrot
+potato
+green_beans
+lettuce
+avocado
+strawberry
+blueberry
+plum
+watermelon
+peaches
+tomato
+cabbage

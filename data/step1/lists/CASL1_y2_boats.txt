@@ -1,0 +1,11 @@
+sailboat
+runabout
+battleship
+cruiser
+destroyer
+aircraft_carrier
+!tendcook
+!hospital
+landing_craft
+paddleboat
+pontoon

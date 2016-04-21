@@ -1,0 +1,10 @@
+car
+truck
+bicycle
+tricycle
+motorcycle
+four_wheeler
+backhoe
+crane
+scooter
+pogo_stick

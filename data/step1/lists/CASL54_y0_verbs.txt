@@ -1,0 +1,14 @@
+blinking
+fighting
+sewing
+printing
+writing
+jogging
+skipping
+swimming
+plowing
+pushing
+shoving
+hitting
+jumping
+#shoving

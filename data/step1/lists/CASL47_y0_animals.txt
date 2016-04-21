@@ -1,0 +1,7 @@
+cow
+cat
+horse
+dog
+rabbit
+squirrel
+donkey

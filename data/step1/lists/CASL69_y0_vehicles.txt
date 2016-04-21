@@ -1,0 +1,13 @@
+(dgc)
+automobile
+truck
+wagon
+boat
+ship
+bicycle
+tricycle
+motorcycle
+wheelbarrow
+!ferris_wheel
+taxi
+bus

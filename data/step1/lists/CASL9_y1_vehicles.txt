@@ -1,0 +1,9 @@
+motorcycle
+bus
+automobile
+truck
+train
+bicycle
+tricycle
+scooter
+#tricycle

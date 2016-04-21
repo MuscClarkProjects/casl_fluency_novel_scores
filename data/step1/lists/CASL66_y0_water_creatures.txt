@@ -1,0 +1,17 @@
+whale
+dolphin
+swordfish
+tuna
+salmon
+bass
+bream
+turtle
+seal
+beaver
+otter
+alligator
+frog
+crab
+shrimp
+oyster
+jellyfish

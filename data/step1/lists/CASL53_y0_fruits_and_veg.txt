@@ -1,0 +1,13 @@
+apple
+orange
+pear
+peach
+plum
+cherry
+avocado
+grapes
+carrots
+beans
+green_beans
+asparagus
+tomatoes

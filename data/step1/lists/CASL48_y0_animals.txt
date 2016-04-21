@@ -1,0 +1,14 @@
+dog
+cat
+chicken
+rooster
+fix
+lion
+tiger
+giraffe
+walrus
+horse
+cow
+lamb
+squirrel
+chipmunk

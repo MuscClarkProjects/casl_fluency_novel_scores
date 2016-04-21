@@ -1,0 +1,9 @@
+(dgc)
+motorcycle
+automobile
+boat
+skateboard
+airplane
+train
+bus
+taxi

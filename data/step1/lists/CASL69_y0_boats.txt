@@ -1,0 +1,11 @@
+(dgc)
+!boat
+canoe
+submarine
+battleship
+destroyer
+cruiser
+oceanliner
+corvette
+dinghy
+seaplane

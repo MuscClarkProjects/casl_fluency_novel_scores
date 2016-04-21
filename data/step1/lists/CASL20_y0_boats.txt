@@ -1,0 +1,10 @@
+! boat
+sailboat
+cruiseship
+ship
+submarine
+skis
+!airplane
+!helicopter
+canoe
+kayak

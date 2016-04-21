@@ -1,0 +1,10 @@
+cruiser
+battleship
+aircraft_carrier
+runabout
+sailboat
+catch
+minesweeper
+cutter
+submarine
+paddleboat

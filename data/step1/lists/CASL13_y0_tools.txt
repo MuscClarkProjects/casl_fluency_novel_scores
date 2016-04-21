@@ -1,0 +1,7 @@
+plyer
+wrench
+socket
+hammer
+nail_bar
+scissor
+nail_clipper

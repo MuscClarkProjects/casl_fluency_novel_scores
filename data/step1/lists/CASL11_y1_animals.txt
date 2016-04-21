@@ -1,0 +1,17 @@
+rat
+dog
+fox
+deer
+rabbit
+squirrel
+mouse
+#rat
+fela
+fish
+mammal
+moose
+elk
+bat
+seal
+sea_lion
+penguin

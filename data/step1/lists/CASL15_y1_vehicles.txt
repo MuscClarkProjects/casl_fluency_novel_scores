@@ -1,0 +1,6 @@
+skate
+!jump_rope
+wagon
+car
+submarine
+boat

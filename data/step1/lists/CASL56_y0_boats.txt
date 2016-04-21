@@ -1,0 +1,9 @@
+raft
+canoe
+kayak
+fishing_boat
+pleasure_boat
+yacht
+steamship
+!oiler
+!scooter

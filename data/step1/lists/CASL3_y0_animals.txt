@@ -1,0 +1,17 @@
+zebra
+dog
+cats
+goats
+cows
+pigs
+horse
+camels
+lions
+cougars
+snakes
+wasps
+elephants
+kangaroos
+#lions
+mice
+rats

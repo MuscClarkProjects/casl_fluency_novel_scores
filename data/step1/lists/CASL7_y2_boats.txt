@@ -1,0 +1,12 @@
+speedboat
+canoe
+fishing_boat
+sailboat
+oceanliner
+dugout
+paddle_boat
+kayak
+submarine
+schooner
+yacht
+cruise_ship

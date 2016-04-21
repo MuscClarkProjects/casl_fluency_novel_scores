@@ -1,0 +1,14 @@
+apple
+orange
+apricot
+grape
+corn
+beans
+potato
+cabbage
+onion
+lettuce
+turnip
+radish
+tomato
+#apricots

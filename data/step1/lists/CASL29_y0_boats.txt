@@ -1,0 +1,6 @@
+canoe
+ship
+speedboat
+yacht
+fishing_boat
+rowboat

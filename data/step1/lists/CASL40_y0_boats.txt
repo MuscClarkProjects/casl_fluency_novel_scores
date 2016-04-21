@@ -1,0 +1,7 @@
+cruise_ship
+yacht
+rowboat
+catamaran
+speed_boat
+hydrofoil
+canoe

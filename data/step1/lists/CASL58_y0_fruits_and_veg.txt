@@ -1,0 +1,12 @@
+potato
+carrot
+onion
+pepper
+apple
+orange
+lemon
+watermelon
+peach
+plum
+turnip
+parsnip

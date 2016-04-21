@@ -1,0 +1,9 @@
+sailboat
+fishing_boat
+pontoon_boat
+party_boats
+cruiseliners
+gunboats
+battleships
+aircraft_carriers
+ships

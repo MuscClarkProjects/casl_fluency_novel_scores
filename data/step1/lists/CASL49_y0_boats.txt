@@ -1,0 +1,12 @@
+canoe
+kayak
+motorboat
+jet_ski
+pontoon_boat
+ski_boat
+ship
+cruiseliner
+aircraft_carrier
+submarine
+paddleboat
+hovercraft

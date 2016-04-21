@@ -1,0 +1,17 @@
+apple
+orange
+banana
+plum
+strawberry
+raspberry
+blackberry
+plantain
+spinach
+turnip
+bean
+lettuce
+tomato
+carrot
+celery
+parsley
+eggplant

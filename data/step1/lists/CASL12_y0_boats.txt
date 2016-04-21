@@ -1,0 +1,11 @@
+ships
+cruise_ship
+battleship
+tanker
+submarine
+PT_boat
+speedboat
+rowboat
+paddle_wheel
+canoe
+aircraft_carrier

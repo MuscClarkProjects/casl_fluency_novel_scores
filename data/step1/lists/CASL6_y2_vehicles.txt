@@ -1,0 +1,9 @@
+streetcar
+train
+airplane
+boat
+submarine
+raft
+wagon
+bicycle
+roller_skates

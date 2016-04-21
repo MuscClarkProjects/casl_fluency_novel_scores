@@ -1,0 +1,17 @@
+onions
+tomatoes
+potatoes
+carrot
+pears
+oranges
+peaches
+avocado
+cucumber
+spinach
+mushroom
+corn
+peas
+green_beans
+okra
+apples
+#oranges

@@ -1,0 +1,13 @@
+swim
+write
+fish
+work
+talk
+eat
+row
+paddle
+golf
+!tennis
+!ping_pong
+!shuffleboard
+!badminton

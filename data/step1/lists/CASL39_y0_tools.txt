@@ -1,0 +1,12 @@
+computer
+printer
+hammers
+screwdriver
+wrench
+socket
+table
+chair
+door
+pliers
+ratchets
+telephone

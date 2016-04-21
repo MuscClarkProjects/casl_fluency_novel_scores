@@ -1,0 +1,11 @@
+apple
+ask
+address
+age
+again
+!open
+access
+axis
+and
+any
+all

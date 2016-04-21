@@ -1,0 +1,6 @@
+canoe
+fishing_boat
+skating_boat
+yacht
+submarine
+aircraft_carrier

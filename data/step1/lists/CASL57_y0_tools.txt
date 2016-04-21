@@ -1,0 +1,14 @@
+screwdriver
+hammer
+awl
+can_opener
+nail_file
+pencil_sharpener
+tape_measure
+ruler
+calculator
+winch
+tractor
+shovel
+spade
+axe

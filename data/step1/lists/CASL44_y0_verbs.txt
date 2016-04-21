@@ -1,0 +1,15 @@
+make
+hit
+leave
+go
+want
+see
+walk
+drive
+hear
+smell
+love
+adore
+come
+eat
+fly

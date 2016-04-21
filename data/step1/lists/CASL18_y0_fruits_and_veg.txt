@@ -1,0 +1,16 @@
+apple
+banana
+grape
+orange
+tangerine
+strawberry
+kiwi
+pineapple
+cabbage
+asparagus
+potato
+cauliflower
+broccoli
+spinach
+green_berry
+greens

@@ -1,0 +1,6 @@
+canoe
+ship
+cruiseship
+cargo_ship
+rowboat
+motorboat

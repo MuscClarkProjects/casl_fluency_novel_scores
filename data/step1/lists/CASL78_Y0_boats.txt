@@ -1,0 +1,11 @@
+battleship
+cruise
+pontoon_boat
+destroyer
+submarine
+canoe
+paddle_boat
+rowboat
+steamship
+sailboat
+ocean-liner

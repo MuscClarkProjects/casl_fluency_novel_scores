@@ -1,0 +1,15 @@
+cat
+dog
+snake
+bird
+orangutan
+lion
+tiger
+whale
+lizard
+crocodile
+alligator
+turkey
+horse
+flea
+bear

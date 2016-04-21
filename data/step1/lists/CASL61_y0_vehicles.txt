@@ -1,0 +1,10 @@
+car
+truck
+motorcycle
+bicycle
+tricycle
+sled
+skis
+wheelbarrow
+trailer
+skates

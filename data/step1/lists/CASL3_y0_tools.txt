@@ -1,0 +1,14 @@
+lathe
+shaper
+files
+hammers
+screws
+#tail_hammer
+plier
+#diagonal_plier
+snippers
+sheet_metal_cutter
+chisel
+calipers
+sledge_hammer
+#claw_hammer

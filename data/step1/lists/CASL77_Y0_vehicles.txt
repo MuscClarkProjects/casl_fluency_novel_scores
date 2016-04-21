@@ -1,0 +1,13 @@
+scooter
+roller_skates
+skis
+ice_skates
+car
+motorcycle
+bicycle
+bus
+train
+airplane
+boat
+skateboard
+ski-lift

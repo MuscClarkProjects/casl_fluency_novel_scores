@@ -1,0 +1,9 @@
+horse
+mule
+goat
+hog
+chicken
+rabbit
+cat
+dog
+sheep

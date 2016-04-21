@@ -1,0 +1,9 @@
+(dgc)
+train
+bus
+car
+truck
+boat
+airplane
+blimp
+ship

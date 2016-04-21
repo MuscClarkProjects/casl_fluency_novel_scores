@@ -1,0 +1,13 @@
+(dgc)
+greens
+apple
+orange
+peach
+plums
+grapes
+watermelon
+cantaloupe
+peas
+lettuce
+beans
+cauliflower

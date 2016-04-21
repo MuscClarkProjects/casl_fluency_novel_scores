@@ -1,0 +1,9 @@
+motorcycle
+bicycle
+automobile
+truck
+wan
+cart
+tricycle
+bus
+eighteen_wheeler

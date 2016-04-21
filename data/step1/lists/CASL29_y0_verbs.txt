@@ -1,0 +1,10 @@
+walk
+run
+swim
+talk
+move
+breathe
+communicate
+write
+type
+greet

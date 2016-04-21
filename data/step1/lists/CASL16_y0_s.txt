@@ -1,0 +1,14 @@
+stop
+start
+shed
+stand
+sit
+swim
+swing
+shift
+soft
+sorry
+shame
+slow
+sign
+signature

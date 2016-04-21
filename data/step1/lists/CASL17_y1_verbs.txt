@@ -1,0 +1,5 @@
+run
+climb
+walk
+!aggressive
+accelerate

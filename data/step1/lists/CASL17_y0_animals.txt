@@ -1,0 +1,16 @@
+lion
+tiger
+giraffe
+bluebird
+hawk
+owl
+apes
+bear
+snake
+fish
+dog
+cat
+hamster
+mice
+spiders
+zebra

@@ -1,0 +1,23 @@
+pencil
+paper
+pen
+marker
+highlighter
+smartphone
+calculator
+! computer
+! laptop
+tablet
+hammer
+nail
+scissors
+saw
+knife
+fork
+spoon
+ladle
+! dish
+! bowl
+napkin
+paper_towel
+! cleaners

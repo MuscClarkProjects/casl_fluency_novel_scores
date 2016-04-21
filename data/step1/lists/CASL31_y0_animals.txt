@@ -1,0 +1,14 @@
+alligator
+armadillo
+dog
+cat
+possum
+bear
+tiger
+cow
+mule
+horse
+bull
+bison
+deer
+antelope

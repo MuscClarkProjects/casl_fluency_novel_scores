@@ -1,0 +1,11 @@
+cow
+horse
+mule
+zebra
+elephant
+tiger
+lion
+hippo
+cat
+dog
+human

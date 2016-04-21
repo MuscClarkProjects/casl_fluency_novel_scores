@@ -1,0 +1,17 @@
+(dgc)
+zebra
+lion
+tiger
+hippopotamus
+giraffe
+horse
+cat
+dog
+duck
+hyena
+gazelle
+deer
+cow
+monkey
+gorilla
+whale

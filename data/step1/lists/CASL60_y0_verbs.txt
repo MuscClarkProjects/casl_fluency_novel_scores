@@ -1,0 +1,17 @@
+see
+go
+come
+run
+walk
+lay
+fall
+#run
+ride
+hear
+tell
+point
+throw
+catch
+duck
+turn
+drive

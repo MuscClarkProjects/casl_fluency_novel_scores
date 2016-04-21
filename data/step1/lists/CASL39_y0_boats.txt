@@ -1,0 +1,7 @@
+sailboat
+tugboat
+rowboat
+fishingboat
+flatboat
+houseboat
+cabin_cruisers

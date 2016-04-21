@@ -1,0 +1,14 @@
+jeep
+tank
+truck
+cart
+#golf_cart
+#street_car
+bus
+aircraft
+trains
+car
+skates
+skiing
+helicopter
+boating

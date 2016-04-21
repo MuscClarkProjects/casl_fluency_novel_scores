@@ -1,0 +1,8 @@
+apple
+peach
+pear
+plum
+celery
+watermelon
+green_beans
+spinach

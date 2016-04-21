@@ -1,0 +1,14 @@
+cab
+car
+truck
+SUV
+station_wagon
+semi_truck
+wagon
+train
+trolley_car
+airplane
+jet
+van
+taxi
+limousine

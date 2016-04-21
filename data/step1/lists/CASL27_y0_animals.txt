@@ -1,0 +1,17 @@
+cat
+dog
+bear
+racoon
+armadillo
+opossum
+kangaroo
+hippo
+elephant
+giraffe
+lion
+tiger
+buffalo
+beaver
+rat
+platypus
+monkey

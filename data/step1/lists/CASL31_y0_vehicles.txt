@@ -1,0 +1,13 @@
+car
+truck
+tractor
+scooter
+three_wheeler
+skates
+airplane
+train
+bus
+go_cart
+motorcycle
+bicycle
+tricycle

@@ -1,0 +1,13 @@
+car
+truck
+bus
+recreational_vehicle
+bicycle
+motorcycle
+boat
+skateboard
+cruiser
+airplane
+helicopter
+tricycle
+wagon

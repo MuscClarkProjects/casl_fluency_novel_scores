@@ -1,0 +1,8 @@
+snake
+fish
+shrimp
+seal
+octopus
+tadpole
+goldfish
+alligator

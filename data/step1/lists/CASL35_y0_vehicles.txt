@@ -1,0 +1,15 @@
+bicycle
+truck
+car
+plane
+scooter
+skate
+surfboard
+train
+! horse
+wagon
+buggy
+ship
+race_boat
+raft
+ski

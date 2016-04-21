@@ -1,0 +1,10 @@
+PT_boat
+small_destroyer
+battleship
+cruiser
+warship
+pleasure_boat
+water_skis
+lifeboat
+!air_mattress
+!water_wings

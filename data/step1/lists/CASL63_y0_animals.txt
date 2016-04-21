@@ -1,0 +1,11 @@
+antelope
+buffalo
+giraffe
+cat
+lion
+tiger
+muskrat
+dog
+horse
+cow
+pony

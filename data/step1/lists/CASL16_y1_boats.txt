@@ -1,0 +1,11 @@
+canoe
+bass_boat
+paddle_boat
+passenger_ship
+cargo_ship
+battleship
+carrier
+submarine
+pontoon_boat
+houseboat
+tanker

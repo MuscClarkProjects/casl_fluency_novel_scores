@@ -1,0 +1,17 @@
+(dgc)
+dog
+cat
+fish
+elephant
+lion
+leopard
+deer
+beaver
+horse
+cow
+# dog
+giraffe
+snake
+# cat
+iguana
+monkey

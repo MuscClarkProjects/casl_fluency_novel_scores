@@ -1,0 +1,13 @@
+giraffe
+elephant
+monkey
+eagle
+gull
+fish
+eel
+whale
+hippo
+crocodile
+lion
+bear
+tiger

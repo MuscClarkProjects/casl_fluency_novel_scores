@@ -1,0 +1,14 @@
+cat
+horse
+dog
+bull
+pig
+chicken
+elephant
+snake
+#cat
+#dog
+bird
+bear
+lion
+tiger

@@ -1,0 +1,14 @@
+going
+backing
+turning
+!side
+walk
+swim
+wave
+throw
+play
+fishing
+rolling
+kicking
+shooting
+!badminton

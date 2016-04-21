@@ -1,0 +1,6 @@
+speed_boat
+fishing_boat
+tugboat
+cruise_boat
+#naval_boat
+#military_boat

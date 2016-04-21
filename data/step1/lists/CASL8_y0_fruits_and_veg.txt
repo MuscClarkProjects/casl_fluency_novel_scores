@@ -1,0 +1,16 @@
+spinach
+lettuce
+tomato
+onion
+bell_peppers
+collard_greens
+turnip
+carrots
+peas
+potatoes
+#tomatoes
+squash
+kiwi
+oranges
+pineapple
+coconut

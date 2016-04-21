@@ -1,0 +1,12 @@
+(dgc)
+climb
+run
+jump
+walk
+skip
+hop
+crawl
+go
+swim
+stand
+sit

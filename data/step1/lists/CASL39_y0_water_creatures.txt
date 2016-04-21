@@ -1,0 +1,11 @@
+beaver
+water_moccasin
+bass
+trout
+crab
+whale
+! elephant
+mosquito
+dolphin
+eel
+stingray

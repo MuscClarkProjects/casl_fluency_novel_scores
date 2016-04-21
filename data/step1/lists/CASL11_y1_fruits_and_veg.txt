@@ -1,0 +1,16 @@
+orange
+grapefruit
+tangerine
+kumquat
+apple
+carrot
+beans
+peas
+cucumber
+potato
+sweet_potato
+tangelo
+#kumquat
+radish
+squash
+lettuce

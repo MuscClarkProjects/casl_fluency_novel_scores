@@ -1,0 +1,13 @@
+!flowers
+!food
+!flax
+!fat
+!factum
+!fellow
+!forward
+!ferment
+#flowers
+!feed
+!fidelity
+!fire
+!fix

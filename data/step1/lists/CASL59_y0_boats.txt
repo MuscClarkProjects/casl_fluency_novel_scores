@@ -1,0 +1,5 @@
+fishing_boat
+ski_boat
+cruise_ship
+pontoon_boat
+yacht

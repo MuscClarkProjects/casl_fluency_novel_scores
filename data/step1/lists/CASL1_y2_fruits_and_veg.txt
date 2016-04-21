@@ -1,0 +1,11 @@
+apple
+orange
+banana
+cherry
+apricot
+lettuce
+prune
+beans
+cabbage
+peas
+spinach

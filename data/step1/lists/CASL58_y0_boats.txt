@@ -1,0 +1,8 @@
+battleship
+submarine
+aircraft_carrier
+jet_ski
+yacht
+bass_boat
+pontoon_boat
+motor_boat

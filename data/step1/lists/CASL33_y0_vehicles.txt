@@ -1,0 +1,15 @@
+car
+truck
+motorcycle
+scooter
+dump_truck
+cement_truck
+bicycle
+seadoo
+boat
+rowboat
+sailboat
+ski
+roller_skate
+skateboard
+tricycle

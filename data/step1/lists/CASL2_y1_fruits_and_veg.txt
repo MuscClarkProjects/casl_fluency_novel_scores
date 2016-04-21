@@ -1,0 +1,12 @@
+apple
+peach
+orange
+okra
+beans
+cabbage
+lettuce
+onion
+tomato
+potato
+strawberry
+grapes

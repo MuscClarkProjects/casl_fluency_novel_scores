@@ -1,0 +1,3 @@
+fishing_boat
+pontoon_boat
+ski_boat

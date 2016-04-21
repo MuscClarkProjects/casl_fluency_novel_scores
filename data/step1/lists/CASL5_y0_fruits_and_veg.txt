@@ -1,0 +1,13 @@
+orange
+apple
+tomato
+carrots
+beets
+lettuce
+corn
+onion
+cucumber
+beans
+cabbage
+celery
+broccoli

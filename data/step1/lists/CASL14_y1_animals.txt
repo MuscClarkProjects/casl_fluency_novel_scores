@@ -1,0 +1,16 @@
+frog
+giraffe
+cow
+hog
+bird
+#giraffe
+#hog
+fox
+tiger
+lamp
+#cow
+pig
+bear
+#tiger
+lion
+rhinoceros

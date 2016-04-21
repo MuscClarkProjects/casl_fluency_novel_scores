@@ -1,0 +1,14 @@
+celery
+broccoli
+asparagus
+potato
+tomato
+cantaloupe
+watermelon
+pears
+beans
+corn
+strawberry
+grapes
+raisins
+carrots

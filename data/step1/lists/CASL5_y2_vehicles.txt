@@ -1,0 +1,8 @@
+car
+truck
+tractor
+ATV
+wagon
+scooter
+bicycle
+tricycle

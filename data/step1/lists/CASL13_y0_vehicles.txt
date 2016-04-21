@@ -1,0 +1,3 @@
+truck
+motorcycle
+bicycle

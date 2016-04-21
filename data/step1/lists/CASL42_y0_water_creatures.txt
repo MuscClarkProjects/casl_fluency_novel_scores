@@ -1,0 +1,10 @@
+frog
+fish
+carp
+toad
+! fly
+snake
+water_buffalo
+!rat
+!muskrat
+wingfly

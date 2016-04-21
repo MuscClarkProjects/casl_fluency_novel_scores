@@ -1,0 +1,13 @@
+screw
+drill
+clamp
+knife
+wrench
+saw
+!C_bar
+hammer
+nail
+#screw
+nailgun
+stapler
+board

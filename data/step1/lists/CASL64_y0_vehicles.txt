@@ -1,0 +1,12 @@
+bicycle
+automobile
+train
+car
+air_balloon
+boat
+#bicycle
+roller_skates
+#train
+taxi
+#automobile
+airplane

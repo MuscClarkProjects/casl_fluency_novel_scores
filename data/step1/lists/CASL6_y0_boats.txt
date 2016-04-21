@@ -1,0 +1,6 @@
+hydroplane
+cruiser
+yacht
+battleship
+destroyer
+aircraft_carrier

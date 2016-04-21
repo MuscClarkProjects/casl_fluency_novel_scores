@@ -1,0 +1,13 @@
+giraffe
+elephant
+dog
+cat
+camel
+ferret
+bird
+snake
+hippo
+lion
+tiger
+cheetah
+monkey

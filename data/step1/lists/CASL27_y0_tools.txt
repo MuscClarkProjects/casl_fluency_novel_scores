@@ -1,0 +1,8 @@
+hammer
+axe
+saw
+wrench
+plyer
+cutter
+needle
+chains

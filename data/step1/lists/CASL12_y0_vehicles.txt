@@ -1,0 +1,13 @@
+bus
+airplane
+subway
+car
+van
+trolley
+convertible
+SUV
+bicycle
+tricycle
+ship
+rocket_ship
+submarine

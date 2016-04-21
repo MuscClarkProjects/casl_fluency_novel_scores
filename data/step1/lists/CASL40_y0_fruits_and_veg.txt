@@ -1,0 +1,13 @@
+tomatoes
+tangerines
+oranges
+apples
+carrot
+peas
+squash
+banana
+strawberry
+cherry
+cauliflower
+beets
+turnips

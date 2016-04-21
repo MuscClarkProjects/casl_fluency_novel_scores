@@ -1,0 +1,14 @@
+surfboard
+raft
+!b
+pontoon
+frigate
+!burdye
+tug
+oceanliner
+battleship
+aircraft_carrier
+destroyer
+canoe
+kayak
+cruiser

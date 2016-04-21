@@ -1,0 +1,14 @@
+(dgc)
+cars
+trucks
+tractors
+scooters
+skates
+wagons
+carriage
+bicycle
+motorcycle
+airplane
+helicopter
+ship
+boat

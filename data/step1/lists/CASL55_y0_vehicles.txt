@@ -1,0 +1,16 @@
+boat
+bicycle
+car
+truck
+scooter
+skates
+ship
+submarine
+airplane
+skis
+skateboard
+!skiboard
+chairlift
+! swing
+#scooter
+moped

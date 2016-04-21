@@ -1,0 +1,16 @@
+apples
+oranges
+grapefruit
+lime
+asparagus
+cauliflower
+broccoli
+lettuce
+tomatoes
+carrots
+potatoes
+sweet_potatoes
+onion
+beets
+garlic
+lemon

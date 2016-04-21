@@ -1,0 +1,11 @@
+canoe
+raft
+fishing_boat
+ski_boat
+submarine
+ship
+aircraft_carrier
+passenger_ship
+battleship
+sailboat
+steamship

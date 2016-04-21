@@ -1,0 +1,12 @@
+! horse
+bicycle
+car
+truck
+!camel
+subway
+#truck
+airplane
+bus
+cart
+motorcycle
+wagon

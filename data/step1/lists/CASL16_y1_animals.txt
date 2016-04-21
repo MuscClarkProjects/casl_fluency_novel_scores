@@ -1,0 +1,17 @@
+fox
+squirrel
+coyote
+possum
+raccoon
+wildcat
+#bobcat
+#cat
+dog
+zebra
+horse
+donkey
+elephant
+tiger
+lion
+leopard
+mule

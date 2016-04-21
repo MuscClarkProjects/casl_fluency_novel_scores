@@ -1,0 +1,7 @@
+motorcycle
+car
+boat
+ATV
+truck
+bus
+airplane

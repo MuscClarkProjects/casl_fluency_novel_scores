@@ -1,0 +1,11 @@
+(dgc)
+field
+frank
+folly
+fix
+fixture
+finger
+foot
+future
+full
+failure

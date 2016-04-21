@@ -1,0 +1,15 @@
+bicycle
+scooter
+skateboard
+#skate
+truck
+bus
+car
+airplane
+#street_car
+rocket
+#scooter
+wagon
+carriage
+#bicycle
+boat

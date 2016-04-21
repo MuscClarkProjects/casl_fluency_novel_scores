@@ -1,0 +1,8 @@
+! boat
+raft
+liner
+barge
+log
+ship
+canoe
+kickboard

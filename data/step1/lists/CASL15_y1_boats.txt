@@ -1,0 +1,5 @@
+canoe
+sailboat
+ship
+submarine
+raft

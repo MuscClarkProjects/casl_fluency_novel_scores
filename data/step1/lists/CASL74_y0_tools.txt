@@ -1,0 +1,12 @@
+(dgc)
+screwdriver
+hammer
+pliers
+wrench
+crowbar
+drill
+grinder
+buffer
+cutter
+level
+square

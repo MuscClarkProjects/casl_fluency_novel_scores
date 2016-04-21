@@ -1,0 +1,11 @@
+cat
+dog
+tiger
+raccoon
+deer
+fox
+rabbit
+horse
+cow
+goat
+sheep

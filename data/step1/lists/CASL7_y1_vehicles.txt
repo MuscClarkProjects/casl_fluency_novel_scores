@@ -1,0 +1,13 @@
+car
+truck
+bus
+motorcycle
+bulldozer
+airplane
+glider
+balloon
+tank
+rocket
+bicycle
+tricycle
+scooter

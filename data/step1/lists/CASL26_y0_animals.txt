@@ -1,0 +1,7 @@
+cow
+dog
+cat
+goat
+sheep
+horse
+racoon

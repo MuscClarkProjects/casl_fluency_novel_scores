@@ -1,0 +1,10 @@
+car
+truck
+motorcycle
+bicycle
+plane
+bus
+ship
+taxi
+train
+subway

@@ -1,0 +1,6 @@
+sail
+cruise
+fishing
+!r
+canoe
+#sail

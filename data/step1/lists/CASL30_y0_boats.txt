@@ -1,0 +1,10 @@
+rowboat
+canoe
+water_raft
+speed_boat
+flat_bottom_boat
+#glass_bottom_boat
+schooner
+ship
+barge
+submarine

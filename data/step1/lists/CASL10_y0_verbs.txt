@@ -1,0 +1,15 @@
+swim
+dance
+cough
+ski
+run
+bicycle
+bowl
+skip
+slap
+#dance
+hop
+chase
+climb
+row
+crash

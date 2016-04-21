@@ -1,0 +1,12 @@
+!ichu_boat
+sailboat
+yacht
+oceanliner
+cruise_ship
+merchant_boat
+tanker
+cutter
+destroyer
+carrier
+submarine
+ice_breaker

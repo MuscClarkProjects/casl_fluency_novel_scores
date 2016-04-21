@@ -1,0 +1,11 @@
+car
+motorcycle
+train
+plane
+rail
+truck
+scooter
+! horse
+!camel
+bicycle
+skateboard

@@ -1,0 +1,9 @@
+! horse
+car
+bus
+boat
+train
+!vane
+motorcycle
+bicycle
+wagon

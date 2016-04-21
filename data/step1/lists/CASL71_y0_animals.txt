@@ -1,0 +1,17 @@
+(dgc)
+horse
+mule
+cow
+squirrel
+rabbit
+fox
+buffalo
+--15
+kangaroo
+--30
+skunk
+camel
+#mule
+#skunk
+elephant
+walrus

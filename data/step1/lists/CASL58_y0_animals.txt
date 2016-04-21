@@ -1,0 +1,17 @@
+horse
+cow
+pic
+chicken
+deer
+elk
+mule
+ox
+eagle
+tiger
+lion
+leopard
+monkey
+bird
+fish
+seal
+otter

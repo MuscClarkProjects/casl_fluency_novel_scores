@@ -1,0 +1,11 @@
+saw
+short
+stand
+sit
+strawberry
+surrender
+sabotage
+speed
+slow
+#stand
+stump

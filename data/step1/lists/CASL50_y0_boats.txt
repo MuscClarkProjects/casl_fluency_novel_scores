@@ -1,0 +1,8 @@
+canoe
+barge
+ship
+sailboat
+motorboat
+water_ski
+pontoon_boat
+kayak

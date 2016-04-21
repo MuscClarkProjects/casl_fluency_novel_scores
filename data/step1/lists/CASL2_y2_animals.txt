@@ -1,0 +1,11 @@
+rabbit
+mule
+cow
+sheep
+goat
+deer
+bear
+lion
+tiger
+human
+donkey

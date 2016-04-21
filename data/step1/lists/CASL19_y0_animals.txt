@@ -1,0 +1,14 @@
+rabbit
+cat
+lion
+horse
+elephant
+giraffe
+ape
+dog
+cow
+#horse
+!ship
+goat
+#elephant
+#giraffe

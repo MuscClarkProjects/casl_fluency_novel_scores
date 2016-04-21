@@ -1,0 +1,10 @@
+cruiseship
+sailboat
+motorboat
+cargo_ship
+catamaran
+ski_boat
+fish_boat
+submarine
+aircraft_carrier
+destroyer

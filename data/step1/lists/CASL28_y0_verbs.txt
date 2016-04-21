@@ -1,0 +1,12 @@
+walk
+run
+sit
+exercise
+work
+think
+sleep
+listen
+yell
+understand
+type
+#walk

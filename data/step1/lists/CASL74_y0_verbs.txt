@@ -1,0 +1,9 @@
+(dgc)
+pulling
+moving
+lifting
+going
+walk
+run
+climb
+driving

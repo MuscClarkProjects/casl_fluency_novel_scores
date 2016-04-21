@@ -1,0 +1,8 @@
+rabbit
+squirrel
+fox
+donkey
+mule
+lion
+zebra
+giraffe

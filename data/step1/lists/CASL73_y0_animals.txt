@@ -1,0 +1,17 @@
+(dgc)
+newt
+goose
+anteater
+dog
+cat
+horse
+pig
+mule
+donkey
+chicken
+duck
+pheasant
+whale
+beaver
+mink
+muskrat

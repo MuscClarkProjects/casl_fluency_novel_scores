@@ -1,0 +1,9 @@
+play
+jump
+sit
+screaming
+rolling
+talking
+singing
+crying
+laughing

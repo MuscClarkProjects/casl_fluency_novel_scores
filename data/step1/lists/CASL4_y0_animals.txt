@@ -1,0 +1,13 @@
+fox
+rabbit
+squirrel
+sheep
+cows
+crows
+birds
+tigers
+lions
+cheetah
+hyena
+rhino
+wildebeest

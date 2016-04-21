@@ -1,0 +1,13 @@
+scissors
+pencil
+pen
+knife
+saw
+drill
+! lawnmower
+spoon
+fork
+#knife
+can_opener
+screws
+bolts

@@ -1,0 +1,6 @@
+motorboat
+cruise_ship
+sailboat
+pontoon_boat
+submarine
+water_skis

@@ -1,0 +1,13 @@
+(dgc)
+work
+lift
+write
+sit
+stand
+run
+climb
+jump
+move
+slide
+skate
+dive

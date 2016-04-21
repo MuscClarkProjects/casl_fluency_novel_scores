@@ -1,0 +1,9 @@
+(dgc)
+automobile
+truck
+motorcycle
+scooter
+airplane
+boat
+submarine
+hovercraft

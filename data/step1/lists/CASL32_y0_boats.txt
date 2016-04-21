@@ -1,0 +1,7 @@
+sailboat
+rowboat
+canoe
+kayak
+pontoon
+oceanliner
+barge

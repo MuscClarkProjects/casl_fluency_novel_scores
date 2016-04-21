@@ -1,0 +1,8 @@
+motorboat
+skiboat
+yacht
+personal_watercraft
+submarine
+aircraft_carrier
+cruiser
+destroyer

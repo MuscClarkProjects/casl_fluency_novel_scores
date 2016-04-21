@@ -1,0 +1,17 @@
+apple
+orange
+peach
+banana
+avocado
+artichoke
+corn
+potato
+collard_greens
+turnip_greens
+spinach
+carrot
+celery
+onion
+ginger
+grapes
+raisins

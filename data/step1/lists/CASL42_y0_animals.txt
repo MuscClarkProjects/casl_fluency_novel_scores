@@ -1,0 +1,15 @@
+cow
+sheep
+giraffe
+elephant
+pig
+camel
+tiger
+panther
+dog
+cat
+toad
+turtle
+horse
+goat
+ewe

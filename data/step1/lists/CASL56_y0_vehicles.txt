@@ -1,0 +1,14 @@
+cars
+buses
+train
+plane
+tricycle
+bicycle
+skateboard
+boat
+canoe
+steamer
+balloon
+scooter
+motorcycle
+atv

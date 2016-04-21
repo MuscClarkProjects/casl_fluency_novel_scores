@@ -1,0 +1,10 @@
+car
+motorcycle
+buggies
+airplane
+helicopter
+glider
+horse_buggies
+boat
+ski
+hang_gliding

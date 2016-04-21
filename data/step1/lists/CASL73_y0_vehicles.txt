@@ -1,0 +1,9 @@
+(dgc)
+bicycle
+skates
+skateboard
+motorcycle
+car
+truck
+train
+bus

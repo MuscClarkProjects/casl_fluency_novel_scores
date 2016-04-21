@@ -1,0 +1,15 @@
+duck
+fish
+alligator
+! racoon
+! dog
+! cat
+! tiger
+elephant
+! kangaroo
+hippotopotamus
+! horse
+! cows
+! goast
+! chickens
+! rats

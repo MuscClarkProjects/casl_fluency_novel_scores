@@ -1,0 +1,8 @@
+dingy
+rowboat
+speedboat
+catamaran
+submarine
+freighter
+warship
+raft

@@ -1,0 +1,10 @@
+(dgc)
+hammer
+screwdriver
+plane
+saw
+tapper
+tape
+tin
+thimble
+!thumbnail

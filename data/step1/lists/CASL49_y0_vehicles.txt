@@ -1,0 +1,15 @@
+car
+truck
+train
+airplane
+tricycle
+bicycle
+skateboard
+boat
+jet_ski
+float
+big_wheel
+tractor
+subway
+tram
+shuttle

@@ -1,0 +1,12 @@
+LST_navy_ship
+aircraft_carrier
+battleship
+submarine
+minesweeper
+sailboat
+bass_boat
+rowboat
+canoe
+kayak
+cruiseship
+ferry_boat

@@ -1,0 +1,7 @@
+fishing
+sail
+sheep
+canoe
+kayak
+#canoe
+speed_boat

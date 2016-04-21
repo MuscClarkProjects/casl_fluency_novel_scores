@@ -1,0 +1,15 @@
+elephant
+giraffe
+dog
+cat
+mouse
+owl
+stork
+lion
+tiger
+bear
+bird
+panther
+snake
+lizard
+iguana

@@ -1,0 +1,11 @@
+car
+truck
+bicycle
+tricycle
+motorcycle
+four-wheeler
+three-wheeler
+airplane
+!parasailing
+balloon
+boat

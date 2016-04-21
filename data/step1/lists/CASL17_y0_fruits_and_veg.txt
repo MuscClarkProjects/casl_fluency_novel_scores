@@ -1,0 +1,16 @@
+(dgc)
+apple
+orange
+pear
+banana
+plum
+cabbage
+cauliflower
+squash
+asparagus
+beans
+lima_beans
+lettuce
+tomato
+cucumber
+radish

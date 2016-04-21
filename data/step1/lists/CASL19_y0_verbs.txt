@@ -1,0 +1,13 @@
+run
+play
+jump
+hit
+smash
+swing
+sip
+sting
+saw
+slope
+sling
+snuff
+stretch

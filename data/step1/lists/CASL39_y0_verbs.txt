@@ -1,0 +1,17 @@
+sitting
+standing
+laying_down
+swimming
+climbing
+rapelling
+jumping
+speaking
+whispering
+singing
+smelling
+touching
+hitting
+fighting
+shooting
+shoving
+opening

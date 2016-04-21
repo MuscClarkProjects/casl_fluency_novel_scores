@@ -1,0 +1,13 @@
+trout
+bass
+brim
+shark
+whale
+swordfish
+tarpin
+muskie
+tuna
+beaver
+ferret
+penguin
+polar_bear

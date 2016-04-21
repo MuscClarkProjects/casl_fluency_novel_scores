@@ -1,0 +1,10 @@
+apple
+peach
+plum
+bananas
+tomatoes
+potato
+beans
+radish
+cabbage
+corn

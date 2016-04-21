@@ -1,0 +1,10 @@
+water_moccasin
+water_buffalo
+fish
+crocodile
+alligator
+whale
+octopus
+seahorse
+shark
+salmon

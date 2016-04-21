@@ -1,0 +1,8 @@
+bicycle
+cars
+truck
+unicycle
+motorcycle
+moped
+golf_cart
+scooter

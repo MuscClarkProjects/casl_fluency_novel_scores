@@ -1,0 +1,16 @@
+(dgc)
+apple
+orange
+tangerine
+grape
+celery
+spinach
+turnip_greens
+beans
+pineapples
+bananas
+potatoes
+!pasta
+watermelons
+cantaloupes
+tomatoes

@@ -1,0 +1,16 @@
+dog
+cat
+pig
+rabbit
+cow
+horse
+goat
+sheep
+donkey
+tiger
+elephant
+giraffe
+hippo
+lion
+squirrel
+chicken

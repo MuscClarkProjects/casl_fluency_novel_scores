@@ -1,0 +1,5 @@
+(dgc)
+!boat
+skis
+surfboard
+yacht
