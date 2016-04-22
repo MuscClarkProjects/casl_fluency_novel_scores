@@ -54,15 +54,17 @@ function run{T <: AbstractString}(
 end
 
 
-function find_non_matching_words(ignore_words...)
+function find_non_matching_words(verbose::Bool=false, ignore_words...)
   ignore_words::Set{ASCIIString} = Set{ASCIIString}(ignore_words)
 
   orig_keys::Strings = begin
-    f::ASCIIString = data_f("pPMI_keys.txt")
+    f::ASCIIString = data_f("step1/pPMI_keys.txt")
     load_words(f, '\r')
   end
 
   list_files::Strings = get_all_list_files()
+
+  non_matchers = Strings()
 
   for f in list_files
     words::Strings = load_words(f)
@@ -70,9 +72,9 @@ function find_non_matching_words(ignore_words...)
       w -> !in(w, ignore_words), setdiff(words, orig_keys)
     )
 
-    if length(missing_words) > 0
+    if verbose
       f_name = basename(f)
-      println("file $f_name")
+      length(missing_words > 0) || (println("file $f_name"))
       for w::ASCIIString in missing_words
         println("word: $w in $f_name")
         println("suggestions for $w")
@@ -82,5 +84,10 @@ function find_non_matching_words(ignore_words...)
         end
       end
     end
+
+    non_matchers = union(non_matchers, missing_words)
   end
+
+  non_matchers
+
 end

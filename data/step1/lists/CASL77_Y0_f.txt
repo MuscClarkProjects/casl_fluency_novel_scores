@@ -9,7 +9,7 @@ fancy
 fend
 friend
 fiscal
-fantas
+fantasy
 # fancy
 futuristic
 family

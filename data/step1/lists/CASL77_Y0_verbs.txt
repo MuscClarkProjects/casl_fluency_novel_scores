@@ -6,7 +6,8 @@ jog
 sleep
 rest
 ! football
-play_footbal
+play
+(play football)
 calculate
 add
 sub

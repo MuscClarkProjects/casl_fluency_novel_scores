@@ -1,7 +1,7 @@
 alligator
 crocodile
 fish
-carb
+crab
 shark
 whale
 coral

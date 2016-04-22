@@ -581,7 +581,6 @@ anvil
 anxiety
 anxious
 any
-any_trace
 anybody
 anyhow
 anyone
@@ -1295,7 +1294,6 @@ bridesmaid_dress
 bridesmaid_dresses
 brief
 briefs
-brim
 bring
 bringing
 broad_bean
@@ -1497,7 +1495,6 @@ car_coat
 car_coats
 caracas
 caramel
-carb
 card
 cardigan
 cardigans
@@ -2359,7 +2356,6 @@ fancy
 fandango
 fang
 fanny
-fantas
 fantasia
 fantasize
 fantastic
@@ -3484,7 +3480,7 @@ hop
 hope
 hopping
 hopscotch
-horn_toads
+horned_toads
 horse
 horse_back
 horse_buggies
@@ -4558,7 +4554,6 @@ plate
 plates
 platypus
 play
-play_footbal
 playing
 pleasure
 pleasure_boat

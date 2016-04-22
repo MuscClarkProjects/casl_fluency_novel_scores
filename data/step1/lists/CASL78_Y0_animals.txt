@@ -17,5 +17,5 @@ horse
 sheep
 chicken
 cows
-horn_toads
+horned_toads
 camels
