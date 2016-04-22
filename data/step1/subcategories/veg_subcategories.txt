@@ -1,0 +1,10 @@
+hamburger : tomato,lettuce,onion,tomatoes,potato
+animal-intrusion : cheese,rabbits,foxes,lion,ham,beef,bears,fox,anchovy,squirrel,eggs,bear,tiger,giraffe,rabbit,squirrels,butter,jack_cheese,coral,pork_and_beans,parmesan_cheese,anchovies,egg
+pickled : caper,olives,cucumbers,cucumber,olive,capers
+root : beetroot,red_beet,red_beets,horseradish,skirret
+seed : rye
+thistle : artichoke,artichokes
+processed-intrusion : fried_potato,mixed_vegetable,slaw,doughnuts,pickles,wheat_flour,boiled_potato,sauerkraut,mixed_vegetables,scalloped_potato,jam,macaroni,grits,asper_gum,croutons,boiled_potatoes,crouton,baked_bean,shish_kabob,cole_slaw,scalloped_potatoes,pasta,doughnut,relish,jams,hominy,succotash,baked_beans,popcorn,pickle,fried_potatoes
+sprouts : alfalfa,alfalfa_sprouts,brussels_sprout,bean_sprout,bean_sprouts,sprout,brussels_sprouts,sprouts,alfalfa_sprout,wheatgrass
+missed : <missed_word>
+gourd : eggplants,chayote,zucchini,pepinos,butternut_squash,okra,gourd,banana_squash,italian_squash,summer_squash,hubbard_squash,pumpkin,yellow_squash,squash,pumpkins,cucumber,hairy_gourd,gherkin,acorn_squash,zucchini_squash,crookneck_squash,cucumbers,pepino,white_squash,green_squash,winter_squash,eggplant,spaghetti_squash,patty_pan_squash,chocho
