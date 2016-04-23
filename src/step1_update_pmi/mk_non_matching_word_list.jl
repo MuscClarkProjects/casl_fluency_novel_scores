@@ -1,4 +1,7 @@
-data_f(f_name::AbstractString) = joinpath(dirname(pwd()), "data", f_name)
+project_folder = dirname(dirname(pwd()))
+
+
+data_f(f_name::AbstractString) = joinpath(project_folder, "data", f_name)
 
 
 is_valid_word(w::ASCIIString) = length(w) > 0 && !ismatch(r"^[!|\-|#|(]", w)
