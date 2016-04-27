@@ -1,0 +1,16 @@
+bear
+giraffe
+cat
+dog
+fox
+lion
+tiger
+zebra
+skunk
+monkey
+ape
+orangutan
+#tiger
+hippopotamus
+rhinoceros
+bird

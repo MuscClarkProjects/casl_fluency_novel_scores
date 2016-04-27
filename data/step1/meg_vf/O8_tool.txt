@@ -1,0 +1,10 @@
+pliers
+screwdriver
+tweezers
+hemostat
+needle
+saw
+jackhammer
+nail_set
+blade
+knife

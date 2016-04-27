@@ -1,0 +1,15 @@
+fox
+cat
+rat
+kangaroo
+elephant
+giraffe
+bear
+bull
+cow
+donkey
+horse
+zebra
+raccoon
+squirrel
+!zebra

@@ -1,0 +1,12 @@
+pen
+paper
+computer
+hammer
+screwdriver
+knife
+fork
+spoon
+hatchet
+pliers
+scissors
+comb

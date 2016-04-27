@@ -1,0 +1,12 @@
+dog
+cat
+mouse
+horse
+cow
+elephant
+tiger
+lion
+chimpanzee
+gorilla
+baboon
+monkey

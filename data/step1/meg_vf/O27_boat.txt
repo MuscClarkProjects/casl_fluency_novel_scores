@@ -1,0 +1,11 @@
+rowboat
+motorboat
+ocean_liner
+steamship
+canoe
+kayak
+ski_boat
+submarine
+paddleboat
+ship
+sailboat

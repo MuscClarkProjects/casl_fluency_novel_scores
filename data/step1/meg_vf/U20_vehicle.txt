@@ -1,0 +1,12 @@
+car
+plane
+skateboard
+skate
+ski
+snowboard
+glider
+bus
+boat
+ship
+subway
+trolley

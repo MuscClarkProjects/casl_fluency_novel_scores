@@ -1,0 +1,13 @@
+car
+truck
+bus
+@Toyota
+@Ford
+boat
+canoe
+bicycle
+motorcycle
+cart
+wagon
+#bus
+train

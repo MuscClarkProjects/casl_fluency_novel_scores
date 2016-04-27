@@ -1,0 +1,8 @@
+car
+bicycle
+truck
+airplane
+helicopter
+tricycle
+unicycle
+coupe

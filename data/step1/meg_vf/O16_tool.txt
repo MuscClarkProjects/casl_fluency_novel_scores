@@ -1,0 +1,12 @@
+mop
+dustbin
+dust_cloth
+sponge
+brush
+hammer
+nail
+saw
+screwdriver
+yardstick
+tape_measurer
+comb

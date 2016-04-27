@@ -1,0 +1,10 @@
+swiffer
+saw
+sander
+mixer
+stove
+scissors
+screwdriver
+sewing_machine
+#swiffer
+hammer

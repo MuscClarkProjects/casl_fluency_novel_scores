@@ -1,0 +1,10 @@
+space_shuttle
+automobile
+boat
+bicycle
+unicycle
+skate
+airplane
+chopper
+motorcycle
+paddleboat

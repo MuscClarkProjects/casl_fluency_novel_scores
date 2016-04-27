@@ -1,0 +1,9 @@
+car
+boat
+trailer
+truck
+suv
+tricycle
+bicycle
+van
+tractor

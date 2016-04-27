@@ -1,0 +1,17 @@
+cat
+dog
+lion
+rhinoceros
+elephant
+monkey
+bird
+(looks_like_ship_or_slip)
+chicken
+duck
+whale
+bear
+camel
+wolf
+tiger
+deer
+(looks_like_malaboos)

@@ -1,0 +1,10 @@
+plane
+train
+bus
+car
+golf_cart
+boat
+subway
+bicycle
+motorcycle
+ski_lift

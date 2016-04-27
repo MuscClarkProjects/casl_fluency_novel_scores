@@ -1,0 +1,6 @@
+motorboat
+submarine
+cruise_ship
+battleship
+rowboat
+steamboat

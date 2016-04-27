@@ -1,0 +1,5 @@
+ship
+ski_boat
+cruise_ship
+!travel_boat
+canoe

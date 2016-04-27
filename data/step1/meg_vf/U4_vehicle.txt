@@ -1,0 +1,17 @@
+bicycle
+tractor
+car
+cus
+train
+#bicycle
+tank
+steamship
+ship
+sailboat
+escalator
+helicopter
+balloon
+submarine
+rocket
+space_shuttle
+

@@ -1,0 +1,7 @@
+fishing_boat
+sailboat
+schooner
+raft
+showboat
+dingy
+canoe

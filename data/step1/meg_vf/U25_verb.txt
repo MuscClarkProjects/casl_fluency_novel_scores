@@ -1,0 +1,11 @@
+see
+run
+go
+shop
+drive
+work
+study
+fly
+swim
+boat
+race

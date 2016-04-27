@@ -1,10 +1,10 @@
 project_folder = dirname(dirname(pwd()))
 
 
-data_f(f_name::AbstractString) = joinpath(project_folder, "data", f_name)
+data_f(parts...) = joinpath(project_folder, "data", parts...)
 
 
-is_valid_word(w::ASCIIString) = length(w) > 0 && !ismatch(r"^[!|\-|#|(]", w)
+is_valid_word(w::ASCIIString) = length(w) > 0 && !ismatch(r"^[@|?|!|\-|#|(]", w)
 
 
 function load_words(f::AbstractString, delim::Union{AbstractString, Char}='\n')
@@ -30,14 +30,20 @@ function load_words{T <: AbstractString}(fs::AbstractVector{T})
 end
 
 
-function get_all_list_files()
-  step1_lists_dir = data_f("step1/lists/")
+function get_all_dir_txt_files(dir)
+  step1_dir = data_f("step1", dir)
 
   is_text_file(f::ASCIIString) = endswith(f, ".txt")
-  add_path(f::AbstractString) = joinpath(step1_lists_dir, f)
+  add_path(f::AbstractString) = joinpath(step1_dir, f)
 
-  ASCIIString[add_path(f) for f in filter(is_text_file, readdir(step1_lists_dir))]
+  ASCIIString[add_path(f) for f in filter(is_text_file, readdir(step1_dir))]
 end
+
+
+get_all_list_files() = get_all_dir_txt_files("lists")
+
+
+get_all_meg_vf_files() = get_all_dir_txt_files("meg_vf")
 
 
 typealias Strings Vector{ASCIIString}
@@ -65,11 +71,11 @@ function find_non_matching_words(verbose::Bool=false, ignore_words...)
     load_words(f, '\r')
   end
 
-  list_files::Strings = get_all_list_files()
+  word_files::Strings = union(get_all_meg_vf_files(), get_all_list_files())
 
   non_matchers = Strings()
 
-  for f in list_files
+  for f in word_files
     words::Strings = load_words(f)
     missing_words::Strings = filter(
       w -> !in(w, ignore_words), setdiff(words, orig_keys)

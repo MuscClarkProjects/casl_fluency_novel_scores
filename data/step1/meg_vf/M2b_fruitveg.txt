@@ -1,0 +1,10 @@
+apple
+peach
+strawberry
+orange
+bean
+peas
+okra
+corn
+zucchini
+broccoli

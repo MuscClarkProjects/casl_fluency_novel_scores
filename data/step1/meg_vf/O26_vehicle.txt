@@ -1,0 +1,12 @@
+bus
+train
+car
+airplane
+motorcycle
+bicycle
+roller_skate
+skateboard
+horse
+van
+boat
+wheelchair

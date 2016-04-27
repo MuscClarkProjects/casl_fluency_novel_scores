@@ -1,0 +1,17 @@
+alligator
+crocodile
+fish
+eel
+snake
+shark
+squid
+octopus
+tuna
+whale
+jellyfish
+crab
+lobster
+shrimp
+stingray
+sea_turtle
+tadpole

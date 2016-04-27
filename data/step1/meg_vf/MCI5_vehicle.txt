@@ -1,0 +1,12 @@
+car
+truck
+bus
+train
+airplane
+trolly
+boat
+yacht
+canoe
+scooter
+motorcycle
+skateboard

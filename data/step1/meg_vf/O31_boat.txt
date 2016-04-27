@@ -1,0 +1,10 @@
+sailboat
+rowboat
+paddleboat
+raft
+inflatable_boat
+cruiser
+destroyer
+aircraft_carrier
+ocean_liner
+ferry_boat

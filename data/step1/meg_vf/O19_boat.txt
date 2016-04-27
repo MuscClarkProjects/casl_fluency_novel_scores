@@ -1,0 +1,6 @@
+skiff
+sailboat
+yacht
+canoe
+racing_boat
+#sailboat

@@ -1,0 +1,10 @@
+car
+bicycle
+segway
+airplane
+helicopter
+biplane
+motorcycle
+moped
+boat
+truck

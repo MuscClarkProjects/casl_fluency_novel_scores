@@ -1,0 +1,14 @@
+cook
+clean
+store
+show
+freeze
+bake
+fry
+collect
+distribute
+manage
+manufacture
+rescue
+stay
+make

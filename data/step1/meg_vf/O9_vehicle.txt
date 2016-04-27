@@ -1,0 +1,16 @@
+tricycle
+bicycle
+wagon
+car
+truck
+#plane
+tractor
+boat
+ship
+trailer
+submarine
+airplane
+skateboard
+@big_wheel
+rollerblade
+ice_skate

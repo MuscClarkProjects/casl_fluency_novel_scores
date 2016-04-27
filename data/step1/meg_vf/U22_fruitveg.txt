@@ -1,0 +1,12 @@
+lettuce
+tomato
+cucumber
+onion
+potato
+watermelon
+cherry
+sweet_potato
+broccoli
+apple
+cauliflower
+peach

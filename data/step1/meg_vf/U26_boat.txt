@@ -1,0 +1,12 @@
+cruise_ship
+sailboat
+motorboat
+ski_boat
+fishing_boat
+submarine
+battleship
+destroyer
+!treasure_hunting_ship
+icebreaker
+cargo_ship
+pirate_ship

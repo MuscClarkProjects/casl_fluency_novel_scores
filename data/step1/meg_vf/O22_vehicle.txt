@@ -1,0 +1,9 @@
+boat
+plane
+train
+car
+scooter
+wagon
+skate
+motorcycle
+bus

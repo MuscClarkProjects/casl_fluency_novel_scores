@@ -1,0 +1,9 @@
+elephant
+giraffe
+ant
+cockroach
+monkey
+gorilla
+cat
+dog
+puppy

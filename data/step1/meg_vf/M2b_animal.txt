@@ -1,0 +1,14 @@
+dog
+cat
+horse
+cow
+elephant
+raccoon
+squirrel
+lion
+tiger
+bear
+zebra
+kangaroo
+goat
+sheep

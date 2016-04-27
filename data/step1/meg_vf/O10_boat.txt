@@ -1,0 +1,8 @@
+kayak
+fishing_boat
+ship
+submarine
+battleship
+cruise_ship
+raft
+tugboat

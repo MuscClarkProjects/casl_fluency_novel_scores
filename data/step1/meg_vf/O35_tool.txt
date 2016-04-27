@@ -1,0 +1,12 @@
+pen
+pencil
+hoe
+shovel
+fork
+spoon
+tongues
+computer_mouse
+keyboard
+plunger
+hammer
+saw

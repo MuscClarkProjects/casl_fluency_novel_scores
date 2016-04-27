@@ -1,0 +1,14 @@
+show
+view
+boat
+swim
+camp
+canoe
+fish
+call
+go
+kayak
+jump
+move
+scream
+bike

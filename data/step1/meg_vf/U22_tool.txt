@@ -1,0 +1,9 @@
+hammer
+pencil
+pen
+ruler
+stapler
+drill
+pliers
+nail
+eraser

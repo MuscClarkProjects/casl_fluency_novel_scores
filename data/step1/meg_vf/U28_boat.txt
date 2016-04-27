@@ -1,0 +1,3 @@
+speedboat
+cruise_ship
+!small_boat

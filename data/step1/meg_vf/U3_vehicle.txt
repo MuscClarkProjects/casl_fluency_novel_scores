@@ -1,0 +1,17 @@
+car
+truck
+boat
+submarine
+plane
+hot_air_balloon
+scooter
+motorcycle
+skate_board
+skates
+four_wheeler
+seadoo
+train
+#truck
+elevator
+
+

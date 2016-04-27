@@ -1,0 +1,15 @@
+orange
+pear
+peach
+grape
+banana
+cantaloupe
+lemon
+lime
+carrot
+spinach
+radish
+lettuce
+asparagus
+pepper
+cauliflower

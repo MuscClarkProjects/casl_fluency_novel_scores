@@ -1,0 +1,14 @@
+pontoon
+speedboat
+sailboat
+ferryboat
+cruise_ship
+motorboat
+airboat
+!swamp_boat
+kayak
+rowboat
+lifeboat
+yacht
+battleship
+submarine

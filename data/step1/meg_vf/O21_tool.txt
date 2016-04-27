@@ -1,0 +1,7 @@
+hammer
+screwdriver
+pliers
+comb
+scissors
+nail
+weed_eater

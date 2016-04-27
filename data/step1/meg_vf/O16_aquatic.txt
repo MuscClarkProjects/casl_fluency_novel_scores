@@ -1,0 +1,10 @@
+tuna
+whale
+shark
+octopus
+squid
+tadpole
+water_snake
+alligator
+crocodile
+shrimp

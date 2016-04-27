@@ -1,0 +1,6 @@
+ship
+speedboat
+seadoo
+catamaran
+canoe
+barge

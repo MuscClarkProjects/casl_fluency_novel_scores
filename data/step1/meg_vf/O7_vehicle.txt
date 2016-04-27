@@ -1,0 +1,10 @@
+train
+boat
+cart
+motorcycle
+bicycle
+!wheels
+pushcart
+go_cart
+truck
+trailer

@@ -1,0 +1,11 @@
+shovel
+hammer
+nail
+pencil
+pen
+paper
+marker
+crayon
+plier
+stick
+comb

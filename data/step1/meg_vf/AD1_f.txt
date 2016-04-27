@@ -1,0 +1,7 @@
+food
+flour
+fresh
+fish
+fork
+foot
+fern

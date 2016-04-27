@@ -1,0 +1,8 @@
+go
+make
+bake
+hum
+walk
+skate
+play
+swim

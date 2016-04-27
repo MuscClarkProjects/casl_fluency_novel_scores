@@ -1,0 +1,17 @@
+orange
+lemon
+lime
+grapefruit
+apple
+kiwi
+carrot
+spinach
+broccoli
+peas
+bean
+cauliflower
+brussel_sprouts
+eggplant
+lettuce
+celery
+potato

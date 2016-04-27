@@ -1,0 +1,9 @@
+cruise_ship
+fishing_boat
+paddleboat
+canoe
+shrimp_boat
+speedboat
+racing_boat
+sailboat
+

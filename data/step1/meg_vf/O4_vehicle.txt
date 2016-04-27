@@ -1,0 +1,17 @@
+cart
+scooter
+airplane
+subway
+train
+helicopter
+boat
+bicycle
+tricycle
+motorcycle
+tank
+ten_wheeler
+bus
+truck
+minivan
+jeep
+submarine

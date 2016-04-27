@@ -1,0 +1,10 @@
+whale
+shark
+dolphin
+fish
+snake
+bacteria
+crocodile
+alligator
+water_buffalo
+crab

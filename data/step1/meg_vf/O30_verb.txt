@@ -1,0 +1,13 @@
+walk
+run
+slide
+skip
+hop
+jump
+stumble
+step
+creep
+crawl
+fall
+fail
+stick

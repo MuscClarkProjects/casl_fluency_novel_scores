@@ -1,0 +1,16 @@
+cat
+dog
+zebra
+elephant
+goat
+bear
+cow
+sheep
+snake
+monkey
+gorilla
+tiger
+lion
+fish
+rabbit
+hamster

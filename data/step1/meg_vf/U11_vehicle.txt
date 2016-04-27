@@ -1,0 +1,14 @@
+automobile
+motorcycle
+truck
+van
+airplane
+helicopter
+tank
+submarine
+ship
+jetski
+scooter
+jeep
+glider
+suv

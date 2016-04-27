@@ -1,0 +1,12 @@
+frog
+snake
+salamander
+snail
+lobster
+crawfish
+fish
+starfish
+octopus
+lizard
+crocodile
+alligator

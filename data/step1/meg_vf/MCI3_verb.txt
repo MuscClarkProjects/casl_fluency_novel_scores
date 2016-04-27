@@ -1,0 +1,16 @@
+run
+jump
+skip
+hop
+sing
+talk
+swim
+hike
+walk
+#talk
+hear
+shout
+scream
+#hop
+leap
+fall

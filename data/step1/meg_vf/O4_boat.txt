@@ -1,0 +1,10 @@
+speedboat
+cruise_ship
+canoe
+raft
+yacht
+jet_ski
+submarine
+aircraft_carrier
+#cruise_ship
+sailboat

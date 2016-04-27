@@ -1,0 +1,15 @@
+tricycle
+bicycle
+motorcycle
+scooter
+car
+truck
+helicopter
+plane
+train
+boat
+canoe
+tractor
+#truck
+rocket
+ferryboat

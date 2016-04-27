@@ -1,0 +1,15 @@
+pic
+nail_clippers
+hammer
+rake
+pliers
+fork
+knife
+spoon
+grater
+scissors
+tweezers
+screwdriver
+brush
+carving_tool
+saw

@@ -1,0 +1,17 @@
+walk
+do
+go
+stop
+start
+back
+talk
+ask
+tell
+give
+get
+allow
+let
+steal
+talk
+answer
+enter

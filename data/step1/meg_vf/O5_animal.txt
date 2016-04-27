@@ -1,0 +1,17 @@
+beaver
+bat
+cat
+dog
+tiger
+elephant
+lion
+hippopotamus
+peacock
+hen
+whale
+seal
+zebra
+rhinoceros
+giraffe
+eel
+monkey

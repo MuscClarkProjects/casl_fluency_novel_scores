@@ -1,0 +1,11 @@
+bear
+lion
+tiger
+pig
+octopus
+dog
+cat
+deep
+zebra
+rat
+giraffe

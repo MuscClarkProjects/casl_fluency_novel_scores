@@ -1,0 +1,13 @@
+(dgc)
+armadillo
+gorilla
+ape
+porcupine
+opossum
+skunk
+cat
+dog
+bison
+elephant
+steer
+ox

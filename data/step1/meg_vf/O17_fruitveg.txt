@@ -1,0 +1,10 @@
+orange
+grape
+squash
+okra
+potato
+tomato
+green_bean
+banana
+water_melon
+broccoli

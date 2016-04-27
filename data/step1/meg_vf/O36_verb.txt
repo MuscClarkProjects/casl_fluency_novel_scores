@@ -1,0 +1,14 @@
+shout
+swim
+show
+ski
+run
+walk
+lift
+drive
+go
+shop
+fly
+glide
+wash
+work

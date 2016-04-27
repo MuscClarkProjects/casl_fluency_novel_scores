@@ -1,0 +1,5 @@
+sailboat
+cruise_ship
+submarine
+warship
+skis

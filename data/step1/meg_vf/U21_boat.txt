@@ -1,0 +1,9 @@
+speedboat
+ship
+cruise_ship
+water_ski
+seadoo
+fishing_boat
+sailboat
+canoe
+raft

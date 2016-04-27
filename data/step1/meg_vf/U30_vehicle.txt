@@ -1,0 +1,8 @@
+bicycle
+car
+bus
+cab
+skate
+scooter
+airplane
+train

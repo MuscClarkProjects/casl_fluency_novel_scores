@@ -1,0 +1,14 @@
+bee
+bear
+cat
+dog
+crocodile
+alligator
+tiger
+leopard
+cheetah
+elephant
+rhinoceros
+lion
+monkey
+zebra

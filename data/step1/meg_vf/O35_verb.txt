@@ -1,0 +1,13 @@
+push
+share
+race
+see
+do
+run
+play
+jump
+walk
+swim
+jog
+find
+carry

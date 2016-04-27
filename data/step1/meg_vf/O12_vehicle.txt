@@ -1,0 +1,14 @@
+ski
+sled
+bicycle
+wheelbarrow
+wagon
+buggy
+helicopter
+motorboat
+rowboat
+canoe
+jet_ski
+snow_skate
+bobcat
+airplane

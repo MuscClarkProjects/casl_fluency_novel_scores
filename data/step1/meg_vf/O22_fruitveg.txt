@@ -1,0 +1,15 @@
+apple
+orange
+tomato
+lettuce
+collard_green
+banana
+peas
+corn
+bean
+onion
+beet
+okra
+squash
+potato
+carrot

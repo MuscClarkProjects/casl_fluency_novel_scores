@@ -1,0 +1,6 @@
+car
+boat
+bicycle
+train
+rickshaw
+airplane

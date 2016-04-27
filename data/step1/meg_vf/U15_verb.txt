@@ -1,0 +1,10 @@
+dance
+play
+cry
+make
+bake
+watch
+sleep
+work
+train
+fly

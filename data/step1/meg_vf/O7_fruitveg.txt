@@ -1,0 +1,17 @@
+apple
+orange
+grape
+beans
+tomato
+peppers
+!nuts
+!juice
+!egg
+!flour
+corn
+rice
+!pasta
+!soup
+green_bean
+sweet_potato
+broccoli

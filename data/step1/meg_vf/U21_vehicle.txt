@@ -1,0 +1,14 @@
+car
+truck
+bus
+train
+bicycle
+motorcycle
+motor_scooter
+boat
+ski
+airplane
+buggy
+taxi
+cruise_ship
+skates

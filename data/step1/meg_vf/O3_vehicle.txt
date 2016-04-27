@@ -1,0 +1,17 @@
+boat
+ferry
+seadoo
+truck
+car
+airplane
+mountain_bike
+bicycle
+four_wheeler
+suv
+air_balloon
+wagon
+skateboard
+golf_cart
+tractor
+tricycle
+train

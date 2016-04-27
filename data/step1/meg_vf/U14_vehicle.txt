@@ -1,0 +1,17 @@
+boat
+ski
+bicycle
+unicycle
+tricycle
+car
+bus
+van
+golf_cart
+scooter
+skateboard
+vespa
+elevator
+escalator
+moving_sidewalk
+airplane
+

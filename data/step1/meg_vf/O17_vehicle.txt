@@ -1,0 +1,13 @@
+cab
+taxi
+go_cart
+race_car
+golf_cart
+street_car
+bus
+train
+bicycle
+tricycle
+unicycle
+airplane
+boat

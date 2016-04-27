@@ -1,0 +1,8 @@
+(dgc)
+apple
+peach
+cherry
+beets
+carrots
+corn
+pineapple

@@ -1,0 +1,17 @@
+swim
+golf
+walk
+talk
+know
+think
+learn
+speak
+study
+read
+care
+listen
+forget
+drive
+sleep
+turn
+work

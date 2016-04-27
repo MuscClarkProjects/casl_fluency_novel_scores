@@ -1,0 +1,12 @@
+pontoon_boat
+houseboat
+kayak
+canoe
+fishing_boat
+raft
+seadoo
+paddleboat
+cruise_ship
+tanker
+tugboat
+barge

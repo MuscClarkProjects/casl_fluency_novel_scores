@@ -1,0 +1,16 @@
+throw
+catch
+kick
+jump
+sit
+run
+strike
+shuffle
+drive
+stop
+crank
+begin
+skip
+charge
+point
+hit

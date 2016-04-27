@@ -1,0 +1,7 @@
+boat
+skate
+bicycle
+wheelchair
+airplane
+scooter
+tricycle

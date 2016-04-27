@@ -1,0 +1,13 @@
+ask
+name
+play
+come
+cook
+show
+#play
+dress
+clean
+mop
+bathe
+iron
+watch

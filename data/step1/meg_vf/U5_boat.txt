@@ -1,0 +1,10 @@
+canoe
+kayak
+sailboat
+aircraft_carrier
+ski_boat
+rowboat
+fishing_boat
+steamboat
+#fishing_boat
+cruise_ship

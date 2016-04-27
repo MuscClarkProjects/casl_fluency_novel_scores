@@ -1,0 +1,16 @@
+ship
+sailboat
+rowboat
+pontoon_boat
+raft
+airboat
+motorboat
+fishing_boat
+cruise_ship
+tanker
+tugboat
+submarine
+aircraft_carrier
+destroyer
+surfboard
+float

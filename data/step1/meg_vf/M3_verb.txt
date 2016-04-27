@@ -1,0 +1,5 @@
+talk
+walk
+sing
+touch
+smile

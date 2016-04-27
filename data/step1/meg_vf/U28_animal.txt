@@ -1,0 +1,17 @@
+rabbit
+dog
+cat
+bird
+fish
+parrot
+alligator
+snake
+cow
+pig
+gorilla
+lion
+monkey
+dolphin
+shark
+chipmunk
+bear

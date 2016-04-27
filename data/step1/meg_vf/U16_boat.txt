@@ -1,0 +1,10 @@
+cruise_ship
+tugboat
+fishing_boat
+canoe
+paddleboat
+kayak
+sailboat
+submarine
+speedboat
+ski_boat

@@ -1,0 +1,8 @@
+car
+truck
+van
+airplane
+train
+bus
+bicycle
+automobile

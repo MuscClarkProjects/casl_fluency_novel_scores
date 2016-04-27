@@ -1,0 +1,10 @@
+sleep
+run
+kick
+hit
+make
+sit
+break
+sing
+stoop
+laugh

@@ -1,0 +1,6 @@
+yacht
+speedboat
+ship
+submarine
+motorboat
+paddleboat

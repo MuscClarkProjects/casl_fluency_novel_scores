@@ -1,0 +1,8 @@
+rowboat
+ship
+cruise_liner
+speedboat
+kayak
+ski
+fishing_boat
+tugboat

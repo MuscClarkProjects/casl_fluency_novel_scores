@@ -1,0 +1,16 @@
+run
+see
+swim
+hop
+climb
+walk
+talk
+fight
+hunt
+wrestle
+box
+bite
+scratch
+jump
+joke
+murder

@@ -1,0 +1,7 @@
+(dgc)
+car
+stagecoach
+train
+station_wagon
+bus
+ship

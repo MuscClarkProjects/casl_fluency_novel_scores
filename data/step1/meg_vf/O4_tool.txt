@@ -1,0 +1,11 @@
+saw
+lever
+square
+planer
+screwdriver
+ratchet
+chisel
+wrench
+toothbrush
+(?something_illegible_here)
+toilet_plunger

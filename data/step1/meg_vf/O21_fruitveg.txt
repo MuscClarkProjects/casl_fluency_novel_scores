@@ -1,0 +1,10 @@
+orange
+apple
+peaches
+plum
+tomato
+cabbage
+carrot
+turnip
+sweet_potato
+cantaloupe

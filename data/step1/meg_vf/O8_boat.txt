@@ -1,0 +1,6 @@
+yacht
+canoe
+speedboat
+sailboat
+paddleboat
+kayak

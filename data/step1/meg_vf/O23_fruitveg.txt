@@ -1,0 +1,16 @@
+apple
+orange
+banana
+peach
+pear
+plum
+mango
+lettuce
+tomato
+okra
+carrot
+squash
+cauliflower
+asparagus
+green_bean
+apricot

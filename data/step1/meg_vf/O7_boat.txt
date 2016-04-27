@@ -1,0 +1,7 @@
+canoe
+sailboat
+tank
+raft
+inflatable_tube
+cruise_ship
+battleship

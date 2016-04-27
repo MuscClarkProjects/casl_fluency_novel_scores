@@ -1,0 +1,7 @@
+rowboat
+cruise_ship
+sailboat
+ship
+speedboat
+canoe
+riverboat

@@ -1,0 +1,10 @@
+truck
+sled
+wagon
+wheelchair
+scooter
+motorcycle
+automobile
+airplane
+glider
+ferris_wheel

@@ -1,0 +1,7 @@
+rowboat
+yacht
+fishing_boat
+cruise_ship
+sailboat
+ferry
+ship

@@ -1,0 +1,8 @@
+aircraft_carrier
+canoe
+kayak
+sailboat
+speedboat
+raft
+destroyer
+submarine

@@ -1,0 +1,14 @@
+hairbrush
+comb
+toothbrush
+toilet_brush
+hammer
+screwdriver
+pliers
+broom
+mop
+plunger
+carjack
+hairdryer
+curling_iron
+hot_roller

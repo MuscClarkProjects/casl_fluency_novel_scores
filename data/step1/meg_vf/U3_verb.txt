@@ -1,0 +1,17 @@
+act
+answer
+box
+bend
+cut
+kid
+dig
+fight
+hit
+give
+see
+jump
+ooze
+kick
+miss
+say
+worry

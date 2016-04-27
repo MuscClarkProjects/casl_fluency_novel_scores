@@ -1,0 +1,13 @@
+skateboard
+skate
+bicycle
+scooter
+boat
+surfboard
+car
+truck
+motorcycle
+airplane
+helicopter
+jet
+

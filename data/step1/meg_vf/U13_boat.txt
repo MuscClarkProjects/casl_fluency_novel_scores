@@ -1,0 +1,12 @@
+sailboat
+ski
+surfboard
+battleship
+raft
+float
+yacht
+schooner
+canoe
+kayak
+glass_bottom_boat
+steamship

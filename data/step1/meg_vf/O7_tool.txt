@@ -1,0 +1,12 @@
+saw
+needle
+rake
+plate
+screwdriver
+knife
+cutting_board
+scissors
+rubber_band
+nail_clipper
+razor
+hair_curler

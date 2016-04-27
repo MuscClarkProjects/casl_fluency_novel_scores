@@ -1,0 +1,13 @@
+cart
+skate
+wagon
+bus
+train
+airplane
+chariot
+stagecoach
+tricycle
+bicycle
+horse
+roller_skate
+submarine

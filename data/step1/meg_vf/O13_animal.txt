@@ -1,0 +1,15 @@
+dog
+cat
+parrot
+rat
+#cat
+snake
+pigeon
+penguin
+seahorse
+elephant
+tiger
+lion
+rhinoceros
+giraffe
+horse

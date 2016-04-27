@@ -1,0 +1,6 @@
+pleasure_boat
+sailboat
+cruise_ship
+navy_ship
+!marine_boat
+lifeboat

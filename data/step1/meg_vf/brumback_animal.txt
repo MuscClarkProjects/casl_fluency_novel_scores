@@ -1,0 +1,9 @@
+people
+dog
+cat
+rat
+horse
+pony
+giraffe
+kangaroo
+pig

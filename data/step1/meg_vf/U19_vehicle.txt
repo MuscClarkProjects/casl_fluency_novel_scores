@@ -1,0 +1,11 @@
+truck
+airplane
+car
+train
+motorcycle
+ship
+boat
+yacht
+buggy
+tanker
+cargo_ship

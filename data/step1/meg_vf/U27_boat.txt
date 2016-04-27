@@ -1,0 +1,10 @@
+rowboat
+motorboat
+steamboat
+cruise_ship
+tugboat
+ski_boat
+ferry
+dingy
+fishing_boat
+jet_ski

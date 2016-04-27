@@ -1,0 +1,13 @@
+canoe
+powerboat
+motorboat
+sailboat
+cruise_ship
+catamaran
+aircraft_carrier
+battleship
+kayak
+raft
+schooner
+rowboat
+ski_boat

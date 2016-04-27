@@ -1,0 +1,13 @@
+dog
+cat
+hippopotamus
+giraffe
+lion
+tiger
+elephant
+horse
+chimpanzee
+ape
+zebra
+pig
+cow

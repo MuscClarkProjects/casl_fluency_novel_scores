@@ -1,0 +1,9 @@
+rowboat
+sailboat
+luxury_liner
+battleship
+bass_boat
+canoe
+paddleboat
+hovercraft
+kayak

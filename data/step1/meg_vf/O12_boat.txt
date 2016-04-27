@@ -1,0 +1,13 @@
+rowboat
+fishing_boat
+ski_boat
+cruise_ship
+ocean_liner
+aircraft_carrier
+submarine
+warship
+pirate_ship
+oil_tanker
+sailboat
+skis
+raft

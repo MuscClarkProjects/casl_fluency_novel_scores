@@ -1,0 +1,12 @@
+fish
+shrimp
+tuna
+oyster
+squid
+whale
+shark
+crab
+eel
+starfish
+bass
+snake

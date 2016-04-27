@@ -1,0 +1,16 @@
+bicycle
+scooter
+wagon
+car
+pickup_truck
+station_wagon
+sedan
+cross_over
+suv
+train
+airplane
+boat
+rowboat
+cruiser
+carrier
+hot_air_balloon

@@ -1,0 +1,9 @@
+scooter
+bicycle
+motorcycle
+automobile
+truck
+airplane
+golf_cart
+atv
+tractor

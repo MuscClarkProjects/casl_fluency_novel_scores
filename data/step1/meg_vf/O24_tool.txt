@@ -1,0 +1,15 @@
+pencil
+pen
+scissors
+knife
+clippers
+hammer
+saw
+drill
+wrench
+ratchet
+screwdriver
+nail
+nail_cutter
+shovel
+axe

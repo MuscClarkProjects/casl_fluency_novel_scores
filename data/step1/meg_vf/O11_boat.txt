@@ -1,0 +1,9 @@
+motorboat
+cruise_ship
+freighter
+passenger_ship
+tugboat
+fishing_boat
+charter_boat
+toy_boat
+aircraft_carrier

@@ -1,0 +1,11 @@
+submarine
+houseboat
+cruise_ship
+fishing_boat
+canoe
+kayak
+raft
+paddleboat
+#cruise_ship
+tanker
+tugboat

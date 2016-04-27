@@ -1,0 +1,16 @@
+cow
+giraffe
+zebra
+dog
+cat
+rabbit
+pig
+sheep
+goat
+tiger
+lion
+rhinoceros
+whale
+dolphin
+hippopotamus
+#cat

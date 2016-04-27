@@ -1,0 +1,8 @@
+apple
+ate
+animal
+at
+and
+#ate
+#animal
+anything

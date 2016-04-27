@@ -1,0 +1,5 @@
+sailboat
+cruise_ship
+yacht
+canoe
+cargo_ship

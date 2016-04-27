@@ -1,0 +1,10 @@
+ferry
+steamboat
+motorboat
+speedboat
+jetski
+sailboat
+rowboat
+paddleboat
+cruise_ship
+freight_boat

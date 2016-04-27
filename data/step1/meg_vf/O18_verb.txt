@@ -1,0 +1,17 @@
+name
+care
+borrow
+jump
+hold
+bag
+give
+share
+catch
+run
+walk
+sail
+shop
+ship
+work
+laugh
+#cry

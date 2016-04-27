@@ -1,27 +1,616 @@
 18-wheeler
+abandon
+absorb
+acceptable
+accommodate
+accompany
+acetabulum
+actually
+"ad1	0.233333333brumback	0m1	0m10	0.238095238m2a	0.153846154m2b	0.119047619m3	0m4	0.31372549m5	0.696969697mci3	0.333333333mci4	0.375mci5	0.464912281mci6	0.393939394msa1	0.18627451o1	0.50877193o10	0.46031746o11	0.412o12	0.391025641o13	0.473809524o14	0.416666667o15	0.185185185o16	0.421052632o17	0.511111111o18	0.2o19	0o2	0.416666667o20	0.125o21	0o22	0.4o23	0.438596491o24	0.275o25	0.537878788o26	0.333333333o27	0.285714286o28	0.208333333o3	0.363636364o30	0.266666667o31	0.294117647o33	0.311111111o34	0.294117647o35	0.244444444o36	0.192982456o37	0.320512821o4	0.5o5	0.411764706o6	0.119047619o7	0.214285714o8	0.261904762o9	0.494202899u10	0.534782609u11	0.375u12	0.551851852u13	0.320987654u14	0.421428571u15	0.133333333u16	0.5u17	0.394736842u18	0.403030303u19	0.196969697u2	0.294871795u20	0.272727273u21	0.348484848u22	0.212121212u23	0.133333333u24	0.208333333u25	0.2u26	0.475u27	0.246376812u28	0.294117647u29	0.245833333u3	0.447311828u30	0.238095238u31	0.208333333u4	0.456140351u5	0.236111111u6	0.311594203u7	0.288333333u8	0.501875902u9	0.552688172"
+adaptive
+adhering
+admit
+adorn
+advanced
+afebrile
+affair
+aging
+ago
+agrees
+air_compressor
+air_force
+air_show
+airway
+aldehyde
+alert
+alliance
+alma_mater
+aloof
+aloud
+ameliorate
+amenities
+amity
+amphetamine
+androgynous
+anesthesia
+angelfish
+angling
+angular
+annomoly
+anorexic
+antecubital
+anterograde
+antiquate
+apoptosis
+apothecary
+apparatus
 arcane
+armada
+arousal
+array
+arthritis
+asocial
+aspirate
+aspires
+assign
+assortment
+astigmatism
+auger
+autism
+autoimmune
+avid
+axel
+baby_carriage
+baby_walker
+bang
+baton
+battery_charger
+battle
+beat
+been
+begin
+belt_sander
+black_eye_peas
+black_eyed_peas
+blaming
+blend
+blue_bird
+blue_crab
+blue_whale
+borrow
+brass_knuckles
+brawl
+break
+breath
+brim
+bucket
+bully
+bumblebee
+call
+camp
+cantaloup
+carb
+carjack
+cast
+celebrate
+charge
+chariot
+check
+chopper
+cicada
+circular_saw
+claw
+cod
+collect
+complete
+computer_mouse
+conch
+confront
+congratulate
+cool
+copy
+cord
+corkscrew
+craft
+crank
+crappy
+craving
+crayon
+creep
+croppy
+cross_over
+cruise_liner
+cumquat
+curling_iron
+curse
+cus
+cutting_board
+cycle
+dagger
+deep
+defecate
+demonstrate
+die
+digging
+dine
+dirigible
+dishtowel
+distribute
+drag
+dream
+drift
+drill_press
+dry
+dust_cloth
+dustbin
+edge
+egg_plant
+eggbeater
+electric_bicycle
 electric_clippers
+eraser
 evade
+evaluate
+experiment
+express
+faces
+factual
+faithful
+fanning
+favorable
+feasible
+fecal
+feeding
+felony
+ferrel
+ferryboat
+fervor
+fetal
+fetus
+fibrosis
+figures
+figuring
+finalist
+fingernail
+fingernail_clippers
+fir
+fireman
 flak
+flapjacks
+flatulent
+flaws
+flex
+flows
+flub
+fluency
 flume
+folder
+forced
+forceps
+forehead
+foreigner
+foreplay
+forgiveness
+forrest
+fortnight
+foyer
 frack
+fractional
+frailty
+framed
+frankfort
+fraudulent
+freelance
+freely
+freezerbag
+freight_boat
+freshness
 fro
+frostbite
+funeral
 funny_papers
+furlong
+gasp
+generator
+glass_cutter
+glide
+glow
+gofer
+grant
+grater
+green_been
+grieve
+grill
+groom
+guess
+gut
+hair_curler
+hair_dryer
+hairbrush
+hairdryer
+hanger
+hearing
+heat
+hedgeclipper
 highlighter
+hinge
+hire
+hook
 horned_toads
+horse_radish
+horseshoe_crab
+hot_air_balloon
+hot_roller
+hum
+ibis
+ice_pick
+icebreaker
+inflatable_boat
+inflatable_tube
+ink_pen
+inner_tube
+instruct
+ironclad_ship
+javelin
+jointer
+joke
+key
+keyboard
+kid
+knit
+knives
+knock
+know
 ladle
+latch
+leak
+leap
+lecture
+let
+lid
+loose
+lose
+luxury_liner
+magnifying_glass
+mahi
+makeup_brush
+manage
+mandarin_orange
+mantaray
+manufacture
+march
+marine_boat
 marker
+marry
+mean
+meet
+memorize
+merchant_vessel
+mingle
+minivan
+miss
+mistake
+mixer
+monkfish
+motor_scooter
+mountain_bike
+mourn
+moving_sidewalk
+muscle
 muskie
+nail_gun
+nail_set
+name
+nautilus
+neon_fish
+nunchaku
+nutcracker
+nutpick
+"o1	19	11	16	7	17	18	22	8	10	17	29	39	18"
+"o10	21	11	19	8	24	20	25	12	10	23	31	49	22"
+"o11	25	19	18	9	12	27	18	10	14	30	46	30	24"
+"o12	26	9	10	13	17	23	16	17	14	21	32	33	31"
+"o13	14	11	12	7	15	15	na	9	8	19	26	15	17"
+"o14	8	8	8	2	8	15	8	12	4	9	23	16	16"
+"o15	9	1	5	0	10	12	8	2	7	0	13	18	9"
+"o16	19	10	9	8	16	20	13	12	11	19	30	29	23"
+"o19	5	6	13	5	21	5	16	10	10	10	11	37	20"
+"o2	16	6	4	6	5	19	7	9	8	8	25	12	17"
+"o20	20	8	10	2	13	16	16	14	11	20	24	29	25"
+"o21	9	7	2	4	7	10	4	7	5	3	17	11	12"
+"o22	15	8	12	7	23	15	22	10	9	10	23	45	19"
+"o23	19	10	13	8	5	16	20	19	10	15	26	25	29"
+"o25	22	16	20	11	19	21	19	18	15	22	37	38	33"
+"o26	14	13	16	9	16	20	19	15	12	17	33	35	27"
+"o27	14	12	11	11	13	16	12	9	10	17	28	25	19"
+"o3	21	16	12	13	12	20	18	15	17	23	36	30	32"
+"o30	14	10	3	6	17	20	11	4	8	13	30	28	12"
+"o31	17	10	11	10	16	17	10	16	16	20	27	26	32"
+"o34	17	10	7	6	12	19	13	14	9	6	29	25	23"
+"o35	15	13	13	7	10	21	14	12	8	13	34	24	20"
+"o36	18	9	15	9	11	24	17	15	11	14	33	28	26"
+"o4	28	19	10	9	14	30	18	10	17	16	49	32	27"
+"o5	17	14	13	10	13	27	14	18	19	23	41	27	37"
+"o6	14	5	13	5	15	15	13	5	6	17	20	28	11"
+"o7	14	6	4	7	8	11	11	12	9	20	17	19	21"
+"o8	14	10	12	6	19	18	16	10	13	23	28	35	23"
+"o9	23	14	11	10	10	22	9	12	14	22	36	19	26"
+obliterate
+observe
+ocean_liner
+oil_tanker
+ooze
+operate
+paddlewheel
+paint_pan
+pass
+patch
+pause
+pay
+pedal
+pee
+peep
+photograph
+pirana
+plainer
+poisoning
+poke
+polish
+ponder
+pose
+pothook
+power_drill
+power_saw
+pray
+probe
+propose
+pulley
+pushcart
+question
+race_car
+radial_arm_saw
+rain
+raving
+redfish
+remember
+rescue
+rifle
+road_bike
+rollerblade
+rope
+rub
+rubber_band
+sagittal
+sainthood
+salutation
+sand_bath
+sandcastle
+sandflea
+sandfly
+savour
+sawhorse
+scab
+scaffolding
+scaly
+scamper
+scanty
+scared
+scary
+scatterbrain
+scavenge
+scenery
+schedule
+scholar
+scoliosis
+scoop
+scoot
+scorn
+scribble
+scrounge
+scrubber
+scum
+sea_slug
+seado
+secondary
+secrets
+sedate
+seduce
+seed
+sending
+senior
+septic
 sequester
+sermon
+sessile
+sessions
+settlement
+seventy
+shaver
+shellcracker
 shoehorn
+showmanship
+shrimp_boat
+shrug
+shuffle
+shyness
+sickness
+silliness
+sipper
 siteseeing
+skate_board
 ski-lift
+ski_lift
+skill
+skilled
+slams
+slate
+sleeping_bag
+sleepover
+sleepy
 slicer
+slit
+sloop
+slower
+slowly
+sluggish
+slum
 slup
+slur
 smartphone
+snap
+sneak
+sniff
+snoop
+snow_skate
+snowmobile
+soaking
+solders
+soldier
+sole
+sonar
+sourdough
+space_shuttle
+span
+spare
+spark
+spartan
+spatial
+splendid
+spore
+sport_scar
+spouse
+sprint
+sputum
+squeeze
+squint
+squish
 stack
+stadium
+stagecoach
+stagnant
+stain
+stalking
+stan
+stance
+starboard
+starring
+stature
+stethoscope
+stipend
+stipple
+stony
+stopper
+stopwatch
+strain
+strap
+strategize
+stratum
+stroller
+struck
+stud_finder
+stutter
+"subject	animal	aquatic	a	boat	f	fruitveg	s	tool	vehicle	verb	liv	fas	non"
+substitute
+suffice
+suitcase
+sunroof
+suntan
+superstition
+supposition
+surge
+surrogate
+survey
+survival
+survive
+swank
 swear
+swiffer
+swish
+syringe
+tack
+tamper
+tanker_ship
+tape_measurer
+tarpin
+taruanchulla
+teach
+tear
+tease
+ten_wheeler
+test
+text
+thank
+tina
+tire_gauge
+tofu
+toilet
+toilet_brush
+toilet_plunger
+tongs
+tongues
+toothpick
+torch
+tour
+towboat
+trade
+travel
 tricycle_boat
+trolly
+trunip_green
 tumble
+tutor
+u-boat
+"u10	23	19	14	10	19	22	14	20	19	22	41	33	39"
+"u11	20	19	19	13	na	23	18	20	14	26	42	18	34"
+"u12	18	14	14	16	24	22	22	14	16	16	36	46	30"
+"u13	27	15	16	12	26	30	20	14	16	31	45	46	30"
+"u14	27	12	16	10	11	24	17	19	16	20	36	28	35"
+"u15	15	4	9	7	12	18	13	7	9	10	22	25	16"
+"u16	19	13	13	10	14	17	21	6	10	18	30	35	16"
+"u17	19	15	12	6	17	16	17	10	12	20	31	34	22"
+"u18	32	20	17	14	24	29	28	19	16	30	49	52	35"
+"u19	22	9	14	5	17	23	20	8	11	21	32	37	19"
+"u2	23	14	16	8	11	22	12	19	14	22	36	23	33"
+"u20	22	15	8	10	19	na	22	13	12	23	15	41	25"
+"u21	22	10	11	9	na	19	20	10	14	20	29	20	24"
+"u22	11	10	5	4	10	12	19	9	8	13	22	29	17"
+"u23	15	7	7	8	7	19	6	11	10	14	26	13	21"
+"u24	12	11	10	7	16	13	12	12	9	17	24	28	21"
+"u25	20	10	11	4	11	19	11	12	6	11	29	22	18"
+"u26	20	12	12	11	na	23	17	21	6	25	35	17	27"
+"u27	23	22	14	10	16	17	18	21	14	29	39	34	35"
+"u28	17	8	18	2	15	16	11	11	11	12	24	26	22"
+"u29	24	12	12	6	18	21	18	12	12	13	33	36	24"
+"u3	31	15	21	10	27	21	22	18	14	17	36	49	32"
+"u30	7	6	5	3	9	15	8	6	8	5	21	17	14"
+"u31	16	11	6	5	14	19	13	5	10	6	30	27	15"
+"u4	19	16	11	12	19	25	20	17	15	20	41	39	32"
+"u5	24	13	19	9	27	18	27	11	10	22	31	54	21"
+"u6	23	14	12	13	14	21	24	19	10	17	35	38	29"
+"u7	20	8	13	8	16	25	16	13	6	25	33	32	19"
+"u8	32	17	20	12	28	21	26	21	16	17	38	54	37"
+"u9	31	22	9	17	18	29	15	na	16	32	51	33	16"
+urinate
+vespa
+wagon_train
+wahoo
+wake_board
+war_cruiser
+war_ship
+warn
+washing_machine
+water_boat
+water_melon
 waverunner
+wear
 weed-eater
+whip
+whisk
+wild_cat
+will
+wire_cutters
+wire_strip
+wombat
+wonder
+worry
+zebra_fish

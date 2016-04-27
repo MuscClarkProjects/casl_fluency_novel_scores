@@ -1,0 +1,17 @@
+fishing_boat
+sailboat
+yacht
+jetski
+waterski
+catamaran
+inner_tube
+cruise_ship
+ocean_liner
+merchant_vessel
+tanker
+submarine
+battleship
+pt_boat
+aircraft_carrier
+canoe
+kayak

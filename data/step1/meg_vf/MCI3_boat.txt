@@ -1,0 +1,10 @@
+ski
+boat
+ship
+tanker_ship
+fishing_boat
+ski_boat
+speed_boat
+submarine
+war_ship
+cruise_ship

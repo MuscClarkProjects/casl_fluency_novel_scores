@@ -1,0 +1,5 @@
+canoe
+skiff
+speedboat
+kayak
+ship

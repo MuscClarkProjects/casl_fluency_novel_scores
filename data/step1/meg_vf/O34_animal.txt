@@ -1,0 +1,17 @@
+cow
+deer
+moose
+rabbit
+squirrel
+buffalo
+raccoon
+dog
+cat
+horse
+goat
+pig
+sheep
+zebra
+beaver
+rat
+giraffe

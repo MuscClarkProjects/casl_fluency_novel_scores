@@ -1,0 +1,11 @@
+cat
+dog
+pig
+turtle
+cow
+horse
+tiger
+lion
+giraffe
+camel
+gorilla

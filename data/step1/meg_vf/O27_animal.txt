@@ -1,0 +1,14 @@
+elephant
+fox
+dog
+cat
+antelope
+deer
+monkey
+squirrel
+turkey
+cow
+horse
+mouse
+rat
+whale

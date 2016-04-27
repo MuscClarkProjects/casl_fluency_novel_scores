@@ -1,0 +1,13 @@
+sailboat
+cruise_ship
+cruiser
+submarine
+battleship
+destroyer
+pt_boat
+catamaran
+ski_boat
+pontoon_boat
+jetski
+yacht
+freighter

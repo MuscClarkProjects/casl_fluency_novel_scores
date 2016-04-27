@@ -1,0 +1,7 @@
+dog
+cat
+mouse
+chihuahua
+bear
+beaver
+bird

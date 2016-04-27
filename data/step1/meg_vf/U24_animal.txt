@@ -1,0 +1,12 @@
+dog
+cat
+cow
+horse
+giraffe
+tiger
+lamb
+bear
+chicken
+frog
+pony
+fish

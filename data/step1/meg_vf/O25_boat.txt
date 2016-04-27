@@ -1,0 +1,11 @@
+rowboat
+canoe
+bass_boat
+speed_boat
+freighter
+aircraft_carrier
+submarine
+sailboat
+skiff
+paddleboat
+ocean_liner

@@ -1,0 +1,10 @@
+truck
+bicycle
+motorcycle
+tricycle
+train
+submarine
+boat
+motor_scooter
+skate
+ski

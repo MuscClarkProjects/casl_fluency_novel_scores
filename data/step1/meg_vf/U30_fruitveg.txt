@@ -1,0 +1,16 @@
+strawberry
+peach
+grape
+apricot
+apple
+lettuce
+tomato
+cucumber
+broccoli
+cabbage
+watermelon
+cantaloupe
+melon
+green_bean
+potato
+

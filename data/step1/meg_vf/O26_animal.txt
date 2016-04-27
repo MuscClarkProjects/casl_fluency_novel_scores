@@ -1,0 +1,14 @@
+dog
+cat
+giraffe
+elephant
+zebra
+lion
+sparrow
+tiger
+bear
+bird
+monkey
+kangaroo
+panda
+turtle

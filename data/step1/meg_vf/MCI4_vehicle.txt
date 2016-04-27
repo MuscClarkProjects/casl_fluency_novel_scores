@@ -1,0 +1,12 @@
+car
+truck
+buggy
+wagon
+train
+airplane
+dirigible
+balloon
+#wagon
+bicycle
+tricycle
+motorcycle

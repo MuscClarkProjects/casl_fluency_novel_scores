@@ -1,0 +1,16 @@
+shark
+octopus
+jellyfish
+stingray
+manatee
+seal
+sea_lion
+bass
+crappy
+catfish
+shrimp
+crawfish
+frog
+whale
+dolphin
+

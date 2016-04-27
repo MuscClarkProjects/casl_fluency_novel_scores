@@ -1,0 +1,5 @@
+air
+automobile
+argument
+animal
+alphabet

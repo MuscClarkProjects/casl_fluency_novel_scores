@@ -1,0 +1,14 @@
+tank
+jeep
+truck
+(written_as_s)
+car
+bicycle
+motorcycle
+four_wheeler
+train
+bus
+airplane
+baby_carriage
+scooter
+tram

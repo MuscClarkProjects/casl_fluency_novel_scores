@@ -1,0 +1,7 @@
+submarine
+cruise_ship
+sailboat
+canoe
+marine_boat
+ski
+fishing_boat

@@ -1,0 +1,17 @@
+act
+arrest
+box
+bowl
+call
+cart
+dig
+fight
+hit
+go
+see
+jump
+loose
+look
+miss
+make
+marry

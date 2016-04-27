@@ -1,0 +1,8 @@
+seal
+dolphin
+alligator
+starfish
+goldfish
+shark
+octopus
+sea_lion

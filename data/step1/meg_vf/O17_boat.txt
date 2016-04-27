@@ -1,0 +1,10 @@
+rowboat
+submarine
+steamboat
+skiff
+kayak
+canoe
+raft
+ski_boat
+seadoo
+speedboat

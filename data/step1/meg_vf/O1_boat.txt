@@ -1,0 +1,8 @@
+kayak
+steamship
+carrier
+powerboat
+yacht
+schooner
+!power_slam
+motorboat

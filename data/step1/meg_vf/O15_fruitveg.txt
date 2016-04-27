@@ -1,0 +1,12 @@
+orange
+carrot
+lettuce
+celery
+butter_bean
+green_bean
+tomato
+pear
+watermelon
+onion
+potato
+squash

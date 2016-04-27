@@ -1,0 +1,8 @@
+car
+truck
+motorcycle
+tractor
+pickup_truck
+trailer
+ambulance
+bus

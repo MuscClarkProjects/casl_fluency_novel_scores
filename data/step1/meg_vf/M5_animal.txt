@@ -1,0 +1,11 @@
+snake
+cow
+chicken
+dinosaur
+donkey
+deer
+horse
+and
+mosquito
+octopus
+crab

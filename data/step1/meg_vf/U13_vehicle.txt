@@ -1,0 +1,16 @@
+car
+truck
+motorcycle
+scooter
+bicycle
+four_wheeler
+three_wheeler
+airplane
+boat
+hot_air_balloon
+skateboard
+surfboard
+waterski
+snowboard
+roller_skate
+ice_skate

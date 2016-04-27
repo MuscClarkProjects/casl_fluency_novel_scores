@@ -1,0 +1,7 @@
+cruise_ship
+houseboat
+rowboat
+fishing_boat
+motorboat
+paddleboat
+ski_boat

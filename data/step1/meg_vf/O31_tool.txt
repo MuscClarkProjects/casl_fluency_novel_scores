@@ -1,0 +1,17 @@
+hammer
+screwdriver
+plier
+wrench
+comb
+hairdryer
+knife
+fork
+spoon
+spatula
+saw
+nail_cutter
+vacuum_cleaner
+pen
+pencil
+!paper
+brush

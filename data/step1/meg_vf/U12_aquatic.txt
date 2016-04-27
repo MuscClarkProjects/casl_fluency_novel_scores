@@ -1,0 +1,16 @@
+beaver
+eel
+snake
+whale
+fish
+dolphin
+stingray
+(looks_like_aliphet)
+(looks_like_trial)
+seal
+duck
+geese
+swan
+crab
+lobster
+crawfish

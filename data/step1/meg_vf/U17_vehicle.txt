@@ -1,0 +1,12 @@
+boat
+car
+train
+crane
+subway
+trolley
+jet
+yacht
+horse
+kayak
+hot_air_balloon
+helicopter

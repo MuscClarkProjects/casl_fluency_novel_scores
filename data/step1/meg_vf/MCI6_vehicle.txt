@@ -1,0 +1,11 @@
+car
+truck
+motorcycle
+helicopter
+airplane
+escalator
+elevator
+bus
+submarine
+!missile
+

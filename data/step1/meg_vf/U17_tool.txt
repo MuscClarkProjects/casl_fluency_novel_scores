@@ -1,0 +1,11 @@
+axe
+brush
+comb
+toothbrush
+wrench
+screwdriver
+chainsaw
+measuring_tape
+nail
+toilet_tissue
+!shampoo

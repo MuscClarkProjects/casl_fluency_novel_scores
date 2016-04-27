@@ -1,0 +1,13 @@
+act
+fill
+walk
+run
+step
+climb
+move
+sleep
+talk
+show
+cast
+write
+remember

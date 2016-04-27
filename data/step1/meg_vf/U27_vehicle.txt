@@ -1,0 +1,15 @@
+car
+bus
+taxi
+motorcycle
+scooter
+bicycle
+unicycle
+skate
+ski
+wheelchair
+ambulance
+airplane
+helicopter
+boat
+

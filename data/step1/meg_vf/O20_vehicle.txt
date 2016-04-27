@@ -1,0 +1,12 @@
+bicycle
+scooter
+skate
+car
+boat
+ship
+canoe
+motorcycle
+bus
+train
+#ship
+trailer

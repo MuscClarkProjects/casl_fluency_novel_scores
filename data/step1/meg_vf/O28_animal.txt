@@ -1,0 +1,16 @@
+zebra
+tiger
+elephant
+cat
+dog
+lion
+alligator
+bear
+chimpanzee
+ape
+monkey
+turtle
+fish
+cow
+donkey
+buffalo

@@ -1,0 +1,13 @@
+sailboat
+powerboat
+catamaran
+pt_boat
+submarine
+cruiser
+destroyer
+aircraft_carrier
+schooner
+frigate
+ironclad_ship
+ski_boat
+

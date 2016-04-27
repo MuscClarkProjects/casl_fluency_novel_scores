@@ -1,0 +1,10 @@
+truck
+bus
+car
+ski
+airplane
+helicopter
+skates
+waterski
+boat
+canoe

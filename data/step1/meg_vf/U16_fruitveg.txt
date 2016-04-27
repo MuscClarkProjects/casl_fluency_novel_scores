@@ -1,0 +1,17 @@
+lettuce
+tomato
+pickle
+onion
+pepper
+mushroom
+potato
+kiwi
+apple
+orange
+watermelon
+mango
+lemon
+asparagus
+green_bean
+green_onion
+banana

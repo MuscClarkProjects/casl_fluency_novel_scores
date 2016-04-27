@@ -1,0 +1,10 @@
+rowboat
+sailboat
+towboat
+motorboat
+cruise_ship
+battleship
+aircraft_carrier
+gunboat
+fishing_boat
+schooner

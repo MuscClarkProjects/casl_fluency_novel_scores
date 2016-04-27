@@ -1,0 +1,15 @@
+dog
+cat
+squirrel
+chimpanzee
+penguin
+gorilla
+cow
+zebra
+giraffe
+elephant
+monkey
+ape
+baboon
+fox
+horse

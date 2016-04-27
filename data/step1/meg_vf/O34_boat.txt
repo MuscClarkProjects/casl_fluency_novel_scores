@@ -1,0 +1,6 @@
+motorboat
+sailboat
+submarine
+cruise_ship
+kayak
+canoe

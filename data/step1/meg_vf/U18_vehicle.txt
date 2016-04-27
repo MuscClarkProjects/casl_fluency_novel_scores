@@ -1,0 +1,17 @@
+car
+truck
+train
+bus
+boat
+wagon
+rickshaw
+bicycle
+taxi
+skateboard
+battleship
+space_shuttle
+rocket
+carriage
+cart
+canoe
+

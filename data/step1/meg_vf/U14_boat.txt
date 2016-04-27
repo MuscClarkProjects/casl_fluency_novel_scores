@@ -1,0 +1,11 @@
+submarine
+canoe
+speed_boat
+cargo_ship
+destroyer
+#machine_boat
+ship
+sailboat
+steamboat
+paddleboat
+aircraft_carrier

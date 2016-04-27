@@ -1,0 +1,10 @@
+nail_file
+hammer
+saw
+tweezer
+screwdriver
+clipper
+scissors
+axe
+flashlight
+nail

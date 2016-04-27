@@ -1,0 +1,9 @@
+bicycle
+tricycle
+wagon
+motorcycle
+electric_bicycle
+go_cart
+jeep
+truck
+tractor

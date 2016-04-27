@@ -1,0 +1,12 @@
+crocodile
+fish
+tadpole
+frog
+turtle
+salamander
+eels
+!melusine
+dolphin
+whale
+shark
+shrimp

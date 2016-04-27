@@ -1,0 +1,16 @@
+jeep
+car
+truck
+tank
+motorcycle
+bicycle
+skateboard
+scooter
+tricycle
+wagon
+wagon_train
+unicycle
+train
+trolley
+bus
+van

@@ -1,0 +1,15 @@
+airplane
+bicycle
+car
+motorcycle
+truck
+three_wheeler
+four_wheeler
+boat
+roller_skate
+scooter
+unicycle
+canoe
+tractor
+helicopter
+cart

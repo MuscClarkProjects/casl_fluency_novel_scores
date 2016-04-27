@@ -1,0 +1,9 @@
+cat
+rat
+horse
+cow
+hen
+turkey
+donkey
+tiger
+zebra

@@ -1,0 +1,8 @@
+boat
+airplane
+helicopter
+air_balloon
+water_jet
+scooter
+bicycle
+tractor

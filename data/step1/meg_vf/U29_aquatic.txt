@@ -1,0 +1,12 @@
+crocodile
+eel
+starfish
+octopus
+shark
+clam
+lobster
+shrimp
+salmon
+catfish
+snake
+iguana

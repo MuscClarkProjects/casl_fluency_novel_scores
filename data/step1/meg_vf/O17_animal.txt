@@ -1,0 +1,15 @@
+cat
+mouse
+cow
+antelope
+goat
+sheep
+hippopotamus
+elephant
+tiger
+lion
+bobcat
+whale
+cheetah
+zebra
+buffalo

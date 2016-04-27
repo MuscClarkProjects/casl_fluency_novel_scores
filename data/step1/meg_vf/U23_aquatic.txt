@@ -1,0 +1,7 @@
+whale
+alligator
+fish
+hippopotamus
+jellyfish
+seal
+beaver

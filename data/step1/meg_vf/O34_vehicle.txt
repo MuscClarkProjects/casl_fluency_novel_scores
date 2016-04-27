@@ -1,0 +1,9 @@
+car
+plane
+bus
+ship
+spaceship
+motorcycle
+go_cart
+scooter
+skates

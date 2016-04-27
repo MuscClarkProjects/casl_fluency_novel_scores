@@ -1,0 +1,10 @@
+swim
+run
+jump
+pull
+talk
+move
+#jump
+skip
+look
+sing

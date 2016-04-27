@@ -1,0 +1,13 @@
+apple
+orange
+tangerine
+banana
+greens
+asparagus
+green_peas
+green_bean
+pear
+peaches
+plum
+watermelon
+cantaloup

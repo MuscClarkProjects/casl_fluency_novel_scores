@@ -1,0 +1,15 @@
+dog
+cat
+duck
+elephant
+monkey
+cow
+horse
+pigeon
+zebra
+crocodile
+alligator
+bird
+mouse
+rabbit
+hippopotamus

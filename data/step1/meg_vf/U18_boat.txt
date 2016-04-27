@@ -1,0 +1,15 @@
+canoe
+battleship
+aircraft_carrier
+submarine
+boat
+deep_sea_fishing_boat
+speed_boat
+racing_boat
+skiff
+sailboat
+schooner
+clipper
+paddleboat
+steamship
+#Titanic

@@ -1,0 +1,17 @@
+dog
+cat
+raccoon
+cow
+horse
+pig
+squirrel
+chimpanzee
+bird
+bison
+antelope
+bear
+snake
+camel
+elephant
+rhinoceros
+rat

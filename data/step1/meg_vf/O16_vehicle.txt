@@ -1,0 +1,11 @@
+scooter
+tricycle
+unicycle
+truck
+car
+trailer
+airplane
+helicopter
+trolley
+motorboat
+cruise_ship

@@ -1,0 +1,10 @@
+hammer
+shovel
+lawnmower
+!spreader
+screwdriver
+wrench
+pencil
+needle
+scissors
+ruler

@@ -1,0 +1,6 @@
+tricycle
+bicycle
+motorcycle
+moped
+scooter
+wagon

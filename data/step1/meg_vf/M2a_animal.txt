@@ -1,0 +1,13 @@
+dog
+cat
+cow
+elephant
+tiger
+lion
+bear
+buffalo
+deer
+raccoon
+giraffe
+rhinoceros
+pig

@@ -1,0 +1,8 @@
+run
+walk
+sit
+talk
+play
+cook
+sew
+work

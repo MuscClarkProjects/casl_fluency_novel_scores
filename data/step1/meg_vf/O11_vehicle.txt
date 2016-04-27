@@ -1,0 +1,14 @@
+truck
+minivan
+suv
+scooter
+motorcycle
+skate
+skateboard
+boat
+plane
+helicopter
+cruise_ship
+ski
+boat
+train

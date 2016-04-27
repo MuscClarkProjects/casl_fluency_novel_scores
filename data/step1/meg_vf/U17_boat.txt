@@ -1,0 +1,7 @@
+@Titanic
+cruise_ship
+ship
+kayak
+fishing_boat
+sailboat
+yacht

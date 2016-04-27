@@ -1,0 +1,9 @@
+car
+boat
+train
+bus
+airplane
+helicopter
+hot_air_balloon
+skate
+elevator

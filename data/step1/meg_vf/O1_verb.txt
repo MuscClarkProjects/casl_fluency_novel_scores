@@ -1,0 +1,17 @@
+go
+be
+try
+say
+step
+wear
+drive
+fly
+swim
+dive
+push
+lay
+drag
+move
+log
+make
+sell

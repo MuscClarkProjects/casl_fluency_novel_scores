@@ -1,0 +1,10 @@
+dog
+pony
+cat
+tiger
+rabbit
+horse
+cow
+pig
+zebra
+elephant

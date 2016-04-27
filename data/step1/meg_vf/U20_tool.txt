@@ -1,0 +1,14 @@
+lever
+pulley
+rope
+hammer
+brush
+screwdriver
+!gate
+hose
+shovel
+saw
+drill
+jackhammer
+tamper
+hinge

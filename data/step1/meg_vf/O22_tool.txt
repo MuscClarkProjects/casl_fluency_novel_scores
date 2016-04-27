@@ -1,0 +1,10 @@
+scissors
+knife
+shovel
+screwdriver
+hammer
+saw
+can_opener
+generator
+needle
+wrench

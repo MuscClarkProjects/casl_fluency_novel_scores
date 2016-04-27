@@ -1,0 +1,8 @@
+airplane
+motorcycle
+bicycle
+motorboat
+moped
+scooter
+catamaran
+train

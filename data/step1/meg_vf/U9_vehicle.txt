@@ -1,0 +1,16 @@
+airplane
+bus
+car
+truck
+balloon
+train
+subway
+ship
+yacht
+canoe
+boat
+jet
+pony
+horse
+spaceship
+sailboat

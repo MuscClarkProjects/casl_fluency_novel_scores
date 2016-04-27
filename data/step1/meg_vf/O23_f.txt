@@ -1,0 +1,6 @@
+fruit
+finger
+family
+floor
+flies
+#fruit

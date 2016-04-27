@@ -1,0 +1,12 @@
+pencil
+pen
+screwdriver
+spade
+shovel
+drill
+hammer
+ruler
+comb
+eraser
+spatula
+weed_eater

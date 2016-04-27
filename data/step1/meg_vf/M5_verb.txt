@@ -1,0 +1,12 @@
+battle
+swim
+run
+fight
+leap
+climb
+swing
+throw
+hit
+#climb
+walk
+jump

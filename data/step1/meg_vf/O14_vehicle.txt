@@ -1,0 +1,4 @@
+automobile
+train
+airplane
+motorcycle

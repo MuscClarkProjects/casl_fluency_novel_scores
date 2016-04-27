@@ -1,0 +1,4 @@
+fishing_boat
+sailboat
+speedboat
+rowboat

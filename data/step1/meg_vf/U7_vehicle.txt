@@ -1,0 +1,6 @@
+car
+truck
+cart
+boat
+airplane
+train
