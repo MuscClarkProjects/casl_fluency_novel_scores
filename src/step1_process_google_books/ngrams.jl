@@ -1,38 +1,26 @@
 
 validword_re = r"^[a-zA-Z|-|']+$"
-validpair_re = r"^[a-zA-Z|-|']+ [a-zA-Z|-|']+$"
-isvalidword(word) = isvalid(ASCIIString, word) && ismatch(validword_re, word)
-isvalidword{T <: AbstractString}(word::SubString{T}) = isvalidword(convert(T, word))
+valid2gram_re = r"^[a-zA-Z|-|']+ [a-zA-Z|-|']+$"
+isvalid2gram(twogram) = isvalid(ASCIIString, twogram) && ismatch(valid2gram_re, twogram)
+isvalid2gram{T <: AbstractString}(twogram::SubString{T}) = isvalid2gram(convert(T, twogram))
 
 
-function isvalidrow(left, right, count)
-  isvalidword(left) && isvalidword(right) && ismatch(r"^[0-9]+$", count)
-end
+isvalidrow(leftright, count) = isvalid2gram(leftright) && ismatch(r"^[0-9]+$", count)
 
 
-function isvalidrow{T <: AbstractString}(cols::AbstractVector{T})
-  if (length(cols) > 2) && contains(cols[1], " ")
-    left::AbstractString, right::AbstractString = split(cols[1], ' ')
-    isvalidrow(left, right, cols[3])
-  else
-    false
-  end
-end
+isvalidrow{T <: AbstractString}(cols::AbstractVector{T}) =  (length(cols) > 2) &&
+  isvalidrow(cols[1], cols[3])
 
 
 function get_leftright_count{T <: AbstractString}(cols::AbstractVector{T})
-  left, right = split(cols[1], ' ')
-  count = cols[3]
-
-  (convert(ASCIIString, left), convert(ASCIIString, right)), parse(Int64, count)
+  convert(ASCIIString, cols[1]), parse(Int64, cols[3])
 end
 
 
-typealias WordPair Tuple{ASCIIString, ASCIIString}
-loaddata{T <: AbstractString}(lines::Vector{T}) = reduce(Dict{WordPair, Int64}(), lines) do acc, line
+loaddata{T <: AbstractString}(lines::Vector{T}) = reduce(Dict{ASCIIString, Int64}(), lines) do acc, line
   cols = split(line, '\t')
   if isvalidrow(cols)
-    leftright::WordPair, count::Int64 = get_leftright_count(cols)
+    leftright::ASCIIString, count::Int64 = get_leftright_count(cols)
     acc[leftright] = get(acc, leftright, 0) + count
   end
   acc
