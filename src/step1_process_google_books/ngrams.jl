@@ -1,5 +1,4 @@
 using Logging
-using Requests
 
 validword_re = r"^[a-zA-Z|-|']+$"
 validbigram_re = r"^[a-zA-Z|-|']+ [a-zA-Z|-|']+$"
