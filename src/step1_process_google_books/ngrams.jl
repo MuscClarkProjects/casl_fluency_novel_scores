@@ -26,7 +26,7 @@ isValidRow(leftright, count, gram::Int64) = isValidGram(leftright, gram) && isma
 
 
 isValidRow{T <: AbstractString}(cols::AbstractVector{T}, gram::Int64) =  (length(cols) > 2) &&
-  isValidRow(cols[1], cols[3], gram::Gram)
+  isValidRow(cols[1], cols[3], gram)
 
 
 function getLeftrightCount{T <: AbstractString}(cols::AbstractVector{T})
@@ -49,7 +49,8 @@ end
 
 squishCounts(io::IOStream, gram::Int64) = squishCounts(eachline(io), gram)
 
-squishCounts(f_name::AbstractString) = open(squishCounts, f_name, "r")
+squishCountsGen(gram::Int64) = lines -> squishCounts(lines, gram)
+squishCounts(f_name::AbstractString, gram::Int64) = open(squishCountsGen(gram), f_name, "r")
 
 
 function genUrl(left::Char, right::Char, gram::Int64)
