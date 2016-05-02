@@ -76,7 +76,7 @@ function main(gram::Int64, dest_dir::AbstractString, start_from::Int64=1)
 
       f::AbstractString = downloadLargeFile(url, dest_dir)
       println(f)
-      counts::Dict{ASCIIString, Int64} = squishCounts(f)
+      counts::Dict{ASCIIString, Int64} = squishCounts(f, gram)
       f_counts = replace(f, ".tsv", "_counts.tsv")
       writedlm(f_counts, counts)
       rm(f)
