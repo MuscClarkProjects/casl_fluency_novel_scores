@@ -35,6 +35,9 @@ end
 
 
 squishCounts(lines, gram::Int64) = reduce(Dict{ASCIIString, Int64}(), lines) do acc, line
+  if length(line) < 3
+    return acc
+  end
   cols = split(line, '\t')
   if isValidRow(cols, gram)
     leftright::ASCIIString, count::Int64 = getLeftrightCount(cols)
@@ -93,12 +96,12 @@ function downloadLargeFile(url, dest_dir::AbstractString)
   download(url, f)
   println("downloaded $f")
 
-  Base.run(`gzip -d $f`)
+  Base.run(`gzip -df $f`)
   f_unzipped = replace(f, ".gz", "")
 
   println("f is still $(f_unzipped)")
 
   new_name = "$(f_unzipped).tsv"
-  mv(f_unzipped, new_name)
+  mv(f_unzipped, new_name, remove_destination=true)
   new_name
 end
