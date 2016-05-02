@@ -79,10 +79,11 @@ function main(gram::Int64, dest_dir::AbstractString, start_from::Int64=1)
       info("processing $(current_ix): $url")
 
       f::AbstractString = downloadLargeFile(url, dest_dir)
-      println(f)
+      println("calculating counts for $f")
       counts::Dict{ASCIIString, Int64} = squishCounts(f, gram)
       f_counts = replace(f, ".tsv", "_counts.tsv")
       writedlm(f_counts, counts)
+      println("$(f_counts) calculated")
       rm(f)
 
     end
@@ -99,8 +100,6 @@ function downloadLargeFile(url, dest_dir::AbstractString)
 
   Base.run(`gzip -df $f`)
   f_unzipped = replace(f, ".gz", "")
-
-  println("f is still $(f_unzipped)")
 
   new_name = "$(f_unzipped).tsv"
   mv(f_unzipped, new_name, remove_destination=true)
