@@ -94,6 +94,16 @@ function +(tc::TwoChar, bias::Int64)
 end
 
 
++(tc1::TwoChar, tc2::TwoChar) = tc1 + Int(tc2)
+-(tc1::TwoChar, tc2::TwoChar) = tc1 - Int(tc2)
+Base.isless(tc1::TwoChar, tc2::TwoChar) = Int(tc1) < Int(tc2)
+Base.one(::TwoChar) = TwoChar('a', 'b')
+Base.one(::Type{TwoChar}) = one(TwoChar)
+Base.zero(::TwoChar) = TwoChar('a', 'a')
+Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
+Base.rem(num::TwoChar, denom::TwoChar) = zero(TwoChar) + Int(num)%Int(denom)
+
+
 function -(tc::TwoChar, bias::Int64)
   if sign(bias) < 0
     return tc + abs(bias)
@@ -119,20 +129,23 @@ function main(gram::Int64, dest_dir::AbstractString;
   Logging.configure(filename="$(gram).log")
   Logging.configure(level=INFO)
 
-  urls::Vector{ASCIIString} = begin
-    num_extra_downloads = Int(run_until) - Int(start_from)
-    map(ix::Int64 -> genUrl(start_from + ix, gram), 0:num_extra_downloads)
-  end
-
-  pmap(urls) do url::ASCIIString
-    info("processing $url")
-
+  pmap(start_from:run_until) do tc::TwoChar
+    logIt(msg::ASCIIString) = remotecall(1, info, msg)
+  
+    url::ASCIIString = genUrl(tc, gram)
+    
+    logIt("downloading $tc")
     f::AbstractString = downloadLargeFile(url, dest_dir)
-    println("calculating counts for $f")
+    logIt("$tc downloaded")
+    
+    logIt("calculating $tc counts")
     counts::Dict{ASCIIString, Int64} = squishCounts(f, gram)
+    
     f_counts = replace(f, ".tsv", "_counts.tsv")
     writedlm(f_counts, counts)
-    println("$(f_counts) calculated")
+    
+    logIt("$tc counts calculated")
+    
     rm(f)
   end
 
