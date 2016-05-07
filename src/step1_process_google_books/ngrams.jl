@@ -1,4 +1,5 @@
 using Logging
+using GZip
 
 validword_re = r"^[a-zA-Z|-|']+$"
 
@@ -46,9 +47,9 @@ squishCounts(lines, gram::Int64) = reduce(Dict{ASCIIString, Int64}(), lines) do 
 end
 
 
-squishCounts(io::IOStream, gram::Int64) = squishCounts(eachline(io), gram)
+squishCounts(io::IO, gram::Int64) = squishCounts(eachline(io), gram)
 
-squishCountsGen(gram::Int64) = io -> squishCounts(io, gram)
+squishCountsGen(gram::Int64) = io::IO -> squishCounts(io, gram)
 squishCounts(f_name::AbstractString, gram::Int64) = open(squishCountsGen(gram), f_name, "r")
 
 
@@ -94,16 +95,6 @@ function +(tc::TwoChar, bias::Int64)
 end
 
 
-+(tc1::TwoChar, tc2::TwoChar) = tc1 + Int(tc2)
--(tc1::TwoChar, tc2::TwoChar) = tc1 - Int(tc2)
-Base.isless(tc1::TwoChar, tc2::TwoChar) = Int(tc1) < Int(tc2)
-Base.one(::TwoChar) = TwoChar('a', 'b')
-Base.one(::Type{TwoChar}) = one(TwoChar)
-Base.zero(::TwoChar) = TwoChar('a', 'a')
-Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
-Base.rem(num::TwoChar, denom::TwoChar) = zero(TwoChar) + Int(num)%Int(denom)
-
-
 function -(tc::TwoChar, bias::Int64)
   if sign(bias) < 0
     return tc + abs(bias)
@@ -119,9 +110,19 @@ function -(tc::TwoChar, bias::Int64)
 end
 
 
-function main(gram::Int64, dest_dir::AbstractString; 
-  start_from::TwoChar=TwoChar('a', 'a'), 
-  run_until::TwoChar = TwoChar('z', 'z'))
++(tc1::TwoChar, tc2::TwoChar) = tc1 + Int(tc2)
+-(tc1::TwoChar, tc2::TwoChar) = tc1 - Int(tc2)
+Base.isless(tc1::TwoChar, tc2::TwoChar) = Int(tc1) < Int(tc2)
+Base.one(::TwoChar) = TwoChar('a', 'b')
+Base.one(::Type{TwoChar}) = one(TwoChar)
+Base.zero(::TwoChar) = TwoChar('a', 'a')
+Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
+Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
+Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
+
+
+function main(gram::Int64, dest_dir::AbstractString;
+  pairs::AbstractVector{TwoChar}=TwoChar('a', 'a'):TwoChar('z', 'z'))
 
   log_f::ASCIIString = "$gram.log"
   isfile(log_f) && rm(log_f)
@@ -129,39 +130,45 @@ function main(gram::Int64, dest_dir::AbstractString;
   Logging.configure(filename="$(gram).log")
   Logging.configure(level=INFO)
 
-  pmap(start_from:run_until) do tc::TwoChar
-    logIt(msg::ASCIIString) = remotecall(1, info, msg)
+  pmap(pairs) do tc::TwoChar
+    logIt(msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $msg")
   
     url::ASCIIString = genUrl(tc, gram)
     
     logIt("downloading $tc")
-    f::AbstractString = downloadLargeFile(url, dest_dir)
-    logIt("$tc downloaded")
+    f::AbstractString = downloadLargeGz(url, dest_dir)
+    logIt("$tc downloaded, calculate counts")
     
-    logIt("calculating $tc counts")
-    counts::Dict{ASCIIString, Int64} = squishCounts(f, gram)
-    
-    f_counts = replace(f, ".tsv", "_counts.tsv")
-    writedlm(f_counts, counts)
-    
-    logIt("$tc counts calculated")
-    
-    rm(f)
+    g_stream::IO = GZip.gzopen(f)
+    try
+      counts::Dict{ASCIIString, Int64} = squishCounts(eachline(g_stream), gram)
+      f_counts = replace(f, ".gz", "_counts.tsv")
+      writedlm(f_counts, counts)
+      logIt("$tc counts calculated")
+    catch e
+      logIt("error thrown")
+      logIt(e)
+    finally
+      close(g_stream)
+      rm(f)
+    end
   end
 
 end
 
 
-function downloadLargeFile(url, dest_dir::AbstractString)
+function downloadLargeGz(url, dest_dir::AbstractString, decompress=false)
   f = joinpath(dest_dir, basename(url))
-  println("downloading $f")
   download(url, f)
-  println("downloaded $f")
+  
+  if decompress
+    Base.run(`gzip -df $f`)
+    f_unzipped = replace(f, ".gz", "")
 
-  Base.run(`gzip -df $f`)
-  f_unzipped = replace(f, ".gz", "")
-
-  new_name = "$(f_unzipped).tsv"
-  mv(f_unzipped, new_name, remove_destination=true)
-  new_name
+    new_name = "$(f_unzipped).tsv"
+    mv(f_unzipped, new_name, remove_destination=true)
+    new_name
+  else
+    f
+  end
 end
