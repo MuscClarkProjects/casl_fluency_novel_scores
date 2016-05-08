@@ -120,6 +120,7 @@ Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
 Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
 Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
 
+logIt(msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $msg")
 
 function main(gram::Int64, dest_dir::AbstractString;
   pairs::AbstractVector{TwoChar}=TwoChar('a', 'a'):TwoChar('z', 'z'))
@@ -130,36 +131,40 @@ function main(gram::Int64, dest_dir::AbstractString;
   Logging.configure(filename="$(gram).log")
   Logging.configure(level=INFO)
 
-  pmap(pairs) do tc::TwoChar
-    logIt(msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $msg")
-  
-    url::ASCIIString = genUrl(tc, gram)
+  for tc::TwoChar in pairs
     
-    logIt("downloading $tc")
-    f::AbstractString = downloadLargeGz(url, dest_dir)
-    logIt("$tc downloaded, calculate counts")
-    
-    g_stream::IO = GZip.gzopen(f)
-    try
-      counts::Dict{ASCIIString, Int64} = squishCounts(eachline(g_stream), gram)
-      f_counts = replace(f, ".gz", "_counts.tsv")
-      writedlm(f_counts, counts)
-      logIt("$tc counts calculated")
-    catch e
-      logIt("error thrown")
-      logIt(e)
-    finally
-      close(g_stream)
-      rm(f)
-    end
+    gz_file_name::ASCIIString = downloadLargeGz(tc, gram, dest_dir)
+    @spawn _postDownloadProcess(gz_file_name, tc, gram)
   end
 
 end
 
 
-function downloadLargeGz(url, dest_dir::AbstractString, decompress=false)
+function _postDownloadProcess(gz_file_name::AbstractString,
+                              tc::TwoChar, 
+                              gram::Int64)
+  g_stream::IO = GZip.gzopen(gz_file_name)
+  try
+    counts::Dict{ASCIIString, Int64} = squishCounts(eachline(g_stream), gram)
+    counts_file_name = replace(gz_file_name, ".gz", "_counts.tsv")
+    writedlm(counts_file_name, counts)
+    logIt("$tc counts calculated")
+  catch e
+    logIt("error thrown")
+    logIt(e)
+  finally
+    close(g_stream)
+    rm(gz_file_name)
+  end
+end
+
+
+function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, decompress=false)
+  url::ASCIIString = genUrl(tc, gram)
   f = joinpath(dest_dir, basename(url))
+  logIt("downloading $tc")
   download(url, f)
+  logIt("$tc downloaded, calculate counts")
   
   if decompress
     Base.run(`gzip -df $f`)
