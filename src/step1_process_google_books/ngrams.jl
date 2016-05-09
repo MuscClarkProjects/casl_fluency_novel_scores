@@ -120,7 +120,7 @@ Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
 Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
 Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
 
-logIt(msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $msg")
+logIt(tc::TwoChar, msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $tc $msg")
 
 function main(gram::Int64, dest_dir::AbstractString;
   pairs::AbstractVector{TwoChar}=TwoChar('a', 'a'):TwoChar('z', 'z'))
@@ -145,13 +145,14 @@ function _postDownloadProcess(gz_file_name::AbstractString,
                               gram::Int64)
   g_stream::IO = GZip.gzopen(gz_file_name)
   try
+    logIt(tc, "calculate counts")
     counts::Dict{ASCIIString, Int64} = squishCounts(eachline(g_stream), gram)
     counts_file_name = replace(gz_file_name, ".gz", "_counts.tsv")
     writedlm(counts_file_name, counts)
-    logIt("$tc counts calculated")
+    logIt(tc, "counts calculated")
   catch e
-    logIt("error thrown")
-    logIt(e)
+    logIt(tc, "error thrown trying to calculate counts")
+    logIt(tc, e)
   finally
     close(g_stream)
     rm(gz_file_name)
@@ -162,9 +163,9 @@ end
 function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, decompress=false)
   url::ASCIIString = genUrl(tc, gram)
   f = joinpath(dest_dir, basename(url))
-  logIt("downloading $tc")
+  logIt(tc, "download")
   download(url, f)
-  logIt("$tc downloaded, calculate counts")
+  logIt(tc, "downloaded")
   
   if decompress
     Base.run(`gzip -df $f`)
