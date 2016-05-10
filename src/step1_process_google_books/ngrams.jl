@@ -145,7 +145,7 @@ function _postDownloadProcess(gz_file_name::AbstractString,
                               gram::Int64)
   g_stream::IO = GZip.gzopen(gz_file_name)
   try
-    logIt(tc, "calculate counts")
+    logIt(tc, "calculate counts, size: $(filesize(gz_file_name)/1e6) MB")
     counts::Dict{ASCIIString, Int64} = squishCounts(eachline(g_stream), gram)
     counts_file_name = replace(gz_file_name, ".gz", "_counts.tsv")
     writedlm(counts_file_name, counts)
@@ -165,7 +165,7 @@ function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, dec
   f = joinpath(dest_dir, basename(url))
   logIt(tc, "download")
   download(url, f)
-  logIt(tc, "downloaded, size: $(filesize(f)/1e6) MB")
+  logIt(tc, "downloaded")
   
   if decompress
     Base.run(`gzip -df $f`)
