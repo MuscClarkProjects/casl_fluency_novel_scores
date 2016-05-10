@@ -165,7 +165,7 @@ function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, dec
   f = joinpath(dest_dir, basename(url))
   logIt(tc, "download")
   download(url, f)
-  logIt(tc, "downloaded")
+  logIt(tc, "downloaded, size: $(filesize(f)/1000) MB")
   
   if decompress
     Base.run(`gzip -df $f`)
