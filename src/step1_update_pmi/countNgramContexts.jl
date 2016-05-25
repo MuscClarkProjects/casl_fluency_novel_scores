@@ -115,6 +115,8 @@ function createContextRows(ngram::Int64, tc::TwoChar, db_dir::AbstractString)
     end
   end
 
+  logIt(tc, "calculated context rows")
+
   ret
 end
 
@@ -126,6 +128,8 @@ function process(ngram::Int64, tc::TwoChar,
   outfile = open(joinpath(dest_dir, "$(tc)_context.json"), "w")
   write(outfile, data)
   close(outfile)
+
+  logIt(tc, "processing complete")
 end
 
 
