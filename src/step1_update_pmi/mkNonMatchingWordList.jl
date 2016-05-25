@@ -49,13 +49,13 @@ get_all_meg_vf_files() = get_all_dir_txt_files("meg_vf")
 typealias Strings Vector{ASCIIString}
 
 function run{T <: AbstractString}(
-  dest_file::Nullable{T}=Nullable(data_f("step1/target_words.txt")))
+  dest_file::Nullable{T}=Nullable(data_f("step1/targetwords/target_words.txt")))
 
   list_files::Strings = get_all_list_files()
 
   meg_files::Strings = get_all_meg_vf_files()
 
-  all_word_files::Strings = [data_f("step1/target_words_orig.txt"); list_files; meg_files]
+  all_word_files::Strings = [data_f("step1/targetwords/target_words_orig.txt"); list_files; meg_files]
 
   all_words::Strings = load_words(all_word_files)
 

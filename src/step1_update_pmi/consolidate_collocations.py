@@ -36,12 +36,11 @@ allContexts = []
 allCounts = { 'dog': ({},{}) }
 for file in files:
     print file
-    fh = open(file,'r')
-    kurent = pickle.load(fh)
-    fh.close()
+    with open(file, 'r') as fh:
+        kurent = pickle.load(fh)
     ks = kurent.keys()
     # print ks[0], kurent[ks[0]]
-    allCounts = consolidate_hashes(allCounts,kurent)
+    allCounts = consolidate_hashes(allCounts, kurent)
     for k in allCounts.keys():
         allContexts.extend(allCounts[k].keys())
 
@@ -59,8 +58,3 @@ else:
 fh = open(vectorFile,'w')
 pickle.dump(allCounts,fh)
 fh.close()
-
-
-
-            
-

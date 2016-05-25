@@ -18,19 +18,19 @@ from vf_list import VF_list
 
 def data_directory(sub_dir):
     return os.path.join('../../data/', sub_dir)
-    
-    
+
+
 def step1_directory(sub_dir):
     return data_directory(os.path.join('step1', sub_dir))
-    
-    
+
+
 list_directory = step1_directory('lists/')
 
 
 def pronunciations_f(f):
     return os.path.join(step1_directory('pronunciations/'), f)
-    
-    
+
+
 def subcategories_f(f):
     return os.path.join(step1_directory('subcategories/'), f)
 
@@ -178,7 +178,7 @@ def filter_out_cluster_subsets(lol):
 def load_subcategories(f):
     with open(f,'r') as fh:
         data = fh.readlines()
-        
+
     adj = {}
     comp = []
     for item in data:
@@ -197,7 +197,7 @@ def load_subcategories(f):
 def read_pronunciations(task):
     with open(pronunciations_f(task+'_pronunciations.txt'),'r') as fh:
         data = fh.readlines()
-    
+
     data = [ d.split(':') for d in data ]
     return dict([ (d[0].strip(), d[1].strip().split('.')) for d in data ])
 
@@ -343,7 +343,7 @@ class DataTable():
     def _make_weighted_graph(self,f,funk,distance = False):
         if distance:
             func = lambda w1,w2: 1.0 - funk(w1,w2)
-        else: func = funk 
+        else: func = funk
         vals = self.valids[self.indices[f]]
         biggy = self._bigrams(vals)
         edges = [ (w1,w2,func(w1,w2)) for (w1,w2) in biggy ]
@@ -372,15 +372,15 @@ class DataTable():
         '''
         metherds = self._list_score_methods()
         return [ self._format_result(m(f)) for m in metherds ]
-        
+
     def _mean_values(self,d):
         v = d.values()
         return mean(v) if v else 0.0
-        
+
     def _max(self,d):
         v = d.values()
         return max(v) if v else 0.0
-        
+
     def id(self,f):
         return self.ids[self.indices[f]]
 
@@ -414,90 +414,90 @@ class DataTable():
         if missing:
             self.pronuns = update_pronunciations(missing,self.pronuns)
         return sum([len([p for p in self.pronuns[w] if p[0] in 'AEIOU']) for w in val])
-        
+
     def mean_syllables(self,f):
         val = self.vfs[self.indices[f]].valid()
         missing = [w for w in val if not self.pronuns.has_key(w)]
         if missing:
             self.pronuns = update_pronunciations(missing,self.pronuns)
         return mean([len([p for p in self.pronuns[w] if p[0] in 'AEIOU']) for w in val])
-        
+
     def _transition_matrix(self,f):
         if self.transitions.has_key(f):
             return self.transitions[f]
         else:
             self.transitions[f] = self.cosim.transition_matrix(self.vfs[self.indices[f]].valid())
             return self.transitions[f]
-            
+
     def cluster(self,f):
         return self.cands[self.indices[f]][0]
-        
+
     def switch(self,f):
         return self.cands[self.indices[f]][1]
-        
+
     def sem_cluster(self,f):
         return self.pakhomov[self.indices[f]][0]
-        
+
     def sem_switch(self,f):
         return self.pakhomov[self.indices[f]][1]
-        
+
     def phon_cluster(self,f):
         return self.phono_cs[self.indices[f]][0]
-        
+
     def phon_switch(self,f):
         return self.phono_cs[self.indices[f]][1]
-        
+
     def ortho_cluster(self,f):
         return self.ortho_cs[self.indices[f]][0]
-        
+
     def ortho_switch(self,f):
         return self.ortho_cs[self.indices[f]][1]
-        
+
     def sem_alg_con(self,f):
         return algebraic_connectivity_of_graph(self._make_weighted_graph(f,self.cosim.cosine_similarity))
-        
+
     def phon_alg_con(self,f):
         return algebraic_connectivity_of_graph(self._make_weighted_graph(f,self._phon_funk))
-        
+
     def ortho_alg_con(self,f):
         return algebraic_connectivity_of_graph(self._make_weighted_graph(f,edit_proximity))
-        
+
     def sem_coherence(self,f,funk = None):
         if funk is None:
             funk = self.cosim.cosine_similarity
         return coherence(self.valids[self.indices[f]],comparison=funk)
-        
+
     def phon_coherence(self,f):
         return self.sem_coherence(f,funk = self._phon_funk)
-        
+
     def ortho_coherence(self,f):
         return self.sem_coherence(f,funk = edit_proximity)
-        
+
     def mr_sem(self,f,funk = None):
         if funk is None:
             funk = self.cosim.cosine_similarity
         return metric_range(self.valids[self.indices[f]],comparison=funk)
-        
+
     def mr_phon(self,f):
         return self.mr_sem(f,funk = self._phon_funk)
-        
+
     def mr_ortho(self,f):
         return self.mr_sem(f,funk = edit_proximity)
-        
+
     def mr_freq(self,f):
         return self.mr_sem(f,funk = lambda w1,w2: abs(freqs[w1]-freqs[w2]))
-        
+
     def sem_radius(self,f,funk = None):
         if not funk:
             funk = self.cosim.cosine_similarity
         return graph_radius(self._make_weighted_graph(f,funk,distance=True))
-        
+
     def phon_radius(self,f):
         return self.sem_radius(f,funk=self._phon_funk)
-        
+
     def ortho_radius(self,f):
         return self.sem_radius(f,funk=edit_proximity)
-        
+
     def sem_diameter(self,f,funk = None):
         if not funk:
             funk = self.cosim.cosine_similarity
@@ -506,53 +506,53 @@ class DataTable():
         except ValueError:
             print self.valids[self.indices[f]]
             return -1
-            
+
     def phon_diameter(self,f):
         return self.sem_diameter(f,funk=self._phon_funk)
-        
+
     def ortho_diameter(self,f):
         return self.sem_diameter(f,funk=edit_proximity)
-        
+
     def sem_average_degree(self,f,graph=None):
         if not graph:
             graph = self.semantic_graphs[self.indices[f]]
         if len(graph.edges()) > 0:
             return self._mean_values(graph.degree())
         else: return 0.0
-        
+
     def ortho_average_degree(self,f):
         return self.sem_average_degree(f,graph=self.ortho_graphs[self.indices[f]])
-        
+
     def phono_average_degree(self,f):
         return self.sem_average_degree(f,graph=self.phono_graphs[self.indices[f]])
-        
+
     def sem_average_cluster_coeff(self,f):
         return self._mean_values(nx.clustering(self.semantic_graphs[self.indices[f]]))
-        
+
     def phono_average_cluster_coeff(self,f):
         return self._mean_values(nx.clustering(self.phono_graphs[self.indices[f]]))
-        
+
     def ortho_average_cluster_coeff(self,f):
         return self._mean_values(nx.clustering(self.ortho_graphs[self.indices[f]]))
-        
+
     def sem_transitivity(self,f):
         return nx.transitivity(self.semantic_graphs[self.indices[f]])
-        
+
     def phono_transitivity(self,f):
         return nx.transitivity(self.phono_graphs[self.indices[f]])
-        
+
     def ortho_transitivity(self,f):
         return nx.transitivity(self.ortho_graphs[self.indices[f]])
-        
+
     def sem_max_betweenness(self,f):
         return self._max(nx.betweenness_centrality(self.semantic_graphs[self.indices[f]]))
-        
+
     def ortho_max_betweenness(self,f):
         return self._max(nx.betweenness_centrality(self.ortho_graphs[self.indices[f]]))
-        
+
     def phono_max_betweenness(self,f):
         return self._max(nx.betweenness_centrality(self.phono_graphs[self.indices[f]]))
-        
+
 
 #tasks=['a', 'animal', 'f', 's', 'veg']
 def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
@@ -565,7 +565,7 @@ def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
         meth_names = ['id'] + [ m for m in dir(dt) if m[0] != '_' and callable(getattr(dt,m)) and m != 'id' ]
         methods = [ getattr(dt,m) for m in meth_names ]
         header = '\t'.join(meth_names) # dt._list_score_methods())
-        
+
         outfile = open(os.path.join('../data/step2/', 'CASL_' + task + '.txt'), 'w')
         outfile.write(header)
         for f in dt.files:
@@ -574,4 +574,3 @@ def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
             results = '\t'.join([ dt._format_result(m(f)) for m in methods ])
             outfile.write(results)
         outfile.close()
-    
