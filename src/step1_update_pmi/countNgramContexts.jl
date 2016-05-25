@@ -132,10 +132,10 @@ end
 function main(ngram::Int64, dest_dir::AbstractString, db_dir::AbstractString;
   pairs::AbstractVector{TwoChar}=TwoChar('a', 'a'):TwoChar('z', 'z'))
 
-  log_f::ASCIIString = "$gram.log"
+  log_f::ASCIIString = "$ngram.log"
   isfile(log_f) && rm(log_f)
 
-  Logging.configure(filename="$(gram).log")
+  Logging.configure(filename="$(ngram).log")
   Logging.configure(level=INFO)
 
   pmap(pairs) do tc::TwoChar
