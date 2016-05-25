@@ -20,6 +20,14 @@ Base.convert(::Type{Int64}, tc::TwoChar) = begin
 end
 
 
+Base.convert(::Type{TwoChar}, tc::Int64) = begin
+  tc_min_a = tc - Int('a')
+  left::Char = floor(Int64, tc/26) + 'a'
+  right::Char = tc%26 + 'a'
+  TwoChar(left, right)
+end
+
+
 function +(tc::TwoChar, bias::Int64)
   if sign(bias) < 0
     return tc - abs(bias)
@@ -59,6 +67,7 @@ Base.zero(::TwoChar) = TwoChar('a', 'a')
 Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
 Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
 Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
+Base.(:*)(i::Int64, tc::TwoChar) = TwoChar(Int(tc) * i)
 
 
 Base.show(io::IO, tc::TwoChar) = print(io, "$(tc.left)$(tc.right)")
