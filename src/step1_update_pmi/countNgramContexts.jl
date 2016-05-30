@@ -22,7 +22,7 @@ end
 function getCounts(ngram::Int64, tc::TwoChar, db_dir::AbstractString)
   fname = joinpath(db_dir,
     "googlebooks-eng-all-$(ngram)gram-20120701-$(tc)_counts.tsv")
-  if filesize(f) > 0
+  if filesize(fname) > 0
     readtable(fname, header=false, names=[:gram, :count])
   else
     DataFrame(gram=[], count=[])
