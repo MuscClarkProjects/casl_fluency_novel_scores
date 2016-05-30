@@ -87,6 +87,16 @@ function createContextRow(gram::ASCIIString, count::Int64,
 end
 
 
+createContextRow{S <: AbstractString}(gram::S, count::Int64,
+  target_words::AbstractVector{ASCIIString} = targetWords(),
+  stop_words::Set{ASCIIString} = stopWords()
+  ) = if !isvalid(ASCIIString, gram)
+    Nullable{ContextRow}(), Nullable{ContextRow}()
+  else
+    createContextRow(ASCIIString(gram), count, target_words, stop_words)
+end
+
+
 function createContextRow(row::DataFrameRow,
   target_words::AbstractVector{ASCIIString}=targetWords(),
   stop_words::Set{ASCIIString}=stopWords())
