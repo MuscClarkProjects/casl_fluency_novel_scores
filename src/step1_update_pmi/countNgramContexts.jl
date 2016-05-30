@@ -1,5 +1,6 @@
 using DataFrames
 using JSON
+using Lazy
 using Logging
 
 include("../helpers/helpers.jl")
@@ -150,6 +151,25 @@ function main(ngram::Int64, dest_dir::AbstractString, db_dir::AbstractString;
     process(ngram, tc, db_dir, dest_dir)
   end
 
+end
+
+
+function dirToTwoChars(reg::Regex, dir_path)
+  ret = @>> readdir(dir_path) begin
+    map(s -> match(reg, s))
+    filter(m -> m !== nothing)
+    map(m -> TwoChar(m.captures[1][1], m.captures[1][2]))
+  end
+  TwoChar[r for r in ret]
+end
+
+destTs(dest_dir) = dirToTwoChars(r"^(\w\w)", dest_dir)
+dbTs(db_dir) = dirToTwoChars(r"(\w\w)_counts", db_dir)
+
+
+function resumeMain(ngram::Int64, dest_dir, db_dir)
+  ts = setdiff(dbTs(db_dir), destTs(dest_dir))
+  main(ngram, dest_dir, db_dir, pairs=ts)
 end
 
 
