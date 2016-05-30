@@ -1,4 +1,4 @@
-type TwoChar
+immutable TwoChar
   left::Char
   right::Char
 
@@ -68,6 +68,7 @@ Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
 Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
 Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
 Base.(:*)(i::Int64, tc::TwoChar) = TwoChar(Int(tc) * i)
+Base.(:(==))(tc1::TwoChar, tc2::TwoChar) = Int(tc1) == Int(tc2)
 
 
 Base.show(io::IO, tc::TwoChar) = print(io, "$(tc.left)$(tc.right)")
