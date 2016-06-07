@@ -105,7 +105,8 @@ function createContextRow(row::DataFrameRow,
 end
 
 
-logIt(tc::TwoChar, msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $tc $msg")
+logIt(tc::TwoChar, msg::ASCIIString) = remotecall(
+  1, info, "worker $(myid()): $tc $msg")
 
 
 function createContextRows(ngram::Int64, tc::TwoChar, db_dir::AbstractString)
@@ -188,4 +189,4 @@ stopWords() = Set(readcsv(getDataFile("step1", "stopwords", "stopWords.txt"),
                       header=false)[:])
 
 
-disallowed(w) = reduce(|, Bool[l in w for l in "!@#\$%^&*(){}1234567890=+[]']"])
+disallowed(w) = any(l -> l in w, "!@#\$%^&*(){}1234567890=+[]']"])
