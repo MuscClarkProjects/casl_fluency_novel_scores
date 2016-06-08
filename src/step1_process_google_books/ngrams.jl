@@ -1,8 +1,10 @@
 using Logging
 using GZip
 
-
 include("../helpers/TwoChar.jl")
+
+
+typealias Letters Union{TwoChar, Char}
 
 validword_re = r"^[a-zA-Z|-|']+$"
 
@@ -56,18 +58,16 @@ squishCountsGen(gram::Int64) = io::IO -> squishCounts(io, gram)
 squishCounts(f_name::AbstractString, gram::Int64) = open(squishCountsGen(gram), f_name, "r")
 
 
-function genUrl(left::Char, right::Char, gram::Int64)
-  "http://storage.googleapis.com/books/ngrams/books/googlebooks-eng-all-$(gram)gram-20120701-$(left)$(right).gz"
+function genUrl(letters::Letters, gram::Int64)
+  f_name = "googlebooks-eng-all-$(gram)gram-20120701-$(letters).gz"
+  "http://storage.googleapis.com/books/ngrams/books/$(f_name)"
 end
 
 
-genUrl(tc::TwoChar, gram::Int64) = genUrl(tc.left, tc.right, gram)
+logIt(tc::Letters, msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $tc $msg")
 
-
-logIt(tc::TwoChar, msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $tc $msg")
-
-function main(gram::Int64, dest_dir::AbstractString;
-  pairs::AbstractVector{TwoChar}=TwoChar('a', 'a'):TwoChar('z', 'z'))
+function main{T <: Letters}(gram::Int64, dest_dir::AbstractString;
+  pairs::AbstractVector{T}=TwoChar('a', 'a'):TwoChar('z', 'z'))
 
   log_f::ASCIIString = "$gram.log"
   isfile(log_f) && rm(log_f)
@@ -75,7 +75,7 @@ function main(gram::Int64, dest_dir::AbstractString;
   Logging.configure(filename="$(gram).log")
   Logging.configure(level=INFO)
 
-  for tc::TwoChar in pairs
+  for tc::Letters in pairs
 
     gz_file_name::ASCIIString = downloadLargeGz(tc, gram, dest_dir)
     @spawn _postDownloadProcess(gz_file_name, tc, gram)
@@ -85,7 +85,7 @@ end
 
 
 function _postDownloadProcess(gz_file_name::AbstractString,
-                              tc::TwoChar,
+                              tc::Letters,
                               gram::Int64)
   g_stream::IO = GZip.gzopen(gz_file_name)
   try
@@ -104,7 +104,8 @@ function _postDownloadProcess(gz_file_name::AbstractString,
 end
 
 
-function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, decompress=false)
+function downloadLargeGz(tc::Letters, gram::Int64, dest_dir::AbstractString,
+    decompress=false)
   url::ASCIIString = genUrl(tc, gram)
   f = joinpath(dest_dir, basename(url))
   logIt(tc, "download")
