@@ -1,6 +1,9 @@
 using Logging
 using GZip
 
+
+include("../helpers/TwoChar.jl")
+
 validword_re = r"^[a-zA-Z|-|']+$"
 
 function isValidGram(text::AbstractString, gram::Int64)
@@ -58,67 +61,8 @@ function genUrl(left::Char, right::Char, gram::Int64)
 end
 
 
-type TwoChar
-  left::Char
-  right::Char
-
-  TwoChar(left, right) = begin
-    for c::Char in (left, right)
-      islower(c) || error("$c must be lowercase alpha-numeric")
-    end
-    new(left, right)
-  end
-end
-
-
 genUrl(tc::TwoChar, gram::Int64) = genUrl(tc.left, tc.right, gram)
 
-
-Base.convert(::Type{Int64}, tc::TwoChar) = begin
-  val(c::Char) = Int(c) - Int('a')
-  26*val(tc.left) + val(tc.right)
-end
-
-
-function +(tc::TwoChar, bias::Int64)
-  if sign(bias) < 0
-    return tc - abs(bias)
-  end
-  right::Char = tc.right + bias%26
-  left::Char =  tc.left + floor(Int64, bias/26)
-  is_rollover::Bool = right > 'z'
-  if is_rollover
-    left += 1
-    right -= 26
-  end
-  TwoChar(left, right)
-end
-
-
-function -(tc::TwoChar, bias::Int64)
-  if sign(bias) < 0
-    return tc + abs(bias)
-  end
-  right::Char = tc.right - bias%26
-  left::Char =  tc.left - floor(Int64, abs(bias)/26)
-  is_rollover::Bool = right < 'a'
-  if is_rollover
-    left -= 1
-    right += 26
-  end
-  TwoChar(left, right)
-end
-
-
-+(tc1::TwoChar, tc2::TwoChar) = tc1 + Int(tc2)
--(tc1::TwoChar, tc2::TwoChar) = tc1 - Int(tc2)
-Base.isless(tc1::TwoChar, tc2::TwoChar) = Int(tc1) < Int(tc2)
-Base.one(::TwoChar) = TwoChar('a', 'b')
-Base.one(::Type{TwoChar}) = one(TwoChar)
-Base.zero(::TwoChar) = TwoChar('a', 'a')
-Base.zero(::Type{TwoChar}) = TwoChar('a', 'a')
-Base.rem(num::TwoChar, denom::TwoChar) = Int(num)%Int(denom)
-Base.div(num::TwoChar, denom::TwoChar) = Int(num)/Int(denom)
 
 logIt(tc::TwoChar, msg::ASCIIString) = remotecall(1, info, "worker $(myid()): $tc $msg")
 
@@ -132,7 +76,7 @@ function main(gram::Int64, dest_dir::AbstractString;
   Logging.configure(level=INFO)
 
   for tc::TwoChar in pairs
-    
+
     gz_file_name::ASCIIString = downloadLargeGz(tc, gram, dest_dir)
     @spawn _postDownloadProcess(gz_file_name, tc, gram)
   end
@@ -141,7 +85,7 @@ end
 
 
 function _postDownloadProcess(gz_file_name::AbstractString,
-                              tc::TwoChar, 
+                              tc::TwoChar,
                               gram::Int64)
   g_stream::IO = GZip.gzopen(gz_file_name)
   try
@@ -166,7 +110,7 @@ function downloadLargeGz(tc::TwoChar, gram::Int64, dest_dir::AbstractString, dec
   logIt(tc, "download")
   download(url, f)
   logIt(tc, "downloaded")
-  
+
   if decompress
     Base.run(`gzip -df $f`)
     f_unzipped = replace(f, ".gz", "")

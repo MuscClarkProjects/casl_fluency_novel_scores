@@ -11,9 +11,6 @@ immutable TwoChar
 end
 
 
-genUrl(tc::TwoChar, gram::Int64) = genUrl(tc.left, tc.right, gram)
-
-
 Base.convert(::Type{Int64}, tc::TwoChar) = begin
   val(c::Char) = Int(c) - Int('a')
   26*val(tc.left) + val(tc.right)
