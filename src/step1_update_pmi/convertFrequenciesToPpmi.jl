@@ -1,80 +1,59 @@
 using JSON
 using Lazy
 
+typealias StringIntMap Dict{ASCIIString, Int64}
+typealias JointFrequency Dict{ASCIIString, StringIntMap}
 
-pluralize(w) = if w[end] == 's' || w[end] == 'z' || w[end-2:end] == "sh"
-    w + "es"
-  elseif w[end] == 'y'
-    w[1:end-1] + "ies"
-  else
-    w + 's'
-  end
+typealias StringFloatMap Dict{ASCIIString, Float64}
+typealias JointProbability Dict{ASCIIString, StringFloatMap}
 
 
 jointFrequencies(context_vectors_path::AbstractString) = JSON.parsefile(
-  context_vectors_path)
+  context_vectors_path, dicttype=JointFrequency)
 
 
-function findInflected(ks)
-  println("Combining vectors for inflected targets...")
-  tups = Tuple{ASCIIString, ASCIIString}[]
-  for k in ks
-    infl = pluralize(k)
-    if infl in ks
-      push!(tups, (k, infl))
-  return tups
-end
-
-inflected = findInflected(filter(k, keys(joints)))
-println(inflected)
-
-function combineInflected!(hash, tups)
-  for (un, infl) in tups
-    for key in hash[infl]
-      hash[un][key] = get(hash[un], key, 0) + hash[infl][key]
-    end
-  end
-
-  return hash
-end
-
-combineInflected!(joints, inflected)
+rawProb(unigramprob_f::AbstractString) = rawProb(
+  JSON.parsefile(unigramprob_f, dicttype=StringFloatMap))
 
 
-rawProb(logunigrams_f::AbstractString) = rawProp(JSON.parsefile(logunigrams_f))
-
-function rawProb(logunigrams::Dict{ASCIIString, Float64})
-  raws = [ k => exp(raw) for (k, logunigrams) in raws ]
-  total_raw = raws |> values |> sum
-  [key => raw/total_raw for (key, raw) in raws]
-end
+jointProbabilities(context_vectors_path::AbstractString) = jointProbabilities(
+  jointFrequencies(context_vectors_path))
 
 
-function contextProb(joint_freq::Dict{ASCIIString, Dict{ASCIIString, Int64}})
-  context_prob = Dict()
+function jointProbabilities(joint_freq::JointFrequency)
+  joint_prob = JointProbability()
 
   for (target, context_counts) in joint_freq
     sum_contexts = context_counts |> values |> sum
-    context_prob[target] = Dict()
+    joint_prob[target] = StringFloatMap()
     for (context, context_count) in context_counts
-      context_prob[target][context] = context_count/sum_contexts
+      joint_prob[target][context] = context_count/sum_contexts
     end
   end
 
-  context_prob
+  joint_prob
 end
 
 
-function pPmi(target_context_prob, raw_prob)
+function pPmi(context_vectors_path::AbstractString, logunigrams_f::AbstractString)
+  pPmi(jointProbabilities(context_vectors_path), rawProb(logunigrams_f))
+end
+
+
+function pPmi(joint_prob::JointProbability, raw_prob::StringFloatMap)
   # Using formula p_pmi = max(0,log(P(context|targ)/P(context)))
-  p_pmi = Dict()
-  for (target, context_probs) in target_context_prob
-    p_pmi[target] = {}
-    for (context, context_prob) in context_probs
-      p_con_given_targ = context_prob
-      p_context = raw_prob[context]
-      ppmi = p_con_given_targ/p_context | log
-      p_pmi[target][con] = max(0, ppmi)
+  p_pmi = JointProbability()
+  for (target::ASCIIString, context_probs::StringFloatMap) in joint_prob
+    p_pmi[target] = StringFloatMap()
+    for (context::ASCIIString, p_con_given_target::Float64) in context_probs
+      if !haskey(raw_prob, context)
+        continue
+      end
+
+      p_con = raw_prob[context]
+      ppmi = p_con_given_target/p_con |> log
+      
+      p_pmi[target][context] = max(0., ppmi)
     end
   end
 
@@ -82,12 +61,12 @@ function pPmi(target_context_prob, raw_prob)
 end
 
 
-function cosim(h1, h2)
+function cosim(h1::StringFloatMap, h2::StringFloatMap)
     all_keys = union(keys(h1), keys(h2)) |> unique |> sort
     num_keys = length(all_keys)
     v1 = zeros(Float64, num_keys)
     v2 = zeros(Float64, num_keys)
-    for (i,k) in enumerate(all_keys)
+    for (i, k) in enumerate(all_keys)
       v1[i] = get(h1, k, 0.)
       v2[i] = get(h2, k, 0.)
     end
@@ -98,25 +77,23 @@ function cosim(h1, h2)
 end
 
 
-function topItems(s, p_pmi)
-  coses = @>> keys(p_pmi) begin
-    filter(k -> k !=s )
+function topItems(s::ASCIIString, p_pmi::JointProbability)
+  cosims::Array{Tuple{Float64, ASCIIString}} = @>> keys(p_pmi) begin
+    filter(k -> k != s)
     map(k -> (cosim(p_pmi[k], p_pmi[s]), k))
+    sort(rev=true)
   end
-  thetas = coses |> map((c, k) -> c) |> sort
-  theta = thetas[end-15]
-
-  @>> coses begin
-    filter( (c, k) -> c >= theta)
-    sort(rev=True)
-  end
+  cosims[end - 15: end]
 end
 
 
-for word in [ "eagle", "socks", "jacket", "asparagus", "brussels_sprouts", "spaghetti", "lion", "fun", "arrive", "straight" ]
-  println("$(word):")
-  top15 = topItems(word)
-  for (co, item) in top15
-    println("\t $item $co")
+function simpleRun(p_pmi::JointProbability)
+  for word in [ "eagle", "socks", "jacket", "asparagus", "brussels_sprouts",
+                "spaghetti", "lion", "fun", "arrive", "straight" ]
+    println("$(word)")
+    top15 = topItems(word, p_pmi)
+    for (cosim::Float64, cosim_word::ASCIIString) in top15
+      println("\t $(cosim_word) $cosim")
+    end
   end
 end

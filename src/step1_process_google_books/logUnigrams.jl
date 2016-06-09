@@ -26,3 +26,14 @@ function main(onegrams_dir::AbstractString, dest_f::AbstractString)
 
   open(f -> JSON.print(f, log_uni), dest_f, "w")
 end
+
+
+rawProb(logunigrams_f::AbstractString) = rawProb(
+  JSON.parsefile(logunigrams_f, dicttype=StringFloatMap))
+
+
+function rawProb(logunigrams::StringFloatMap)
+  raws = StringFloatMap([ k => exp(raw) for (k, raw) in logunigrams ])
+  total_raw = raws |> values |> sum
+  StringFloatMap([key => raw/total_raw for (key, raw) in raws])
+end
