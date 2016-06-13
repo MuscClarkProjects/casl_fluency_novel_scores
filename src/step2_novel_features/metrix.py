@@ -18,14 +18,12 @@ import cmath
 # Take clean list and count lines that do not begin with
 # a special character (i.e., #, %, !, -, etc.) Return count
 def raw_score(lst):
-    lst = [ 1 for el in lst if el[0] not in [ '#', '!', '-', '?', '@' ] ]
-    return sum(lst)
+    return sum([ el[0] not in '#!-?@' for el in lst])
 
 # Repetitions
 # Take a raw list and count lines that begin with #
 def repetitions(lst,label='#'):
-    lst = [ 1 for el in lst if el[0] == label ]
-    return sum(lst)
+    return sum([ el[0]==label for el in lst ])
 
 def exponential_proximity(d,k = -0.34657):
     return np.exp(k * d)
@@ -34,7 +32,7 @@ def fractional_proximity(d):
     return 1.0/(1+d)
 
 # Relative efficiency
-# Function takes (1) a list of items and (2) a function for computing efficiency 
+# Function takes (1) a list of items and (2) a function for computing efficiency
 # on the metric (semantic, phonological, or orthographic similarity)
 # Must measure efficiency of original list and on up to 999 permutations of the
 # list. Returns a number between 0 and 1 (ranking of original order over total
@@ -77,9 +75,7 @@ def permutations(iterable, r=None):
             return
 
 def fact(n):
-    if n == 1: return 1
-    else:
-        return n * fact(n-1)
+    return 1 if n == 1 else n * fact(n-1)
 
 def heterogeneous_permutations(lst,max_perm=10000):
     cache = set([])
@@ -95,7 +91,7 @@ def heterogeneous_permutations(lst,max_perm=10000):
         raise StopIteration
 
 def memoize(function):
-    '''A nice memoize function, taken from 
+    '''A nice memoize function, taken from
     the internet'''
     cache = {}
     def decorated_function(*args):
@@ -177,10 +173,10 @@ def edit_proximity(s1,s2):
     if totalen == 0: return 1.0
     else:
         return 1.0 - (float(ed)/(totalen))
-    
+
 # For each repetition, award a fraction of a point depending on
 # how close it is to the first time the subject said the word
-# This should actually use a synset... don't want goose and geese 
+# This should actually use a synset... don't want goose and geese
 # not to be considered a repetition.
 def repetition_distances(lst):
     # use tuples with position, item
@@ -327,7 +323,7 @@ def renormalize_graph(g):
         nug.add_weighted_edges_from([ (w1,w2,{'a':d['weight']['a'],'p':d['weight']['p']/denom,'s':d['s']}) for (w1,w2,d) in edgy ])
         return nug
     return None
-        
+
 def derive_new_path(g):
     for i in range(len(g.nodes())-1):
         cdf = make_cdf_for_pbil(g)
@@ -351,8 +347,8 @@ def derive_new_path(g):
         path.extend(next_edge)
         edgy.remove(next_edge)
         sims.append(next_edge[2]['weight']['s'])
-    return (sum(sims),path)              
-        
+    return (sum(sims),path)
+
 
 def coherence(lst,comparison=edit_proximity):
     if len(lst) < 2:
@@ -407,7 +403,7 @@ def persistence(raw):
 
 # Markov model probability
 # First construct a Markov model: requires hash of clean lists
-#     The Markov model consists of (1) a hash of list elements -> probabilities (or log probs) 
+#     The Markov model consists of (1) a hash of list elements -> probabilities (or log probs)
 # Second, compute probability of list: requires Markov model from step 1.
 # Third, estimate all unigram probabilities
 # Fourth, compute probability of list of bigrams based on the products of unigram freqs.
@@ -488,7 +484,7 @@ def create_giant_matrix(master,mat_map):
 from pylab import *
 
 def pca(data,nRedDim=0,normalise=1):
-    
+
     # Centre data
     m = mean(data,axis=0)
     data -= m
@@ -497,7 +493,7 @@ def pca(data,nRedDim=0,normalise=1):
     C = cov(transpose(data))
 
     # Compute eigenvalues and sort into descending order
-    evals,evecs = linalg.eig(C) 
+    evals,evecs = linalg.eig(C)
     indices = argsort(evals)
     indices = indices[::-1]
     evecs = evecs[:,indices]
@@ -505,7 +501,7 @@ def pca(data,nRedDim=0,normalise=1):
 
     if nRedDim>0:
         evecs = evecs[:,:nRedDim]
-    
+
     if normalise:
         for i in range(shape(evecs)[1]):
             evecs[:,i] / linalg.norm(evecs[:,i]) * sqrt(evals[i])
@@ -535,10 +531,10 @@ def compute_pca_scores(giant,mat_map,how_many=None):
             except KeyError:
                 scores[dude] = [escore[num]]
     return scores
-            
+
 def compute_ica_scores(giant,ics,mat_map,how_many=None):
     # Reconstruct data with each IC
-    # 
+    #
     scores = {}
     if not how_many:
         how_many = ics.shape[1]

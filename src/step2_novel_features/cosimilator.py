@@ -13,7 +13,7 @@ class Cosimilator():
     def __init__(self, pmi_f):
         with open(pmi_f,'r') as fh:
             pmi = pickle.load(fh)
-        
+
         self.targets = pmi.keys()
         self.contexts = []
         for t in pmi.keys():
@@ -21,11 +21,14 @@ class Cosimilator():
         self.contexts = list(set(self.contexts))
         self.counts = pmi
         self.norms = dict([ (t,self.norm(self.counts[t])) for t in self.targets ])
+
     def norm(self,v):
         return math.sqrt(sum([ val**2 for val in v.values()]))
+
     def dotprod(self,v1,v2):
         eN = set(self.counts[v1].keys()).intersection(self.counts[v2].keys())
         return sum([ self.counts[v1][k] * self.counts[v2][k] for k in eN ])
+
     def cosine_similarity(self,v1,v2):
         try:
             denom = self.norms[v1] * self.norms[v2]
@@ -35,10 +38,13 @@ class Cosimilator():
         except KeyError:
             print "Missing one of these:", v1, v2
             return 0.0
+
     def threshold(self,n,theta):
         return 1.0 if n >= theta else 0.0
+
     def threshold_distance(self,n,theta):
         return 1.0 if n <= theta else 0.0
+
     def create_adjacency_matrix(self,wordlol=None,funk=None,z_thresh=1.0,abs_dist_thresh=None):
         ''' Accepts a list of lists of words, a comparison function, and Z-score
             threshold for considering words to be "linked". Returns a hash table with
@@ -66,8 +72,9 @@ class Cosimilator():
         percent_above_thresh = sum(self.adj.values())/len(self.adj)
         print "Percentage selected: ", percent_above_thresh
         return self.adj
+
     def transition_matrix(self,el):
-        ''' Construct transition matrix = sum of outer products of context vectors for 
+        ''' Construct transition matrix = sum of outer products of context vectors for
             consecutive words in list el
         '''
         cons = []
@@ -86,6 +93,7 @@ class Cosimilator():
                     postvec[0,i] += self.counts[post][con]
             tmat += np.outer(prevec,postvec)
         return tmat
+
     def transition_vector(self,el):
         cons = []
         for t in el:
@@ -103,8 +111,10 @@ class Cosimilator():
                     postvec[0,i] += self.counts[post][con]
             tvec += np.multiply(prevec,postvec)
         return tvec
+
     def bigrams(self,el):
         return [ (el[i],el[i+1]) for i in range(len(el)-1) ]
+
     def transition_norm(self,el,transition=None,order=2):
         if transition == None:
             transition = self.transition_matrix(el)

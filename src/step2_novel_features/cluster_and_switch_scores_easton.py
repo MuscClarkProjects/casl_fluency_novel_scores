@@ -46,9 +46,7 @@ def same_initial_letters(w1,w2):
 
 
 def homonyms(w1,w2,pronunciations):
-    if pronunciations[w1] == pronunciations[w2]:
-        return True
-    else: return False
+    return pronunciations[w1] == pronunciations[w2]
 
 
 def rhyme(w1,w2,pronunciations):
