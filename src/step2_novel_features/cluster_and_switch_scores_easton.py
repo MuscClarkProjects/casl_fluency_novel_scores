@@ -27,6 +27,9 @@ def step1_directory(sub_dir):
 list_directory = step1_directory('lists/')
 
 
+subcategories_directory = step1_directory('subcategories/')
+
+
 def pronunciations_f(f):
     return os.path.join(step1_directory('pronunciations/'), f)
 
