@@ -69,7 +69,7 @@ function find_non_matching_words(verbose::Bool=false, ignore_words...)
   ignore_words::Set{ASCIIString} = Set{ASCIIString}(ignore_words)
 
   orig_keys::Strings = begin
-    f::ASCIIString = data_f("step1/pPMI_keys.txt")
+    f::ASCIIString = data_f("step1/pPMI_keys_old.txt")
     load_words(f, '\r')
   end
 
