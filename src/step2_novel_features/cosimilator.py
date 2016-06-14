@@ -3,7 +3,7 @@ Create an object that reads in a pPMI file and allows computation of
 cosine similarities, generation of adjacency matrices on the basis
 of cosim, etc.
 '''
-
+import json
 import pickle
 import math
 import numpy as np
@@ -11,8 +11,11 @@ from numpy.linalg import norm
 
 class Cosimilator():
     def __init__(self, pmi_f):
-        with open(pmi_f,'r') as fh:
-            pmi = pickle.load(fh)
+        with open(pmi_f,'r') as f:
+            if pmi_f.endswith("json"):
+                pmi = json.load(f)
+            else:
+                pmi = pickle.load(f)
 
         self.targets = pmi.keys()
         self.contexts = []
@@ -20,7 +23,7 @@ class Cosimilator():
             self.contexts.extend(pmi[t].keys())
         self.contexts = list(set(self.contexts))
         self.counts = pmi
-        self.norms = dict([ (t,self.norm(self.counts[t])) for t in self.targets ])
+        self.norms = dict([(t,self.norm(self.counts[t])) for t in self.targets])
 
     def norm(self,v):
         return math.sqrt(sum([ val**2 for val in v.values()]))

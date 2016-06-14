@@ -284,9 +284,10 @@ with open(step1_directory('correctedLogUnigrams.pkl'),'r') as fh:
 class DataTable():
     def __init__(self, task, master_cosimilator):
         # Get the file names
-        self.files = [ f for f in listdir(list_directory) if re.search('CASL(\d+)_y\d_' + task + '\.txt$', f)]
+        self.files = [ f for f in listdir(list_directory)
+            if re.search('CASL(\d+)_y\d_' + task + '\.txt$', f)]
         self.ids = [ re.findall('CASL(\d+)_', f)[0] for f in self.files ]
-        self.indices = dict([ (self.files[no], no) for no in range(len(self.files)) ])
+        self.indices = dict([(f, num) for (num, f) in enumerate(self.files)])
         self.pronuns = read_pronunciations(task)
         self.pfmemo = {}
         # Perform traditional cluster/switch measurements
@@ -563,15 +564,18 @@ def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
     for task in tasks:
         print task
         dt = DataTable(task, master_cosimilator)
-        meth_names = ['id'] + [ m for m in dir(dt) if m[0] != '_' and callable(getattr(dt,m)) and m != 'id' ]
-        methods = [ getattr(dt,m) for m in meth_names ]
+
+        ismethod = lambda m: m[0] != '_' and callable(getattr(dt,m)) and m != 'id'
+        tomethod = lambda m: getattr(dt, m)
+        methods = [tomethod('id')] + [ tomethod(m) for m in dir(dt)
+            if ismethod(m)]
         header = '\t'.join(meth_names) # dt._list_score_methods())
 
-        outfile = open(os.path.join('../data/step2/', 'CASL_' + task + '.txt'), 'w')
-        outfile.write(header)
-        for f in dt.files:
-            print f
-            outfile.write('\n')
-            results = '\t'.join([ dt._format_result(m(f)) for m in methods ])
-            outfile.write(results)
-        outfile.close()
+        outfile_name = os.path.join('../data/step2/', 'CASL_' + task + '.txt')
+        with open(outfile_name, 'w') as outfile:
+            outfile.write(header)
+            for f in dt.files:
+                print f
+                outfile.write('\n')
+                results = '\t'.join([dt._format_result(m(f)) for m in methods])
+                outfile.write(results)
