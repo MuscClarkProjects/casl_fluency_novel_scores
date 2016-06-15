@@ -18,20 +18,6 @@ task_mapping = MegToCaslMap(
 )
 
 
-task_reg = r"_([a-zA-Z_]+).txt"
-
-getTask(f_name) = match(task_reg, f_name).captures[1]
-
-getTasks(f_names) = ASCIIString[getTask(f) for f in f_names]
-
-
-getTaskFiles(src_dir, extrafilter=f -> true) = @>> readdir(src_dir) begin
-    filter(f -> ismatch(task_reg, f))
-    filter(extrafilter)
-    map(f -> joinpath(src_dir, f))
-  end
-
-
 getMegTaskFiles() = getTaskFiles(getDataFile("step1", "meg_vf"),
   f -> startswith(f, 'M'))
 
@@ -62,6 +48,6 @@ function checkSync(megsync_dir=getDataFile("step1", "meg_sync"))
   casl_tasks = getCaslTaskFiles() |> getTasks |> Set
   meg_sync_tasks = megsync_dir |> getTaskFiles |> getTasks |> Set
   @assert Set(meg_tasks) == Set(casl_tasks)
-  
+
   casl_tasks, meg_sync_tasks
 end
