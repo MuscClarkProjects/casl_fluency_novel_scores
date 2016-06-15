@@ -1,0 +1,11 @@
+sit
+ride
+walk
+run
+jump
+drive
+chop
+saw
+roll
+hop
+climb

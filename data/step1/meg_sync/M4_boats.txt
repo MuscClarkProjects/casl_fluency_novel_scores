@@ -1,0 +1,10 @@
+rowboat
+fishing_boat
+steamboat
+freighter
+cabin_cruiser
+dingy
+ocean_liner
+ferry
+canoe
+raft

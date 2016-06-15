@@ -1,0 +1,17 @@
+banana
+apple
+orange
+grapefruit
+mango
+kiwi
+pineapple
+cabbage
+lettuce
+turnip_green
+asparagus
+broccoli
+carrot
+turnip
+squash
+celery
+cucumber

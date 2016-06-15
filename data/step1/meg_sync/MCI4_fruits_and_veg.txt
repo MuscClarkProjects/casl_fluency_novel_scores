@@ -1,0 +1,12 @@
+lettuce
+celery
+onion
+potato
+sweet_potato
+parsnip
+spinach
+turnip_green
+radish
+egg_plant
+fennel
+horse_radish

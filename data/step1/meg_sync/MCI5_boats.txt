@@ -1,0 +1,6 @@
+yacht
+sailboat
+cruise_ship
+canoe
+submarine
+seado

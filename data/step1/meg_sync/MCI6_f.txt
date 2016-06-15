@@ -1,0 +1,5 @@
+flower
+floor
+food
+fruit
+few

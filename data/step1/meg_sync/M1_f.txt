@@ -1,0 +1,7 @@
+family
+food
+found
+fish
+frank
+fatal
+football

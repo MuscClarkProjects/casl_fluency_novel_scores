@@ -1,0 +1,9 @@
+apple
+orange
+banana
+pineapple
+tomato
+spinach
+broccoli
+peach
+pear

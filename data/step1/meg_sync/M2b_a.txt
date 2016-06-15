@@ -1,0 +1,14 @@
+all
+any
+arrival
+agriculture
+apple
+appeal
+appliance
+article
+add
+adventure
+assistance
+alphabet
+#any
+at

@@ -1,0 +1,16 @@
+apple
+orange
+pear
+grape
+corn
+bean
+peas
+lettuce
+onion
+cabbage
+lime
+cantaloup
+watermelon
+#grape
+banana
+tangerine

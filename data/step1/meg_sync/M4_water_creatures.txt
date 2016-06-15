@@ -1,0 +1,12 @@
+snake
+alligator
+duck
+hippopotamus
+@Shamu
+fish
+worm
+!maggots
+shark
+whale
+!mosquito
+swordfish

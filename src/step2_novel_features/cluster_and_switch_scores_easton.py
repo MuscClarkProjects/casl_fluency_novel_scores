@@ -287,7 +287,7 @@ class DataTable():
         self.files = [ f for f in listdir(list_directory)
             if re.search('CASL(\d+)_y\d_' + task + '\.txt$', f)]
         self.ids = [ re.findall('CASL(\d+)_', f)[0] for f in self.files ]
-        self.indices = dict([(f, num) for (num, f) in enumerate(self.files)])
+        self.indices = dict([(], no) for (num, f) in enumerate(self.files)])
         self.pronuns = read_pronunciations(task)
         self.pfmemo = {}
         # Perform traditional cluster/switch measurements

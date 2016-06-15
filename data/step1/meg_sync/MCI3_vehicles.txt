@@ -1,0 +1,15 @@
+car
+scooter
+bicycle
+motorcycle
+truck
+tricycle
+wagon
+baby_walker
+horse
+wagon
+jeep
+tank
+#truck
+airplane
+helicopter

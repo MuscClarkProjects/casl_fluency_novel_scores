@@ -1,0 +1,7 @@
+!pie
+corn
+!beef
+!acorn
+apple
+orange
+pineapple

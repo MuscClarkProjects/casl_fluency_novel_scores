@@ -1,0 +1,10 @@
+battleship
+cruiser
+destroyer
+ocean_liner
+rowboat
+speed_boat
+fishing_boat
+canoe
+submarine
+aircraft_carrier

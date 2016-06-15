@@ -1,0 +1,6 @@
+submarine
+cruise_ship
+rowboat
+battleship
+destroyer
+steamship
