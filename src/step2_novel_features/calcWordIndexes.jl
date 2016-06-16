@@ -13,23 +13,25 @@ function allTaskFiles()
 end
 
 
-typealias RanksDict Dict{ASCIIString, Vector{Int64}}
-typealias TaskRanksDict Dict{ASCIIString, RanksDict}
+immutable WordLocation
+  file::ASCIIString
+  index::Int64
+end
 
-typealias RankMeanStdDict Dict{ASCIIString, Tuple{Float64, Float64}}
-typealias TaskRanksMeanStdDict Dict{ASCIIString, RankMeanStdDict}
 
+typealias WordLocations Dict{ASCIIString, Vector{WordLocation}}
+typealias TaskWordLocations Dict{ASCIIString, WordLocations}
 
 isComment(w::ASCIIString) = map(c -> c in w, ('#', '!')) |> any
 
 isValid(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
-function createTaskRanksDict()
-  task_ranks = TaskRanksDict()
+function calculateTaskWordLocations()
+  taskwords = TaskWordLocations()
 
   for task_f in allTaskFiles()
     task = getTask(task_f)
-    task_ranks[task] = word_ranks = get(task_ranks, task, RanksDict())
+    taskwords[task] = wordlocations = get(taskwords, task, WordLocations())
 
     if filesize(task_f) == 0
       continue
@@ -45,31 +47,36 @@ function createTaskRanksDict()
         continue
       end
 
-      word_ranks[word] = ranks = get(word_ranks, word, Int64[])
-      push!(ranks, rank)
+      wordlocations[word] = get(wordlocations, word, WordLocation[])
+      push!(wordlocations[word], WordLocation(basename(task_f), rank))
     end
   end
 
-  task_ranks
+  taskwords
 end
 
 
 saveDict(d::Dict, f::AbstractString) = open(f -> JSON.print(f, d), f, "w")
 
 
-saveTaskRanksDict(ranks::TaskRanksDict,
-  dest_f=getDataFile("step2", "ranks.json")) = saveDict(ranks, dest_f)
+saveTaskWordLocations(twl::TaskWordLocations,
+  dest_f=getDataFile("step2", "word_locations.json")) = saveDict(twl, dest_f)
 
 
-function convertTaskRanksToMeanStd(ranks::TaskRanksDict)
-  ret = TaskRanksMeanStdDict()
 
-  for (task, task_rank) in ranks
-    ret[task] = get(ret, task, Dict())
-    for (word, ranks) in task_rank
-      if length(ranks) > 1
-        ret[task][word] = mean_and_std(ranks)
-      end
+typealias MeanStd Tuple{Float64, Float64}
+
+typealias WordMeanStds Dict{ASCIIString, MeanStd}
+typealias TaskWordMeanStds Dict{ASCIIString, WordMeanStds}
+
+function convertTaskWordLocationsToMeanStd(twl::TaskWordLocations)
+  ret = TaskWordMeanStds()
+
+  for (task, wordlocations) in twl
+    ret[task] = get(ret, task, WordMeanStds())
+
+    for (word, wordlocations) in wordlocations
+      ret[task][word] = map(wl -> wl.index, wordlocations) |>  mean_and_std
     end
   end
 
@@ -77,12 +84,12 @@ function convertTaskRanksToMeanStd(ranks::TaskRanksDict)
 end
 
 
-function saveTaskRanksMeanStd(ranks::TaskRanksDict,
-    dest_f=getDataFile("step2", "ranks_mean_std.json"))
-  saveTaskRanksMeanStd(convertTaskRanksToMeanStd(ranks), dest_f)
+function saveTaskWordMeanStd(twl::TaskWordLocations,
+    dest_f=getDataFile("step2", "word_locations_mean_std.json"))
+  saveTaskWordMeanStd(convertTaskWordLocationsToMeanStd(twl), dest_f)
 end
 
 
-saveTaskRanksMeanStd(ranks::TaskRanksMeanStdDict,
-    dest_f=getDataFile("step2", "ranks_mean_std.json")) = saveDict(
-  ranks, dest_f)
+saveTaskWordMeanStd(twm::TaskWordMeanStds,
+    dest_f=getDataFile("step2", "word_locations_mean_std.json")) = saveDict(
+  twm, dest_f)
