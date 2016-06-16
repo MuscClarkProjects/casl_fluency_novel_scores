@@ -2,12 +2,13 @@
 Generate cluster and switch scores for letter fluency, simplified program for new analysis
 """
 
-from os import listdir, system
+import json
 import networkx as nx
 from nltk.corpus import wordnet as wn
 from nltk.stem.wordnet import WordNetLemmatizer
 from numpy import isnan, array, corrcoef
 import numpy.linalg as la
+from os import listdir, system
 import pickle
 import re
 
@@ -22,6 +23,10 @@ def data_directory(sub_dir):
 
 def step1_directory(sub_dir):
     return data_directory(os.path.join('step1', sub_dir))
+
+
+def step2_directory(sub_dir):
+    return data_directory(os.path.join('step2', sub_dir))
 
 
 list_directory = step1_directory('lists/')
@@ -276,6 +281,34 @@ with open(step1_directory('correctedLogUnigrams.pkl'),'r') as fh:
     freqs = pickle.load(fh)
 
 
+def get_word_locations():
+    with open(step2_directory('word_locations.json'), 'r') as wl:
+        word_locations = json.load(wl)
+    return word_locations
+
+
+def raw_list_to_zscores(f_name, task, word_locations=get_word_locations()):
+    words = word_locations[task]
+    score = None
+    for (word, file_locations) in words.iteritems():
+        f_indexes = [f['index'] for f in file_locations if f['file'] == f_name]
+        if len(f_indexes) == 0:
+            continue
+
+        other_indexes = [f['index'] for f in file_locations
+            if f['file'] != f_name]
+        if len(other_indexes) < 2:
+            continue
+
+        other_mean = np.mean(other_indexes)
+        other_std = np.std(other_indexes)
+
+        curr_score = sum([(i - other_mean)/other_std for i in f_indexes])
+        score = curr_score + score if score is not None else curr_score
+
+    return score
+
+
 # Maybe put all the header items into a hash table as keys. Each value can then
 # be a function that takes the fluency file name as an argument and returns
 # a string for printing into the file. The string can be unprocessed data (age, sex),
@@ -287,11 +320,11 @@ class DataTable():
         self.files = [ f for f in listdir(list_directory)
             if re.search('CASL(\d+)_y\d_' + task + '\.txt$', f)]
         self.ids = [ re.findall('CASL(\d+)_', f)[0] for f in self.files ]
-        self.indices = dict([(], no) for (num, f) in enumerate(self.files)])
+        self.indices = dict([(f, num) for (num, f) in enumerate(self.files)])
         self.pronuns = read_pronunciations(task)
         self.pfmemo = {}
         # Perform traditional cluster/switch measurements
-        if task in ['animal','veg']:
+        if task in ['animals','fruits_and_veg']:
             task_f = subcategories_directory + '/' + task+'_subcategories.txt'
             self.adj = load_subcategories(task_f)
         else:
@@ -315,6 +348,7 @@ class DataTable():
         self.ortho_graphs = [ self._make_graph(vf,ortho_adj) for vf in self.valids ]
         self.transitions = {}
         self._task = task
+        self._word_locations = get_word_locations()
 
     def _phon_funk(self,w1,w2):
         p1 = self.pronuns[w1]
@@ -554,6 +588,9 @@ class DataTable():
 
     def phono_max_betweenness(self,f):
         return self._max(nx.betweenness_centrality(self.phono_graphs[self.indices[f]]))
+
+    def index_z_score(self, f):
+        return raw_list_to_zscores(f, self._task, self._word_locations)
 
 
 #tasks=['a', 'animal', 'f', 's', 'veg']

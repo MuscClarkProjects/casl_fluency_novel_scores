@@ -63,7 +63,6 @@ saveTaskWordLocations(twl::TaskWordLocations,
   dest_f=getDataFile("step2", "word_locations.json")) = saveDict(twl, dest_f)
 
 
-
 typealias MeanStd Tuple{Float64, Float64}
 
 typealias WordMeanStds Dict{ASCIIString, MeanStd}
