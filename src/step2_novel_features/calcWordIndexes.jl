@@ -24,7 +24,7 @@ typealias TaskWordLocations Dict{ASCIIString, WordLocations}
 
 isComment(w::ASCIIString) = map(c -> c in w, ('#', '!')) |> any
 
-isValid(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
+isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
 function calculateTaskWordLocations()
   taskwords = TaskWordLocations()
@@ -39,7 +39,7 @@ function calculateTaskWordLocations()
 
     valid_words = begin
       all_words = readcsv(task_f, ASCIIString, comments=false)[:]
-      filter(isValid, all_words)
+      filter(isValidWord, all_words)
     end
 
     for (rank, word) in enumerate(valid_words)
@@ -54,9 +54,6 @@ function calculateTaskWordLocations()
 
   taskwords
 end
-
-
-saveDict(d::Dict, f::AbstractString) = open(f -> JSON.print(f, d), f, "w")
 
 
 saveTaskWordLocations(twl::TaskWordLocations,

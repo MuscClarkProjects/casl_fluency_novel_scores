@@ -21,4 +21,22 @@ getTaskFiles(src_dir, extrafilter=f -> true) = @>> readdir(src_dir) begin
     map(f -> joinpath(src_dir, f))
   end
 
+
+function allTaskFiles()
+  getTaskFs(sub_dir) = getDataFile("step1", sub_dir) |> getTaskFiles
+  meg_task_fs = getTaskFs("lists")
+  casl_task_fs = getTaskFs("meg_sync")
+  union(meg_task_fs, casl_task_fs)
+end
+
+#####
+
+saveDict(d::Dict, f::AbstractString) = open(f -> JSON.print(f, d), f, "w")
+
+
+#####Words helpers
+isComment(w::ASCIIString) = map(c -> c in w, ('#', '!')) |> any
+
+isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
+
 #####
