@@ -59,7 +59,7 @@ function getMultiWordsPronunciations(;multi_words=getValidTaskWords(w -> '_' in 
       return acc
     end
 
-    single_words = split(multi_word, '_')
+    single_words = split(multi_word, r"_|-")
 
     curr_no_pronuns = filter(w -> !(w in keys(pronuns)), single_words)
     if length(curr_no_pronuns) > 0
