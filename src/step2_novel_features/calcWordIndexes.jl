@@ -5,14 +5,6 @@ using StatsBase
 include("../helpers/helpers.jl")
 
 
-function allTaskFiles()
-  getTaskFs(sub_dir) = getDataFile("step1", sub_dir) |> getTaskFiles
-  meg_task_fs = getTaskFs("lists")
-  casl_task_fs = getTaskFs("meg_sync")
-  union(meg_task_fs, casl_task_fs)
-end
-
-
 immutable WordLocation
   file::ASCIIString
   index::Int64
@@ -21,10 +13,6 @@ end
 
 typealias WordLocations Dict{ASCIIString, Vector{WordLocation}}
 typealias TaskWordLocations Dict{ASCIIString, WordLocations}
-
-isComment(w::ASCIIString) = map(c -> c in w, ('#', '!')) |> any
-
-isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
 function calculateTaskWordLocations()
   taskwords = TaskWordLocations()
