@@ -98,6 +98,10 @@ end
 combineCmuWithPrevPronuns(;cmu::Dict=getCmu(),
     prev_pronuns::Dict=getPrevPronuns()) = union(cmu, prev_pronuns) |> Dict
 
+function allKnownPronuns(;cmu::Dict=getCmu(),
+  prev_pronuns::Dict=getPrevPronuns(),
+  )
+end
 
 function getAllTaskWordsWithoutPronuns(;
   pronuns::Dict=combineCmuWithPrevPronuns())
