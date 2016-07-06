@@ -1,14 +1,12 @@
 using DataFrames
+using Lazy
 
 
-include("../helpers/helpers.jl")
+include("processPronunsHelpers.jl")
 
 
-pronunsDir() = getDataFile("step1", "pronunciations")
-
-function readPronuns(f)
-  full_f = getDataFile(pronunsDir(), "$(f)_pronunciations.csv")
-  ret = readtable(full_f, header=false, names=[:word, :pronun])
+function readPronunsAsTable(f)
+  ret = readtable(prevPronunsCsv(f), header=false, names=[:word, :pronun])
 
   ret[:word] = [lowercase(w) for w in ret[:word]]
   ret
@@ -18,11 +16,8 @@ end
 pronunTypes() = ["a", "animals", "f", "fruits_and_veg", "s"]
 
 
-allPronuns() = map(readPronuns, pronunTypes())
-
-
 function findInconistent()
-  a, animals, f, fruits_and_veg, s = allPronuns()
+  a, animals, f, fruits_and_veg, s = map(readPronunsAsTable, pronunTypes())
 
   combine(df1, df2) = join(df1, df2, on=:word, kind=:outer)
   all_df = @> a combine(animals) combine(f) combine(fruits_and_veg) combine(s)
@@ -49,3 +44,19 @@ function findInconistent()
 
   all_df[conflict_rows, :]
 end
+
+
+readPrevPronunsAsDict(f) = @> f prevPronunsCsv readcsv(ASCIIString) matrixToDict
+
+
+function readAllPronunsAsDict()
+  ret::Dict = @>> map(readPrevPronunsAsDict, pronunTypes())... union Dict
+
+  for (word, pronun) in readPronunsAsDict("prev_resolve_conflict")
+    ret[word] = pronun
+  end
+  ret
+end
+
+
+writeCombined() = @> "prev_not_in_cmu" pronunsCsv writecsv(readAllPronunsAsDict())
