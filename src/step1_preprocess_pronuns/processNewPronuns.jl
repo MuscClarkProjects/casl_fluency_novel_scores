@@ -83,9 +83,7 @@ function multiWordsPronunciations(;multi_words=validMultiTaskWords(),
       return acc
     end
 
-    for w in single_words
-      acc[w] = pronuns[w]
-    end
+    acc[multi_word] = @> w->pronuns[w] map(single_words) join('.')
 
     acc
   end
