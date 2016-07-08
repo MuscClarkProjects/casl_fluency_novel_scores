@@ -1,0 +1,14 @@
+hammer
+maul
+pick
+! lawn_mower
+scissors
+screwdriver
+pliers
+nails
+!boats
+screws
+!gloves
+picture_hangers
+washers
+nuts

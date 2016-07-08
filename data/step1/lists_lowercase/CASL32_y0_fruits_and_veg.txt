@@ -1,0 +1,15 @@
+carrot
+lettuce
+cabbage
+squash
+corn
+celery
+apple
+orange
+banana
+melon
+cantaloupe
+!honey
+peach
+apricot
+grape

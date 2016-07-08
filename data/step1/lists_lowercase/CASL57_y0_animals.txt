@@ -1,0 +1,17 @@
+lion
+tiger
+camel
+jaguar
+cheetah
+dog
+sheep
+cow
+cat
+giraffe
+hippopotamus
+gorilla
+ape
+bear
+seal
+deer
+rat

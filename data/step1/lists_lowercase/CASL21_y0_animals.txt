@@ -1,0 +1,10 @@
+rat
+mouse
+monkey
+gorilla
+horse
+mule
+giraffe
+racoon
+squirrel
+rabbit

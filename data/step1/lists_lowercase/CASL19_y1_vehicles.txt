@@ -1,0 +1,11 @@
+tank
+car
+taxi
+bus
+bicycle
+tricycle
+wheelbarrow
+street_car
+double_bike
+school_bus
+train

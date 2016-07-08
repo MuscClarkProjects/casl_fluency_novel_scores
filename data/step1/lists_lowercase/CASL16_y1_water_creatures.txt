@@ -1,0 +1,9 @@
+frog
+fish
+water_beetle
+tadpole
+snake
+!muskrat
+beaver
+mussel
+stingray

@@ -1,0 +1,11 @@
+elephant
+giraffe
+anaconda
+cow
+horse
+mule
+dog
+cat
+rat
+ram
+fly

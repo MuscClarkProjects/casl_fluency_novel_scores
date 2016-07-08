@@ -1,0 +1,12 @@
+cow
+horse
+goat
+dog
+parrot
+bluebird
+lion
+tiger
+hippo
+elephant
+bear
+antelope

@@ -1,0 +1,16 @@
+potato
+squash
+broccoli
+carrot
+sweet_potato
+lettuce
+cabbage
+kale
+asparagus
+rutabaga
+apple
+orange
+grapefruit
+grapes
+strawberries
+cantaloupe

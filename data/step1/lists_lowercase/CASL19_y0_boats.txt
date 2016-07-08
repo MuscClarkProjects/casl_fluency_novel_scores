@@ -1,0 +1,7 @@
+dingy
+steam
+submarine
+cruise_ship
+powerboat
+ferry_boat
+raft

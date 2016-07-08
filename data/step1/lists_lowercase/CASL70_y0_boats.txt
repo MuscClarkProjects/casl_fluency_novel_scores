@@ -1,0 +1,8 @@
+(dgc)
+submarines
+!boat
+jetski
+skis
+ship
+rowboat
+surfboard

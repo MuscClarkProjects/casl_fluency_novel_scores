@@ -1,0 +1,9 @@
+arrow
+age
+act
+animal
+ant
+antelope
+air
+are
+am

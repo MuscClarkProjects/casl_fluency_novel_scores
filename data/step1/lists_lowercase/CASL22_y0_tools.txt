@@ -1,0 +1,8 @@
+plier
+grips
+locks
+screwdriver
+hammer
+jack
+drill
+socket

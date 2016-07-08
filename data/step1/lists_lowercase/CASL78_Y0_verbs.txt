@@ -1,0 +1,11 @@
+go
+swim
+swing
+walking
+swimming
+skating
+siteseeing
+snoring
+sneeze
+spring
+jumping

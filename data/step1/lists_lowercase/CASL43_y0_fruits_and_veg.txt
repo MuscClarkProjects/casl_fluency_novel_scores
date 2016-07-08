@@ -1,0 +1,17 @@
+apple
+orange
+lemon
+lime
+strawberry
+blueberry
+blackberry
+mango
+kiwi
+corn
+lettuce
+beans
+potato
+banana
+cantaloupe
+watermelon
+tomato

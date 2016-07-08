@@ -1,0 +1,15 @@
+plane
+jet
+rocket
+shuttle
+bike
+car
+wagon
+truck
+trailer
+boat
+ship
+submarine
+!kite
+balloon
+#plane

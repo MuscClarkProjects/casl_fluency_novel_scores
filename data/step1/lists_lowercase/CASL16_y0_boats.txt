@@ -1,0 +1,8 @@
+fish_boat
+ski_boat
+cruiser
+battleship
+carrier
+cargo
+houseboat
+pontoon

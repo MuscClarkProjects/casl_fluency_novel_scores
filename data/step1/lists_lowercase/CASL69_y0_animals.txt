@@ -1,0 +1,10 @@
+(dgc)
+lion
+tiger
+elephant
+panther
+fish
+people
+#person
+plankton
+!food

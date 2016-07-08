@@ -1,0 +1,17 @@
+cat
+fox
+dog
+horse
+cow
+zebra
+hippo
+elephant
+lion
+tiger
+beaver
+groundhog
+sparrow
+pigeon
+crow
+blackbird
+eagle

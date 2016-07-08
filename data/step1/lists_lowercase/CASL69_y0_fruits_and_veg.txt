@@ -1,0 +1,6 @@
+(dgc)
+apple
+orange
+lemon
+!apple_pie
+!applesauce

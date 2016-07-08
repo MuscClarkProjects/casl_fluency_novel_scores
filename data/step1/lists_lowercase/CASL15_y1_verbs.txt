@@ -1,0 +1,9 @@
+walk
+jump
+skip
+run
+look
+think
+scratch
+kneel
+stay

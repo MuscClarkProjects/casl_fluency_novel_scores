@@ -1,0 +1,6 @@
+ship
+fishing_boat
+#navy_ship
+submarine
+cruise
+#fishing_boat

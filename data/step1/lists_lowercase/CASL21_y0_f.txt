@@ -1,0 +1,7 @@
+fruit
+fragile
+follow
+fall
+fail
+flower
+food

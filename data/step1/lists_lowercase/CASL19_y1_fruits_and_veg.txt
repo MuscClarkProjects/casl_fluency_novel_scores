@@ -1,0 +1,11 @@
+corn
+cabbage
+potato
+onion
+rutabaga
+rhubarb
+apple
+orange
+olive
+acorn
+artichoke

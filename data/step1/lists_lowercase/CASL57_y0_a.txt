@@ -1,0 +1,7 @@
+apple
+ant
+#anteater
+arboretum
+any
+animal
+!aberdark

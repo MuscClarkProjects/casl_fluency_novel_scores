@@ -1,0 +1,4 @@
+sailboat
+motorboat
+fishing_boat
+skee

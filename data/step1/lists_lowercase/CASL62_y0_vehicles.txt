@@ -1,0 +1,13 @@
+sleigh
+truck
+car
+airplane
+!sail
+!movie
+!townhouse
+!trap
+!muscle_builder
+!song
+!step
+!star
+!moon

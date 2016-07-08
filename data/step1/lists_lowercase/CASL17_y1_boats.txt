@@ -1,0 +1,7 @@
+ship
+regular_boat
+cruise
+canoe
+river_boat
+pontoon
+aircraft_carrier

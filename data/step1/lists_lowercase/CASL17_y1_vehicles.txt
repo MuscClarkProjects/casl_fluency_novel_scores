@@ -1,0 +1,8 @@
+bus
+car
+van
+motorcycle
+bicycle
+truck
+#bicycle
+scooter

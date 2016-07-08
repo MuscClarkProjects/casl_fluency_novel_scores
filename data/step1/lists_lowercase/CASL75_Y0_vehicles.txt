@@ -1,0 +1,14 @@
+! feet
+car
+truck
+! horse
+! mule
+wagon
+bulldozer
+airplane
+ship
+boat
+# truck
+18-wheeler
+train
+tricycle

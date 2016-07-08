@@ -1,0 +1,10 @@
+fish
+snake
+oysters
+seal
+swan
+shark
+snail
+crab
+scallops
+whale

@@ -1,0 +1,17 @@
+(dgc)
+elephant
+giraffe
+donkey
+horse
+zebra
+rhinoceros
+lions
+tigers
+cougar
+hyena
+ants
+beetles
+termites
+cats
+snakes
+birds

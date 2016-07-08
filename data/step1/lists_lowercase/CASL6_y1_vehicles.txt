@@ -1,0 +1,15 @@
+car
+motorcycle
+bicycle
+bus
+street_car
+truck
+golf_cart
+airplane
+helicopter
+speed_boat
+cruiser
+battleship
+rescue_boat
+wagon
+! horse

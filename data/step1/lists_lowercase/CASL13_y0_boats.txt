@@ -1,0 +1,5 @@
+fishing_boat
+ski_boat
+#deep_sea_fishing_boat
+yacht
+cruiser

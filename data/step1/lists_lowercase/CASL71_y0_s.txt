@@ -1,0 +1,17 @@
+(dgc)
+store
+sit
+stand
+start
+soil
+shirt
+silk
+simple
+#start
+stop
+shoe
+socks
+slip
+shorts
+son
+shank

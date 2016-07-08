@@ -1,0 +1,8 @@
+fish
+snake
+frog
+!dog
+!flies
+!birds
+!people
+tadpoles

@@ -1,0 +1,15 @@
+hit
+run
+climb
+look
+see
+come
+stay
+walk
+talk
+think
+park
+stand
+wave
+wiggle
+giggle

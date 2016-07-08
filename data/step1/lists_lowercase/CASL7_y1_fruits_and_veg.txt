@@ -1,0 +1,13 @@
+apple
+pear
+banana
+cherry
+radish
+lemon
+spinach
+beans
+celery
+tomato
+lettuce
+grape
+rice

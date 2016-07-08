@@ -1,0 +1,13 @@
+buggy
+cart
+car
+bus
+truck
+sledge
+train
+!toboggan
+subway
+airplane
+balloon
+#cart
+canoe

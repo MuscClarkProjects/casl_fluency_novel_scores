@@ -1,0 +1,8 @@
+car
+truck
+tank
+bicycle
+motorcycle
+bus
+golf_cart
+airplane

@@ -1,0 +1,13 @@
+ski
+cruise
+rowboat
+paddle_boat
+speed_boat
+pleasure
+fishing
+submarine
+pirate
+!cv_boat
+!coast_guard_boat
+!drug_runner_boat
+sailboat

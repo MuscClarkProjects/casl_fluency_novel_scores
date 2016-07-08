@@ -1,0 +1,6 @@
+!sea_going
+motorboat
+airboat
+canoe
+tugboat
+skiff

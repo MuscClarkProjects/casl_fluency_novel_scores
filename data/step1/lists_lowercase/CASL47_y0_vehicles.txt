@@ -1,0 +1,7 @@
+car
+truck
+motorcycle
+tractor
+all_terrain_vehicle
+boat
+airplane

@@ -1,0 +1,7 @@
+car
+bus
+boat
+plane
+!horse_back
+bicycle
+motorcycle

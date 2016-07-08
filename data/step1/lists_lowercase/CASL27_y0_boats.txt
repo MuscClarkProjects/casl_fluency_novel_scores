@@ -1,0 +1,7 @@
+sailboat
+rowboat
+hardship
+passenger_liner
+tanker
+canoe
+raft

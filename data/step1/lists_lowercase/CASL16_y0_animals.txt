@@ -1,0 +1,11 @@
+dog
+cat
+goat
+horse
+cow
+raccoon
+opossum
+fox
+lynx
+squirrel
+rabbit

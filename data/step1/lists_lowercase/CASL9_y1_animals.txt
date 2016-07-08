@@ -1,0 +1,6 @@
+cow
+horse
+ping
+mouse
+rat
+fox

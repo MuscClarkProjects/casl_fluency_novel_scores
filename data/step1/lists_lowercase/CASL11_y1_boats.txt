@@ -1,0 +1,11 @@
+bass_boat
+rowboat
+outboard_motorboat
+submarine
+battleship
+aircraft_carrier
+destroyer
+cruiser
+lst
+lifeboat
+#liferaft

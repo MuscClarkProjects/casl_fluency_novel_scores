@@ -1,0 +1,12 @@
+car
+truck
+airplane
+glider
+train
+motorcycle
+go-cart
+#motorbike
+bicycle
+unicycle
+tricycle
+sailplane

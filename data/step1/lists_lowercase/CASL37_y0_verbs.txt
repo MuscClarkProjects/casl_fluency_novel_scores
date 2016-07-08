@@ -1,0 +1,16 @@
+run
+walk
+stand
+sit
+act
+puking
+talk
+dance
+sing
+jump
+follow
+think
+read
+write
+typing
+search

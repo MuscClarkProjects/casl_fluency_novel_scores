@@ -1,0 +1,17 @@
+horse
+cow
+calf
+pig
+snake
+turtle
+terrapin
+zebra
+hippo
+rhino
+lion
+tiger
+mule
+#horse
+dog
+cat
+human

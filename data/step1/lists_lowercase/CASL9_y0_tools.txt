@@ -1,0 +1,13 @@
+pencil
+spoon
+knife
+fork
+saw
+hammer
+chisel
+file
+!automobile
+!money
+!coins
+!bills
+!pictures

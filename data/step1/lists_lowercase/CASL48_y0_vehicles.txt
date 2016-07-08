@@ -1,0 +1,11 @@
+carriage
+truck
+car
+boat
+ship
+limousine
+balloon
+airplane
+train
+wagon
+bicycle

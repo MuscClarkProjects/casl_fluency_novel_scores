@@ -1,0 +1,11 @@
+train
+car
+! horse
+wagon
+bus
+subway
+taxi
+trucks
+airplane
+ship
+boat

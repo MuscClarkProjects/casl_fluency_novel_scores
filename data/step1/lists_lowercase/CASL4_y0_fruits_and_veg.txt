@@ -1,0 +1,13 @@
+apple
+orange
+onion
+broccoli
+spinach
+greens
+cabbage
+tomato
+corn
+peaches
+pears
+squash
+rhubarb

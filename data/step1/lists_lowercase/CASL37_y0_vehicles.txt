@@ -1,0 +1,15 @@
+car
+bus
+truck
+train
+boat
+bike
+motorcycle
+skate
+rocket
+spaceship
+balloon
+sea_plane
+helicopter
+merry_go_round
+! swing

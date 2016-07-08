@@ -1,0 +1,11 @@
+cherry
+pear
+orange
+grape
+carrot
+celery
+lettuce
+cabbage
+squash
+onion
+cauliflower

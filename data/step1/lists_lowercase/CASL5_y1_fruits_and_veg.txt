@@ -1,0 +1,12 @@
+apple
+orange
+carrot
+beans
+peas
+corn
+tangerine
+plum
+lettuce
+tomato
+squash
+cucumber

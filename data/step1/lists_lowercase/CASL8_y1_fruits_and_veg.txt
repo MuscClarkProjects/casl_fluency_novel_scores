@@ -1,0 +1,17 @@
+apple
+orange
+banana
+berry
+pear
+grapes
+cherry
+broccoli
+cauliflower
+peas
+greens
+beans
+pineapple
+tangerine
+asparagus
+potato
+tomato

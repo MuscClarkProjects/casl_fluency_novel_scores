@@ -1,0 +1,7 @@
+throw
+run
+jump
+talk
+writing
+drive
+sailing

@@ -1,0 +1,12 @@
+apples
+oranges
+bananas
+cherries
+grapefruit
+cantaloupe
+pears
+peaches
+tomatoes
+collards
+turnip_greens
+radishes

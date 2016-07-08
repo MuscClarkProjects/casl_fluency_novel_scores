@@ -1,0 +1,15 @@
+passenger_car
+pickup_truck
+trailer
+van
+tractor
+riding_lawn_mower
+tank
+personnel_carrier
+golf_cart
+tow_truck
+ambulance
+police_car
+helicopter
+uav
+aircraft

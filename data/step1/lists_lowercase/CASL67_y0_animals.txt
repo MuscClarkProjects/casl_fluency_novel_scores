@@ -1,0 +1,11 @@
+cat
+dog
+horse
+tiger
+elephant
+goat
+cow
+weasel
+camel
+bear
+coyote

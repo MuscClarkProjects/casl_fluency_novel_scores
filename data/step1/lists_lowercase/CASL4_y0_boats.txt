@@ -1,0 +1,11 @@
+aircraft_carrier
+battleship
+cruiser
+pt_boat
+landing_craft
+submarine
+fishing_boat
+ski_boat
+pontoon_boat
+houseboat
+sailboat

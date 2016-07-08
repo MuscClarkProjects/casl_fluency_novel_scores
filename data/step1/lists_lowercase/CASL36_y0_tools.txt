@@ -1,0 +1,13 @@
+pliers
+saw
+solder
+rake
+mower
+scissors
+wrench
+hose
+clippers
+hammer
+screwdriver
+#scissors
+blow_dryer

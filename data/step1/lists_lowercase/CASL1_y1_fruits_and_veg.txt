@@ -1,0 +1,15 @@
+squash
+beans
+orange
+apple
+lemons
+prune
+plum
+cherry
+grape
+spinach
+celery
+carrot
+onion
+potato
+broccoli

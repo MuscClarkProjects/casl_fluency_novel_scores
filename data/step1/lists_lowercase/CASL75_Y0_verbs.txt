@@ -1,0 +1,12 @@
+move
+sit
+go
+swim
+driving
+walking
+running
+playing
+! going_fishing
+hunt
+washing
+cutting

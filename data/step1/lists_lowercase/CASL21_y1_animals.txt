@@ -1,0 +1,15 @@
+pig
+goat
+chicken
+cow
+horse
+mule
+elephant
+deer
+monkey
+hyena
+bear
+#goat
+turkey
+geese
+duck

@@ -1,0 +1,15 @@
+horse
+mule
+cow
+sheep
+pig
+rhino
+hippo
+zebra
+giraffe
+camel
+human
+snake
+buzzard
+crow
+eagle

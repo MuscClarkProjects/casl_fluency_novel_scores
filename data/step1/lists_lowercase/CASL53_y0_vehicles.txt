@@ -1,0 +1,13 @@
+bicycle
+tricycle
+scooter
+rollerskate
+skateboard
+boat
+hydroplane
+car
+truck
+buses
+taxicab
+airplane
+hot-air_balloon

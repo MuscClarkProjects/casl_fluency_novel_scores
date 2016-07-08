@@ -1,0 +1,25 @@
+hop
+skip
+walk
+run
+jog
+sleep
+rest
+! football
+play
+(play football)
+calculate
+add
+sub
+write
+speak
+think
+evade
+act
+listen
+speak
+hear
+see
+feel
+tumble
+kick

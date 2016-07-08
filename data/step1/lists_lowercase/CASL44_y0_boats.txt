@@ -1,0 +1,12 @@
+aircraft
+battleship
+cruiser
+passenger_ship
+yacht
+sailboat
+rowboat
+jet_ski
+#electronic_boat
+clipper_ship
+#pirate_ship
+submarine

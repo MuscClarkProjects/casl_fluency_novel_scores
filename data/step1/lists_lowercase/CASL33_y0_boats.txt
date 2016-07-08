@@ -1,0 +1,10 @@
+rowboat
+sailboat
+cruiseliner
+dingy
+yacht
+aircraft_carrier
+destroyer
+motorboat
+#yacht
+racing_boat

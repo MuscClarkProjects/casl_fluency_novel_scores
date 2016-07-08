@@ -1,0 +1,15 @@
+surfboard
+sailboat
+jet_ski
+pontoon_boat
+passenger
+freighter
+canoe
+paddle_boat
+barge
+speedboat
+fishing_boat
+hydrofoil
+submarine
+#fishing_ship
+#fishing_vessel

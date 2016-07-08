@@ -1,0 +1,13 @@
+love
+hate
+sit
+run
+walk
+unite
+ride
+read
+cook
+sift
+stir
+bake
+boil

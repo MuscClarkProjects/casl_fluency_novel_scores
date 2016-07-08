@@ -1,0 +1,11 @@
+(dgc)
+scissors
+knife
+hoe
+plow
+rake
+broom
+can_opener
+needle
+tweezers
+nail_clippers

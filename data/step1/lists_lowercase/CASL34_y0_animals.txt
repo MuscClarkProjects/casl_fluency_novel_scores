@@ -1,0 +1,17 @@
+fish
+frog
+alligator
+crocodile
+iguana
+cat
+cow
+horse
+camel
+snake
+cougar
+elephant
+lion
+tiger
+puma
+gazelle
+wildebeest

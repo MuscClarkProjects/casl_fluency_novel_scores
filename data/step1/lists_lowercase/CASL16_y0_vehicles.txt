@@ -1,0 +1,9 @@
+(dgc)
+car
+truck
+train
+bus
+crane
+taxi
+van
+firetruck

@@ -1,0 +1,13 @@
+walk
+talk
+bounce
+jump
+jack
+run
+recite
+record
+relate
+shoot
+chop
+shake
+drive

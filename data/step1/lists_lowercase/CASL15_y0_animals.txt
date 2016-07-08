@@ -1,0 +1,7 @@
+bear
+elephant
+tigers
+mouse
+snake
+dog
+cat

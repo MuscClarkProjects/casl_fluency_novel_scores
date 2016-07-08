@@ -1,0 +1,12 @@
+snake
+snail
+shark
+song
+saddle
+shoes
+socks
+# snakes
+sea_turtle
+# song bird
+# snail
+salamander

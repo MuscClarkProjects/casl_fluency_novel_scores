@@ -1,0 +1,13 @@
+canoe
+skiff
+ski_boat
+oceanliner
+battleship
+cruiser
+submarine
+destroyer
+landing_craft
+#destroyer
+anti_mine_ship
+surfboard
+ski_plane

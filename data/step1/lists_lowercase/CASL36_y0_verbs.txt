@@ -1,0 +1,14 @@
+run
+eat
+swim
+walk
+spin
+swing
+talk
+look
+drum
+kick
+toss
+work
+color
+sweep

@@ -1,0 +1,11 @@
+truck
+car
+motorcycle
+bicycle
+boat
+ship
+tank
+jeep
+humvee
+airplane
+helicopter

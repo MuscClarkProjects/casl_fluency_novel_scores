@@ -1,0 +1,10 @@
+car
+truck
+motorcycle
+#diesel_truck
+recreational_vehicle
+plane
+bicycle
+scooter
+tricycle
+skateboard

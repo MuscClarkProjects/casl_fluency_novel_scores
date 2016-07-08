@@ -1,0 +1,7 @@
+food
+fire
+field
+fix
+foam
+faint
+fur

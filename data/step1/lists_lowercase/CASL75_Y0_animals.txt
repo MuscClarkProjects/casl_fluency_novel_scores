@@ -1,0 +1,13 @@
+dog
+cat
+fish
+squirrel
+rabbit
+goldfish
+bear
+birds
+elephant
+hippopotamus
+monkey
+turtle
+coyote

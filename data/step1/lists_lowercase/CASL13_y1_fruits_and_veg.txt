@@ -1,0 +1,6 @@
+peach
+pear
+pineapple
+!pork
+peanut
+potatoes

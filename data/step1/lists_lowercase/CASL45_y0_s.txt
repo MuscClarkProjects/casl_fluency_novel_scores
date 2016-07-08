@@ -1,0 +1,9 @@
+state
+stair
+start
+stop
+stay
+saying
+stare
+scare
+starch

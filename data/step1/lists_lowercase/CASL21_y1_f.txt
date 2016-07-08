@@ -1,0 +1,11 @@
+food
+far
+forward
+furniture
+fruit
+!faulkner
+#far
+farther
+father
+forever
+future

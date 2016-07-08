@@ -1,0 +1,14 @@
+dog
+cat
+human
+cow
+horse
+mule
+#dog
+donkey
+steer
+rabbit
+squirrel
+bull
+#mule
+#horse

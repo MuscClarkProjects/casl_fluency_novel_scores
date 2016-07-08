@@ -1,0 +1,11 @@
+pontoon
+yacht
+dingy
+speedboat
+sailboat
+houseboat
+fishing_boat
+rowboat
+ship
+skiff
+submarine

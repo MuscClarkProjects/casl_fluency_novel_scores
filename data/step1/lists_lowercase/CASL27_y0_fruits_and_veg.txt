@@ -1,0 +1,15 @@
+banana
+kiwi
+strawberry
+carrot
+peas
+green_peas
+orange
+blueberry
+cabbage
+radish
+lettuce
+chestnut
+onion
+mushrooms
+gooseberry

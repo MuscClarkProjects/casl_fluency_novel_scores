@@ -1,0 +1,16 @@
+dog
+cat
+cow
+horse
+pig
+donkey
+chicken
+lamb
+sheep
+zebra
+tiger
+lion
+elephant
+giraffe
+frog
+alligator

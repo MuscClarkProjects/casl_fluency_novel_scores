@@ -1,0 +1,13 @@
+! boat
+ferry
+cruise_ship
+water_ski
+surfboard
+pontoon
+house_boat
+hovercraft
+cigarette_boat
+ski_boat
+#cruise_ship
+raft
+kayak

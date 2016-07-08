@@ -1,0 +1,14 @@
+run
+walk
+sit
+stand
+gallop
+shift
+sleep
+cook
+clean
+water
+pull
+push
+brush
+wash

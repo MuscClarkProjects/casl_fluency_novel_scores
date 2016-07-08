@@ -1,0 +1,16 @@
+apple
+oranges
+bananas
+grapes
+pears
+coconuts
+cantaloupes
+peach
+carrots
+potatoes
+succotash
+scallions
+endive
+red_cabbage
+white_cabbage
+apricots

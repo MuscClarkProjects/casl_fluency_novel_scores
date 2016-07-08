@@ -1,0 +1,15 @@
+walk
+throw
+run
+sitting
+sailing
+sharpening
+salute
+surfing
+speeding
+crawling
+rolling
+advancing
+descend
+ascending
+transmit

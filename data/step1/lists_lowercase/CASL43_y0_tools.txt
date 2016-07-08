@@ -1,0 +1,12 @@
+hammer
+wrench
+screwdriver
+oil_filter_wrench
+pliers
+chainsaw
+axe
+wedge
+sledgehammer
+drill
+tire_pressure_gauge
+jack

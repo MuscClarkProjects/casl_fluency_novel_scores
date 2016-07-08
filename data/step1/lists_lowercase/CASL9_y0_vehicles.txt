@@ -1,0 +1,9 @@
+automobile
+truck
+bus
+cart
+scooter
+motorcycle
+skates
+ski_boat
+!running

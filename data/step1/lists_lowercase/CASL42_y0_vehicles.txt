@@ -1,0 +1,11 @@
+car
+bus
+suv
+boat
+plane
+train
+#bus
+pickup_truck
+dumptruck
+go_cart
+tractor

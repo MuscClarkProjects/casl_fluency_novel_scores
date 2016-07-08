@@ -1,0 +1,13 @@
+run
+cry
+sniffle
+shout
+cheer
+clap
+sing
+yodel
+yawn
+whistle
+yell
+scream
+cuss

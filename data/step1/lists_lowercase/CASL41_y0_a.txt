@@ -1,0 +1,9 @@
+animal
+actress
+actor
+acclaim
+accident
+ostrich
+!africa
+! alpha
+! alpha

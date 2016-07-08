@@ -1,0 +1,14 @@
+whale
+fish
+squid
+octopus
+shrimp
+jellyfish
+shark
+crab
+frog
+alligator
+crocodile
+leech
+snake
+dolphin

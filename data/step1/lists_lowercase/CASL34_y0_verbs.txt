@@ -1,0 +1,15 @@
+ran
+skip
+fly
+swim
+crawl
+fall
+climb
+write
+erase
+look
+see
+reach
+touch
+hold
+clasp

@@ -1,0 +1,15 @@
+!job
+run
+skip
+dance
+jog
+hit
+slap
+walk
+touch
+talk
+swing
+drive
+stroll
+write
+shop

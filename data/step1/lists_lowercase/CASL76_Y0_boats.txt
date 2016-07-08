@@ -1,0 +1,12 @@
+rowboat
+kayak
+canoe
+speedboat
+fishing_boat
+pontoon_boat
+tug
+skis
+submarine
+destroyer
+battleship
+aircraft_carrier

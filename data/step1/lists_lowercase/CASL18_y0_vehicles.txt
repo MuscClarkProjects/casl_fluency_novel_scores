@@ -1,0 +1,11 @@
+car
+motorcycle
+plane
+truck
+scooter
+train
+bus
+bike
+tricycle
+moped
+skates

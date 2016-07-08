@@ -1,0 +1,11 @@
+run
+jump
+play
+sweep
+eat
+write
+erase
+talk
+walk
+dance
+twist

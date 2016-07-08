@@ -1,0 +1,10 @@
+apple
+orange
+grapefruit
+beans
+peas
+banana
+pineapple
+peach
+potato
+carrot

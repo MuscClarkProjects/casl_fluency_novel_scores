@@ -1,0 +1,13 @@
+car
+motorcycle
+moped
+skateboard
+skates
+golf_cart
+airplane
+boat
+water_ski
+!water_jet
+submarine
+ship
+ferry_boat

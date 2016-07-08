@@ -1,0 +1,9 @@
+ski_boat
+fishing_boat
+barge
+houseboat
+canoe
+#rescue_boat
+#charter_boat
+flat_bottom
+submarine

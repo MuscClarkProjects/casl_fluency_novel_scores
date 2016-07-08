@@ -1,0 +1,14 @@
+! horse
+automobile
+truck
+van
+airplanes
+ships
+boats
+canoes
+roller_skates
+ice_skates
+hang_glider
+railroad
+subways
+taxis

@@ -1,0 +1,7 @@
+flat_bottom
+cruiseboat
+speedboat
+pontoon_boat
+canoe
+oceanliner
+ship

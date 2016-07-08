@@ -1,0 +1,16 @@
+mango
+banana
+watermelon
+pumpkin
+pear
+potato
+radish
+cabbage
+lettuce
+plum
+zucchini
+squash
+green_bean
+eggplant
+carrot
+celery

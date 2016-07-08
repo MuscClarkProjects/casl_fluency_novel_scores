@@ -1,0 +1,6 @@
+ship
+aircraft_carrier
+minesweeper
+motorboat
+paddleboat
+canoe

@@ -1,0 +1,10 @@
+coupe
+sedan
+station_wagon
+truck
+eighteen_wheeler
+earthmover_caterpillar
+snow_mobile
+motorcycle
+bicycle
+tricycle

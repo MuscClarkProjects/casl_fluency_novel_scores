@@ -1,0 +1,15 @@
+apple
+orange
+grape
+grapefruit
+broccoli
+peas
+okra
+tomato
+lettuce
+cabbage
+celery
+carrot
+onion
+garlic
+pomegranate

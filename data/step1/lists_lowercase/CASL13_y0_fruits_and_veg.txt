@@ -1,0 +1,6 @@
+apple
+orange
+peaches
+cucumber
+cabbage
+collard

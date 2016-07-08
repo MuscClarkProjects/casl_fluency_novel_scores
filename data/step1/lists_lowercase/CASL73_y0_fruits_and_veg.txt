@@ -1,0 +1,15 @@
+(dgc)
+apple
+orange
+lemon
+grape
+lettuce
+cabbage
+bean
+turnip
+cucumber
+rutabaga
+potato
+broccoli
+kumquat
+pomegranate

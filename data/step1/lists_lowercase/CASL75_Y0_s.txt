@@ -1,0 +1,10 @@
+sun
+suit
+short
+swimming_suit
+shine
+slim
+socks
+stove
+saucer
+slicer

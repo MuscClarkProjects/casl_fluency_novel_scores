@@ -1,0 +1,13 @@
+dog
+cat
+rat
+squirrel
+snake
+chimpanzee
+kangaroo
+rabbit
+frog
+fish
+turtle
+bear
+#squirrel

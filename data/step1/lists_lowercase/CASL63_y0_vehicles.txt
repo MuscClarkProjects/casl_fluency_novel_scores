@@ -1,0 +1,11 @@
+truck
+car
+motorcycle
+subway
+airplane
+bus
+boat
+escalator
+elevator
+#bus
+#car

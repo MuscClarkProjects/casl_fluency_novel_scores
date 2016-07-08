@@ -1,0 +1,6 @@
+run
+walk
+race
+think
+learning
+write

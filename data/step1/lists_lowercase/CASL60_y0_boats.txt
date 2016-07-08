@@ -1,0 +1,11 @@
+hovercraft
+rowboat
+submarine
+ship
+paddle_boat
+canoe
+kayak
+raft
+sailboat
+john_boat
+bass_boat

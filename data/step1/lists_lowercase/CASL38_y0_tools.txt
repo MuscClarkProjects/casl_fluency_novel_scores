@@ -1,0 +1,10 @@
+hammer
+screwdriver
+scissors
+drill
+saw
+lever
+gripper
+leveler
+vice
+table_saw

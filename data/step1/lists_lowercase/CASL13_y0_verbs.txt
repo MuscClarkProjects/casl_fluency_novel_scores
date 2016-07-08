@@ -1,0 +1,4 @@
+walking
+jumping
+skipping
+running

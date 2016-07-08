@@ -1,0 +1,13 @@
+jump
+run
+squat
+skip
+talk
+fishing
+flying
+drive
+bathing
+swinging
+walking
+jogging
+#swinging

@@ -1,0 +1,14 @@
+apricot
+apple
+oranges
+carrots
+radish
+squash
+cantaloupe
+pears
+peaches
+pineapples
+peas
+watermelon
+corn
+cabbage

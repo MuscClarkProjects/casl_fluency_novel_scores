@@ -1,0 +1,14 @@
+go
+come
+enter
+depart
+find
+sing
+sign
+run
+walk
+cook
+sleep
+drink
+eat
+wash

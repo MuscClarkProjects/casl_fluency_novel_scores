@@ -1,0 +1,9 @@
+walking
+running
+bowing
+wrestling
+!basketball
+!football
+!baseball
+!push_ups
+fighting

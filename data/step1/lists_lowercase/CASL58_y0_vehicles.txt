@@ -1,0 +1,11 @@
+motorcycle
+car
+truck
+airplane
+train
+bicycle
+scooter
+segway
+tank
+submarine
+boat

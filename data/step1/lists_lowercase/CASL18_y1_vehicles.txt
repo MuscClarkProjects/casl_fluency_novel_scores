@@ -1,0 +1,12 @@
+car
+truck
+motorcycle
+van
+bicycle
+tricycle
+skate
+rocket
+airplane
+helicopter
+scooter
+!horses

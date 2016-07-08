@@ -1,0 +1,12 @@
+(dgc)
+whale
+dolphin
+otter
+fish
+squid
+crabs
+lobster
+shrimp
+jellyfish
+sea_urchin
+shark

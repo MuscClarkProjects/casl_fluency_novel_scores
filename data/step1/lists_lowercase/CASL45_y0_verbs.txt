@@ -1,0 +1,7 @@
+stop
+go
+run
+jump
+start
+push
+pull

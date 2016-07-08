@@ -1,0 +1,6 @@
+rake
+hammer
+screwdriver
+scissors
+hoe
+pitchfork

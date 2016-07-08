@@ -1,0 +1,16 @@
+cat
+dog
+rat
+rabbit
+shrink
+racoon
+opossum
+ape
+lion
+tiger
+elephant
+giraffe
+hyena
+monkey
+llama
+bull

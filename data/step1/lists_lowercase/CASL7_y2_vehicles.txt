@@ -1,0 +1,12 @@
+car
+automobile
+convertible
+truck
+van
+lorry
+bus
+cab
+milk_truck
+bicycle
+motorcycle
+wagon

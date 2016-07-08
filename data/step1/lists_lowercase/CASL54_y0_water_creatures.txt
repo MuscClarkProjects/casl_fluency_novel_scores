@@ -1,0 +1,11 @@
+snakes
+seal
+hippopotamus
+fish
+catfish
+goldfish
+eels
+sharks
+!eskimos
+!people
+#goldfish

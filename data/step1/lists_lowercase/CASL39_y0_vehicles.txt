@@ -1,0 +1,10 @@
+truck
+car
+suv
+hummer
+convertible
+compacts
+economy
+executive
+luxury
+limo

@@ -1,0 +1,8 @@
+greens
+okra
+potatoes
+watermelons
+!oysters
+turnips
+collards
+spinach

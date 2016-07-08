@@ -1,0 +1,9 @@
+tricycle
+bicycle
+skate
+motorcycle
+plane
+train
+bus
+truck
+ski

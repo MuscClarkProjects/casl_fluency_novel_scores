@@ -1,0 +1,11 @@
+running
+walking
+waltzing
+dancing
+cartwheeling
+sit
+setting
+cutting
+sawing
+dividing
+#cutting

@@ -1,0 +1,7 @@
+sailboat
+fishing_boat
+pleasure_boats
+ships
+catamarans
+surfboards
+motor_boats

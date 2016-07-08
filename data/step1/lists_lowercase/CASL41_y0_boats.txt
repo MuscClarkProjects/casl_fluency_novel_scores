@@ -1,0 +1,10 @@
+rowboat
+speed_boat
+! boat
+yacht
+ship
+pontoon
+ferry
+#ocean_boat
+canoe
+motorboat

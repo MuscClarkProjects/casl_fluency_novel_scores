@@ -1,0 +1,11 @@
+car
+truck
+plane
+bicycle
+tricycle
+scooter
+boat
+balloon
+helicopter
+canoe
+kayak

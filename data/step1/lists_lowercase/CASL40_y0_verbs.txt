@@ -1,0 +1,7 @@
+run
+walk
+work
+play
+talk
+write
+read

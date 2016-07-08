@@ -1,0 +1,12 @@
+apple
+peach
+orange
+figs
+potato
+tomato
+greens
+peas
+beans
+corn
+cucumber
+celery

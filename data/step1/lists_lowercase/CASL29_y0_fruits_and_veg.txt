@@ -1,0 +1,16 @@
+apple
+pear
+pineapple
+grape
+banana
+broccoli
+beans
+potato
+okra
+squash
+tomato
+lettuce
+cabbage
+turnip
+corn
+orange

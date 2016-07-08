@@ -1,0 +1,5 @@
+(dgc)
+go
+stop
+run
+went

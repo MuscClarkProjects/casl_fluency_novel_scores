@@ -1,0 +1,17 @@
+fish
+octopus
+alligator
+crocodile
+shrimp
+crab
+shark
+whale
+seabass
+bass
+catfish
+salmon
+#shark
+frog
+#alligator
+#crocodile
+!mermaid

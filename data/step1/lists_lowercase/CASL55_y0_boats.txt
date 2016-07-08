@@ -1,0 +1,14 @@
+sailboat
+catamaran
+trimaran
+bass_boat
+skiboat
+#sailboat
+cruiseliner
+submarine
+personal_watercraft
+jet_ski
+battleship
+destroyer
+pt_boat
+!fast_boat

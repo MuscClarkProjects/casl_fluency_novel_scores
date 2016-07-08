@@ -1,0 +1,11 @@
+going
+ran
+run
+walk
+crawl
+jump
+falling
+#fall
+fly
+flock
+blow

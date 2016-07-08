@@ -1,0 +1,14 @@
+pig
+horse
+giraffe
+bear
+squirrel
+cow
+cat
+bull
+kangaroo
+tiger
+lion
+hyena
+fox
+birds

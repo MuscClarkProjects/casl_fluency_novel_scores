@@ -1,0 +1,14 @@
+banana
+grapes
+plums
+carrots
+cabbage
+almonds
+potato
+onions
+peaches
+artichokes
+dates
+radish
+turnips
+sweet_potatoes

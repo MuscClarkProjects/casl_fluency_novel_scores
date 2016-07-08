@@ -1,0 +1,12 @@
+atv
+tractor
+eighteen_wheeler_truck
+#two_ton_truck
+pickup
+automobile
+convertible
+tank
+airplane
+helicopter
+rocket
+glider

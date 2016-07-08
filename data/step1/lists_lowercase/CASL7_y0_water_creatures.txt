@@ -1,0 +1,12 @@
+fish
+whales
+squid
+eels
+sharks
+trout
+bass
+oysters
+octopus
+penguins
+sea_serpents
+salmon

@@ -1,0 +1,16 @@
+dog
+cat
+mouse
+deer
+horse
+pony
+cow
+bull
+sheep
+lamb
+gorilla
+giraffe
+tiger
+lion
+monkey
+human

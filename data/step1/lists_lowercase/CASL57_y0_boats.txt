@@ -1,0 +1,11 @@
+raft
+fishing_boat
+pontoon_boat
+motor_boat
+speedboat
+canoe
+ship
+submarine
+ski-doo
+#fishing_boat
+bass_boat

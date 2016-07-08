@@ -1,0 +1,17 @@
+lettuce
+broccoli
+green_bean
+peas
+#english_peas
+carrots
+apples
+oranges
+apricots
+peaches
+lemons
+tangerine
+grapefruit
+banana
+grapes
+prunes
+pears

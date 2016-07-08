@@ -1,0 +1,14 @@
+cat
+dog
+bear
+bird
+lion
+tiger
+snake
+frog
+fish
+whale
+alligator
+giraffe
+hippo
+elephant

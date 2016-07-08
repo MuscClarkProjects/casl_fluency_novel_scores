@@ -1,0 +1,6 @@
+run
+jump
+skip
+throw
+sing
+read

@@ -1,0 +1,16 @@
+flute
+fly
+flower
+fib
+fancy
+forest
+fiber
+front
+future
+family
+four
+flea
+flap
+fortune
+#fancy
+fire

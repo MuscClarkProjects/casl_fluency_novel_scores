@@ -1,0 +1,14 @@
+crocodile
+alligator
+snakes
+fish
+tuna
+shark
+whales
+eels
+piranha
+!elephants
+ducks
+snails
+clams
+oysters

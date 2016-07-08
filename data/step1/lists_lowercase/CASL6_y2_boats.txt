@@ -1,0 +1,11 @@
+racers
+runabouts
+ski_boat
+jet_boat
+#coast_guard_boat
+battleship
+cruiser
+destroyer
+pt_boat
+ferry
+raft

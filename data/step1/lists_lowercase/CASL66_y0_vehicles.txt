@@ -1,0 +1,13 @@
+car
+bike
+motorbike
+bus
+truck
+pickup
+van
+train
+plane
+!drone
+balloon
+tricycle
+roller_skates

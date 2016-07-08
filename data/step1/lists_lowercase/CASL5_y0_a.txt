@@ -1,0 +1,4 @@
+apple
+automobile
+arm
+!elbow

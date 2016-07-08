@@ -1,0 +1,11 @@
+supply
+sound
+simple
+suck
+splash
+!spam
+!spain
+some
+sometime
+sample
+significant

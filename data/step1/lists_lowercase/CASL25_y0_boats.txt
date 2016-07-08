@@ -1,0 +1,7 @@
+aircraft_carrier
+canoe
+motor_boat
+pontoon_boat
+yacht
+ship
+ferry

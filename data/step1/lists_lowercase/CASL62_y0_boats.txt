@@ -1,0 +1,6 @@
+flatboat
+ski_boat
+!trailer_boat
+!sinking_boat
+!canopy_boat
+houseboat

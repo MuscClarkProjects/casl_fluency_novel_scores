@@ -1,0 +1,9 @@
+canoe
+kayak
+sailboat
+clipper_ship
+motorboat
+submarine
+cruise_ship
+frigate
+tall_ships

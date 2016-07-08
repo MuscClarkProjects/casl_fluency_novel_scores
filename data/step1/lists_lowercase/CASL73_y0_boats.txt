@@ -1,0 +1,9 @@
+(dgc)
+!boat
+waterski
+hydroplane
+ship
+seaplane
+ski-doo
+surfboard
+#waterski

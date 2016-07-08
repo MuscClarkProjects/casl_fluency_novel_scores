@@ -1,0 +1,16 @@
+car
+plane
+helicopter
+bicycle
+sled
+skate
+skateboard
+skis
+motorcycle
+canoe
+ship
+boat
+tricycle
+train
+subway
+scooter

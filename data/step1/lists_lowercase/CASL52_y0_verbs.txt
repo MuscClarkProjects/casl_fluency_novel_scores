@@ -1,0 +1,15 @@
+move
+write
+walk
+run
+trot
+finish
+separate
+#write
+drive
+use
+disclose
+point
+slide
+skim
+thinks
