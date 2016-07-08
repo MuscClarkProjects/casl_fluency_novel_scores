@@ -55,11 +55,17 @@ class Cosimilator():
         '''
         if not funk:
             funk = self.cosine_similarity
+
         if not wordlol:
             wordlol = [self.targets]
+
         cartesian = []
-        for lol in wordlol:
+
+        print("will extend cartesians")
+        for (i, lol) in enumerate(wordlol):
             cartesian.extend(set([ (w1,w2) for w1 in lol for w2 in lol if w1 < w2 ]))
+        print("cartesians extended")
+
         self.all_cosims = dict([ ((w1,w2),funk(w1,w2)) for (w1,w2) in cartesian ])
         if not abs_dist_thresh:
             cvs = [ cv for cv in self.all_cosims.values() if not np.isnan(cv) ]
@@ -72,9 +78,12 @@ class Cosimilator():
             self.adj = dict([ (words,self.threshold(zed,z_thresh)) for (words,zed) in self.all_zs ])
         else:
             self.adj = dict([ (words,self.threshold_distance(dist,abs_dist_thresh)) for (words,dist) in self.all_cosims ])
+
         percent_above_thresh = sum(self.adj.values())/len(self.adj)
         print "Percentage selected: ", percent_above_thresh
+
         return self.adj
+
 
     def transition_matrix(self,el):
         ''' Construct transition matrix = sum of outer products of context vectors for

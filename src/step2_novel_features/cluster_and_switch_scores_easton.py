@@ -29,7 +29,7 @@ def step2_directory(sub_dir):
     return data_directory(os.path.join('step2', sub_dir))
 
 
-list_directory = step1_directory('lists/')
+list_directory = step1_directory('lists_lowercase/')
 
 
 subcategories_directory = step1_directory('subcategories/')
@@ -71,11 +71,12 @@ def rhyme(w1,w2,pronunciations):
         else:
             rime.append(p1[-loc])
     if not rime: return False
-    # Does the ending identical part include a vowel?
-    v = [ el for el in rime if el[0] in 'AEIOU' and int(el[-1])>0 ]
-    if not v:
-        return False
-    else: return True
+
+    def is_vowel(w):
+        return w[0] in 'AEIOU' and (w[-1].isdigit() and int(w[-1]) > 0)
+
+    vowels = [ el for el in rime if is_vowel(el) ]
+    return len(vowels) > 0
 
 
 def one_vowel_difference(w1,w2,pronunciations):
@@ -138,26 +139,29 @@ def predict(values,coefs):
     return logistic
 
 
-def identify1cluster(item,lst,adj):
+def identify1cluster(item, lst, adj):
     """item: a word in the list, lst: a list of words, adj: a hash table,
     s.t., you put in an ordered pair of words and get back a 1 if they are
     linked, else 0. Returns a list of contiguous words linked to item"""
     no = lst.index(item)
-    preds = range(no-1,-1,-1)
-    succs = range(no+1,len(lst))
+    preds = [lst[i] for i in range(no-1, -1, -1)]
+    succs = [lst[i] for i in range(no+1, len(lst))]
     clust = [item]
     for pred in preds:
-        if not adj.has_key(order([lst[pred],item])):
-            adj[order([lst[pred],item])] = 0
-        if adj[order([lst[pred],item])]:
-            clust.append(lst[pred])
+        ordered = order([pred, item])
+        if not adj.has_key(ordered):
+            adj[ordered] = 0
+        if adj[ordered]:
+            clust.append(pred)
         else:
             break
     for succ in succs:
-        if not adj.has_key(order([lst[succ],item])):
-            adj[order([lst[succ],item])] = 0
-        if adj[order([lst[succ],item])]:
-            clust.append(lst[succ])
+        ordered_succ = order([succ, item])
+
+        if not adj.has_key(ordered_succ):
+            adj[ordered_succ] = 0
+        if adj[ordered_succ]:
+            clust.append(succ)
         else:
             break
     return clust
@@ -200,12 +204,12 @@ def load_subcategories(f):
     return adj
 
 
-def read_pronunciations(task):
-    with open(pronunciations_f(task+'_pronunciations.txt'),'r') as fh:
+def read_pronunciations():
+    with open(pronunciations_f('master_pronunciations.csv'), 'r') as fh:
         data = fh.readlines()
 
-    data = [ d.split(':') for d in data ]
-    return dict([ (d[0].strip(), d[1].strip().split('.')) for d in data ])
+    data = [ d.split(',') for d in data ]
+    return {w.strip(): pronun.strip().split('.') for (w, pronun) in data}
 
 
 def update_pronunciations(lop,pronuns):
@@ -252,12 +256,12 @@ class Letter_adjacency():
         return rep + "}"
 
 
-def identify_clusters(lst,adj):
+def identify_clusters(lst, adj):
     """lst: a list of words, adj: a hash table (as above). Returns
     a list of lists, each of which is a cluster"""
     clusters = []
     for item in lst:
-        clusters.append(identify1cluster(item,lst,adj))
+        clusters.append(identify1cluster(item, lst, adj))
     return filter_out_cluster_subsets(clusters)
 
 
@@ -321,7 +325,8 @@ class DataTable():
             if re.search('CASL(\d+)_y\d_' + task + '\.txt$', f)]
         self.ids = [ re.findall('CASL(\d+)_', f)[0] for f in self.files ]
         self.indices = dict([(f, num) for (num, f) in enumerate(self.files)])
-        self.pronuns = read_pronunciations(task)
+        self.pronuns = read_pronunciations()
+        print("loaded pronuns")
         self.pfmemo = {}
         # Perform traditional cluster/switch measurements
         if task in ['animals','fruits_and_veg']:
@@ -329,23 +334,28 @@ class DataTable():
             self.adj = load_subcategories(task_f)
         else:
             self.adj = Letter_adjacency(self.pronuns)
+        print("loaded subcategories")
         self.vfs = [ VF_list(list_directory+f) for f in self.files ]
         self.valids = [ vf.valid() for vf in self.vfs ]
+        print("loaded valids")
         self.cands = self._cluster_and_switch()
         # Perform semantic cluster and switch a la Pakhomov
         self.cosim = master_cosimilator
-        # print self.valids
         cos_adj = self.cosim.create_adjacency_matrix(wordlol=self.valids)
+        print("loaded adj matrix")
         self.pakhomov = self._cluster_and_switch(cos_adj)
+        print("calculated pakhomov")
         # Perform phonological and orthographic cluster and switch a la Pakhomov
         # self.phon_funk = lambda w1,w2: dpo(w1,w2,pronunciations = self.pronuns)
-        phon_adj = self.cosim.create_adjacency_matrix(wordlol=self.valids,funk=self._phon_funk)
+        phon_adj = self.cosim.create_adjacency_matrix(wordlol=self.valids, funk=self._phon_funk)
         self.phono_cs = self._cluster_and_switch(phon_adj)
+        print("calculated phono_cs")
         ortho_adj = self.cosim.create_adjacency_matrix(wordlol=self.valids,funk=edit_proximity)
         self.ortho_cs = self._cluster_and_switch(ortho_adj)
         self.semantic_graphs = [ self._make_graph(vf,cos_adj) for vf in self.valids ]
         self.phono_graphs = [ self._make_graph(vf,phon_adj) for vf in self.valids ]
         self.ortho_graphs = [ self._make_graph(vf,ortho_adj) for vf in self.valids ]
+        print("calculated semantic, phono, and ortho graphs")
         self.transitions = {}
         self._task = task
         self._word_locations = get_word_locations()
@@ -370,7 +380,7 @@ class DataTable():
     def _cluster_and_switch(self,adj=None):
         if not adj:
             adj = self.adj
-        c_and_s = [ cluster_and_switch_scores(identify_clusters(vf.valid(),adj)) for vf in self.vfs ]
+        c_and_s = [ cluster_and_switch_scores(identify_clusters(v, adj)) for v in self.valids ]
         return c_and_s
 
     def _bigrams(self,wordlist):
@@ -393,11 +403,11 @@ class DataTable():
         return g
 
     def _list_method_strings(self):
-        return ['id'] + [ m for m in dir(self) if m[0] != '_' and callable(getattr(self,m)) and m != 'id' ]
+        unordered = [m for m in dir(self) if m[0] != '_' and callable(getattr(self,m))]
+        return ['id'] + [m for m in unordered if m != 'id']
 
     def _list_score_methods(self):
-        all_attr = [ getattr(self,m) for m in self._list_method_strings() ]
-        return [ m for m in all_attr if callable(m) ]
+        return [ getattr(self,m) for m in self._list_method_strings()]
 
     def _format_result(self,r):
         return r if isinstance(r,str) else str(r)
@@ -593,8 +603,9 @@ class DataTable():
         return raw_list_to_zscores(f, self._task, self._word_locations)
 
 
-#tasks=['a', 'animal', 'f', 's', 'veg']
-def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
+#tasks=['a', 'animals', 'boats', 'f', 'fruits_and_veg', 's', 'tools',
+# 'vehicles', 'verbs', 'water_creatures']
+def write_tasks(pmi_f, tasks=['animals'], dest_dir='../data/step2/'):
     # Write all of the DataTable method calls to a file
     master_cosimilator = Cosimilator(pmi_f) if isinstance(pmi_f, str) else pmi_f
     print "Done assembling cosimilator."
@@ -602,13 +613,11 @@ def write_tasks(pmi_f, tasks=['animal'], dest_dir='../data/step2/'):
         print task
         dt = DataTable(task, master_cosimilator)
 
-        ismethod = lambda m: m[0] != '_' and callable(getattr(dt,m)) and m != 'id'
-        tomethod = lambda m: getattr(dt, m)
-        methods = [tomethod('id')] + [ tomethod(m) for m in dir(dt)
-            if ismethod(m)]
-        header = '\t'.join(meth_names) # dt._list_score_methods())
+        methods = dt._list_score_methods()
+        method_names = dt._list_method_strings()
+        header = '\t'.join(method_names) # dt._list_score_methods())
 
-        outfile_name = os.path.join('../data/step2/', 'CASL_' + task + '.txt')
+        outfile_name = os.path.join('../../data/step2/', 'CASL_' + task + '.txt')
         with open(outfile_name, 'w') as outfile:
             outfile.write(header)
             for f in dt.files:
