@@ -6,6 +6,8 @@ project_folder = dirname(dirname(pwd()))
 getDataFile(parts...) = joinpath(project_folder, "data", parts...)
 
 
+getDataCsv(parts...) = @> getDataFile(parts...) string(".csv")
+
 #####Tasks
 
 task_reg = r"_([a-zA-Z_]+).txt"
