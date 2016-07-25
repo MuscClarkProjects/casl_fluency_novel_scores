@@ -42,3 +42,5 @@ isComment(w::ASCIIString) = map(c -> c in w, ('#', '!')) |> any
 isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
 #####
+
+const summary_cols = [:fci, :sem, :vbl, :exe, :mem, :vis, :atn]

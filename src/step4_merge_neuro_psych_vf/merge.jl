@@ -4,8 +4,6 @@ using Lazy
 include("../helpers/helpers.jl")
 
 
-const summary_cols = [:fci, :sem, :vbl, :exe, :mem, :vis, :atn]
-
 function summaryScores()
   df = readtable(getDataCsv("step3", "summary_scores"))
 
