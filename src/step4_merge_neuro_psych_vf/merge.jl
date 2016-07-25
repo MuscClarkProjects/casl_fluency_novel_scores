@@ -29,7 +29,8 @@ function run()
 
   const step2_dir = getDataFile("step2")
   for task_f in @>> step2_dir readdir filter(f -> endswith(f, "txt"))
-    vf = @> step2_dir joinpath(task_f) readtable(separator='\t');
+    vf = @> step2_dir joinpath(task_f) readtable(separator='\t',
+      nastrings=["None"]);
 
     dest_f = @>> task_f[6:end-4] getDataCsv("step4")
 
