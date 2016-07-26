@@ -1,4 +1,5 @@
 using DataFrames
+using Gadfly
 using Lazy
 
 include("../helpers/helpers.jl")
@@ -10,16 +11,84 @@ function readTask(task, baseline_only=true)
 end
 
 
-pureData(task, include_y=true) = @> task readTask pureData(include_y)
+const meta_cols = [:id, :visit, :task]
 
-function pureData(task::DataFrame, include_y=true)
-  data_cols = if include_y
-    names(task)
-  else
-    @> task names setdiff([summary_cols; :id])
+dataCols(task::DataFrame) = @> task names setdiff([summary_cols; meta_cols])
+
+pureData(task, all_cols=true) = @> task readTask pureData(all_cols)
+
+function pureData(task::DataFrame, all_cols=true)
+  ret = copy(task)
+
+  cols = all_cols ? names(task) : dataCols(task)
+
+  pure_rows = @> task[:, cols] complete_cases
+
+  for c in dataCols(task)
+    vec = ret[pure_rows, c]
+
+    if reduce(|, isinf(vec))
+      warn("inf found in $c")
+      warn("will flip $c")
+
+      println("## $c info ##")
+      println("max: $(maximum(vec)); min: $(minimum(vec))")
+      println("min abs: $(minimum(abs(vec)))")
+      println("####")
+
+      new_col = symbol("one_over_", c)
+      ret[new_col] = 0.
+      ret[pure_rows, new_col] = 1./vec
+      delete!(ret, c)
+    end
+
+    if std(vec) == 0.0
+      warn("std = 0 in $c, will delete")
+      delete!(ret, c)
+    end
+
   end
 
-  pure_rows = @> task[:, data_cols] complete_cases
+  ret[pure_rows, :]
+end
 
-  task[pure_rows, :]
+
+plotFeature(task::DataFrame, predictor, prediction) = plot(task,
+  x=predictor,
+  y=prediction,
+  Geom.point,
+  Geom.smooth,
+  Guide.xlabel("$predictor"),
+  Guide.ylabel("$prediction")
+  )
+
+
+function plotFeatures(task_name)
+  task = pureData(task_name)
+
+  predictors = dataCols(task)
+  for prediction in summary_cols
+    println("will run for $prediction")
+    
+    plots = begin
+      all_plots = [plotFeature(task, c, prediction) for c in predictors]
+
+      safeDisplay(p) = try
+        display(p)
+        true
+      catch e
+        warn(p.guides)
+        false
+      end
+
+      filter(safeDisplay, all_plots)
+    end
+    pic_len = begin
+      num_rows = length(predictors)
+      parse("$(num_rows*5)inch") |> eval
+    end
+
+    draw(PNG("$(task_name)_$(prediction).png", 9inch, pic_len), vstack(plots))
+  end
+
 end
