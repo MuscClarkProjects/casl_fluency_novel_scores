@@ -43,4 +43,10 @@ isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
 #####
 
-const summary_cols = [:fci, :sem, :vbl, :exe, :mem, :vis, :atn]
+@enum SummaryScore fci sem vbl exe mem vis atn
+summaryScores() = [fci sem vbl exe mem vis atn]
+overSummaryScores(fn) = map(fn, summaryScores())
+
+@enum Task a animals boats f fruits_and_veg s tools vehicles verbs water_creatures
+Tasks() = [a animals boats f fruits_and_veg s tools vehicles verbs water_creatures]
+overTasks(fn) = map(fn, Tasks())
