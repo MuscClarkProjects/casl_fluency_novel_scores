@@ -50,3 +50,7 @@ overSummaryScores(fn) = map(fn, summaryScores())
 @enum Task a animals boats f fruits_and_veg s tools vehicles verbs water_creatures
 Tasks() = [a animals boats f fruits_and_veg s tools vehicles verbs water_creatures]
 overTasks(fn) = map(fn, Tasks())
+
+
+const meta_cols = [:id, :visit, :task]
+const summary_cols = overSummaryScores(symbol)
