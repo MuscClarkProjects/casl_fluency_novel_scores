@@ -9,7 +9,6 @@ function readTask(task::Task, baseline_only=true)
   baseline_only ? data[data[:visit] .== "y0", :] : data
 end
 
-dataCols(task::DataFrame) = @> task names setdiff([summary_cols'; meta_cols])
 dataCols(task::Task) = @> task readTask dataCols
 
 pureData(task, all_cols=true) = @> task readTask pureData(all_cols)
@@ -50,6 +49,53 @@ function pureData(task::DataFrame, all_cols=true)
 end
 
 
-writePureData!() = overTasks() do t::Task
-  @>> t pureData writetable(getDataCsv("step5", "$t"))
+function writePureData!()
+  writeStep5(f_name, data) = @> "step5" getDataCsv(f_name) writetable(data)
+
+  pure_data_tasks = overTasks() do t::Task
+    pure_data = pureData(t)
+    writeStep5("$t", pure_data)
+
+    pure_data
+  end
+
+  all_tasks = mergeTasks(Tasks())
+  writeStep5("all_tasks", all_tasks)
+end
+
+
+mergeTasks(tasks) = reduce(DataFrame(), tasks) do acc::DataFrame, t::Task
+  df = begin
+    task_df = pureData(t)
+
+    @>> [:id] setdiff(meta_cols) delete!(task_df)
+
+    rename!(task_df,
+      [c => symbol(c, '_', t) for c in dataCols(task_df)]
+    )
+
+    task_df
+  end
+
+  is_first = (@> acc names length) == 0
+
+  if is_first
+    df
+  else
+    non_summary_cols = @> df names setdiff(summary_cols)
+
+    ret = join(acc, df[non_summary_cols], on=:id)
+
+    df_id_ixs, acc_id_ixs = map([df, acc]) do d
+      Int64[findfirst(d[:id], i) for i in ret[:id]]
+    end
+
+    assert(
+      @>> summary_cols begin
+        map(c -> df[df_id_ixs, c] == acc[acc_id_ixs, c])
+        reduce(&)
+      end
+    )
+    ret
+  end
 end

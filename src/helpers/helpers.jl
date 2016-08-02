@@ -53,4 +53,6 @@ overTasks(fn) = map(fn, Tasks())
 
 
 const meta_cols = [:id, :visit, :task]
-const summary_cols = overSummaryScores(symbol)
+const summary_cols = overSummaryScores(symbol)[:]
+
+dataCols(df::DataFrame) = @> df names setdiff([summary_cols; meta_cols])
