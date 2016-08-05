@@ -10,15 +10,47 @@ include("../step5_machine_learning_prep/purifyData.jl")
 
 @pyimport sklearn.svm as svm
 LinearSVR = svm.LinearSVR
+SVR = svm.SVR
+
+@pyimport sklearn.ensemble as ens
+RandomForestRegressor = ens.RandomForestRegressor
 
 
-pipelineGen(t::Task,
-  s::SummaryScore) = @> "step5" getDataCsv("$t") readtable pipelineGen(s)
+function rfPipelineGen(t, s::SummaryScore)
+  model_state = Dict{Symbol, Any}()
+  classifier = model_state[:classifier] = RandomForestRegressor()
+  pipelineGen(t, s, classifier, model_state)
+end
 
-function pipelineGen(df::DataFrame, s::SummaryScore)
-  svr = LinearSVR()
+function svrPipelineGen(t, s::SummaryScore)
+  model_state = Dict(:C => 1., :penalty => "l1", :kernel => "rbf")
+  classifier = model_state[:classifier] = SVR()
+  pipelineGen(t, s, classifier, model_state,
+  fit_keys = Symbol[m for m in keys(model_state)]
+  )
+end
 
-  model_state = Dict(:svr_C => 1., :svr_penalty => "l1")
+function linearSvrPipelineGen(t, s::SummaryScore)
+  model_state = Dict(:C => 1., :penalty => "l1")
+  classifier = model_state[:classifier] = LinearSVR()
+  pipelineGen(t, s, classifier, model_state)
+end
+
+
+step5TaskDf(t) = @> "step5" getDataCsv("$t") readtable
+
+pipelineGen(t,
+  s::SummaryScore,
+  classifier,
+  model_state::Dict;
+  fit_keys::Vector{Symbol} = intersect(keys(model_state), keys(classifier))
+  ) = @> t step5TaskDf pipelineGen(s, classifier, model_state, fit_keys=fit_keys)
+
+function pipelineGen(df::DataFrame, s::SummaryScore,
+  classifier, model_state::Dict;
+  fit_keys = intersect(keys(model_state), keys(classifier))
+  )
+
   predictors = dataCols(df)
 
   X_data = df[predictors] |> Matrix{Float64}
@@ -28,14 +60,16 @@ function pipelineGen(df::DataFrame, s::SummaryScore)
   fits = begin
     getXy(ixs) = X_data[ixs, :], y_data[ixs]
 
-    function svrFit!(Xy)
-        X, y= Xy
-        svr[:C] = model_state[:svr_C]
-        svr[:penalty] = model_state[:svr_penalty]
-        svr[:fit](X, y)
+    function classifierFit!(Xy)
+      for k in fit_keys
+        classifier[k] = model_state[k]
+      end
+
+      X, y = Xy
+      classifier[:fit](X, y)
     end
 
-    [getXy, svrFit!]
+    [getXy, classifierFit!]
   end
 
   #predict functions
@@ -44,9 +78,9 @@ function pipelineGen(df::DataFrame, s::SummaryScore)
 
     _pyArrayToJl(arr) = Float64[p for p in arr]
 
-    svrPredict(X) = svr[:predict](X) |> _pyArrayToJl
+    classifierPredict(X) = classifier[:predict](X) |> _pyArrayToJl
 
-    [getX, svrPredict]
+    [getX, classifierPredict]
   end
 
   Pipeline(fits, predicts, r2score, y_data, model_state)
@@ -61,14 +95,21 @@ function plotAsUni(train_scores, test_scores, title)
 end
 
 
-function evalNovelFluencyModel(t::Task, s::SummaryScore,
-  svr_cs; plot=false)
-  novel_fluency_pipe = pipelineGen(t, s)
-  num_samples = novel_fluency_pipe.truths |> length
-  cvg = RandomSub(num_samples, round(Int64, num_samples * .8), 20)
+function pipelineToRandomSub(p::Pipeline)
+  num_subjects = length(p.truths)
+  sample_length = round(Int64, num_subjects * .8)
+  num_samples = 20
+  RandomSub(num_subjects, sample_length, num_samples)
+end
 
-  model_eval = evalModel(novel_fluency_pipe, cvg, num_samples,
-    meanTrainTest, :svr_c => svr_cs)
+
+function evalNovelFluencyModel(pipe::Pipeline,
+  params::Vector{Pair}; plot=false)
+
+  num_samples = pipe.truths |> length
+  cvg = pipelineToRandomSub(pipe)
+
+  model_eval = evalModel(pipe, cvg, num_samples, meanTrainTest, params...)
 
   if plot
     plotEvalModel(model_eval)
@@ -78,13 +119,32 @@ function evalNovelFluencyModel(t::Task, s::SummaryScore,
 end
 
 
-viewPlots() = overTasks() do t::Task
-  overSummaryScores() do s::SummaryScore
-    model_eval = evalNovelFluencyModel(t, s, logspace(-5, 4, 10))
-    title = "$t, $s"
-    println(title)
-    println(model_eval[1] |> maximum)
-    println(model_eval[2] |> maximum)
-    #plotAsUni(model_eval[1], model_eval[2], title)
-  end
+viewPlots(;tasks = Tasks(),
+  summary_scores=summaryScores()) = overTasks(tasks) do t
+    overSummaryScores(summary_scores) do s::SummaryScore
+      function printModelEval(model_eval, model_type)
+        title = "$(model_type): $t, $s"
+        println(title)
+        println(model_eval[1] |> maximum)
+        println(model_eval[2] |> maximum)
+        #plotAsUni(model_eval[1], model_eval[2], title)
+      end
+      lin_svr_eval = begin
+        lin_svr_pipe = linearSvrPipelineGen(t, s)
+        evalNovelFluencyModel(lin_svr_pipe, Pair[:C=>logspace(-5, 4, 10)])
+      end
+      printModelEval(lin_svr_eval, "Linear SVR")
+
+      svr_eval = begin
+        svr_pipe = svrPipelineGen(t, s)
+        evalNovelFluencyModel(svr_pipe, Pair[:C=>logspace(-5, 4, 10)])
+      end
+      printModelEval(svr_eval, "SVR")
+
+      rf_eval = begin
+        rf_pipe = rfPipelineGen(t, s)
+        evalNovelFluencyModel(svr_pipe, Pair[:n_features=>[10, 15, 20]])
+      end
+      printModelEval(rf_eval, "Random Forests")
+    end
 end

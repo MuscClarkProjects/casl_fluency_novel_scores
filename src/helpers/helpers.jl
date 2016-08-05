@@ -45,11 +45,11 @@ isValidWord(w::ASCIIString) = length(w) > 0 && isalpha(w[1])
 
 @enum SummaryScore fci sem vbl exe mem vis atn
 summaryScores() = [fci sem vbl exe mem vis atn]
-overSummaryScores(fn) = map(fn, summaryScores())
+overSummaryScores(fn, summary_scores=summaryScores()) = map(fn, summary_scores)
 
 @enum Task a animals boats f fruits_and_veg s tools vehicles verbs water_creatures
 Tasks() = [a animals boats f fruits_and_veg s tools vehicles verbs water_creatures]
-overTasks(fn) = map(fn, Tasks())
+overTasks(fn, tasks=Tasks()) = map(fn, tasks)
 
 
 const meta_cols = [:id, :visit, :task]
