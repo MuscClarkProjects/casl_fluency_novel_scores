@@ -1,3 +1,4 @@
+using DataFrames
 using Lazy
 
 project_folder = dirname(dirname(pwd()))

@@ -56,9 +56,8 @@ end
 
 
 casl_z[:fci] = summary([:dom2_total, :dom3_total, :dom4b, :dom5_total, :dom7_total])
-sem = [:ppt_w, :ppt_p]
-casl_z[:sem] = summary(sem)
-casl_z[:vbl] = summary([:cvlt1; :cvltb; :cvlt_total; :cvlt_ldfr; :cvlt_ldcr; sem; :bnt; :reg; :lang_1; :recall1; :recall2; :wm])
+casl_z[:sem] = summary([:ppt_w, :ppt_p, :bnt])
+casl_z[:vbl] = summary([:cvlt1; :cvltb; :cvlt_total; :cvlt_ldfr; :cvlt_ldcr; :bnt; :reg; :lang_1; :recall1; :recall2; :wm])
 casl_z[:exe] = summary([:tmt_b, :wm, :pent, :pent_recall])
 casl_z[:mem] = summary([:cvlt1, :cvltb, :cvlt_total, :cvlt_ldfr, :cvlt_ldcr, :ten_36_1, :ten_36_total, :ten_36_del, :recall1, :recall2, :pent_recall])
 casl_z[:vis] = summary([:ten_36_1, :ten_36_total, :ten_36_del, :pent_recall, :ppt_p, :bnt, :tmt_a, :tmt_b])
